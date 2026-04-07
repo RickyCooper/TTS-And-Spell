@@ -1,0 +1,94 @@
+@use "../../styles/variables" as *;
+
+@mixin button-theme($base, $highlight, $shadow) {
+
+  padding: $btn-padding-y $btn-padding-x;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $title-font-family;
+  font-size: $btn-font-size;
+  transition: all 0.15s ease-in-out;
+  user-select: none;
+  cursor: pointer;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: $btn-disabled-opacity;
+  }
+
+  &.button--primary {
+    height: $btn-height;
+    color: white;
+    border: $btn-border-width solid transparent;
+    border-radius: $btn-border-radius;
+    background-color: $base;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    background-image:
+      linear-gradient($base, $base),
+      linear-gradient(to top, $highlight, $base);
+    
+    box-shadow:
+      0 0 0 0.1rem $shadow,
+      0 0.2rem 0 $shadow,
+      0 0.1rem 0 0.2rem #fff,
+      0 -0.1rem 0 0.1rem #fff,
+      0 -0.1rem 0 0.25rem $highlight-color-grey,
+      0 0.1rem 0 0.3rem $highlight-color-grey;
+
+    &:not(:disabled):hover {
+      filter: brightness(1.05);
+    }
+
+    .button_text {
+      font-family: $button-font-family;
+      font-size: $btn-text-font-size;
+      line-height: 1;
+      transform: translateY($btn-text-offset-y);
+    }
+  }
+
+  &.button--secondary {
+    background: none;
+    border: 0.2rem solid $base;
+    color: $base;
+
+    &:not(:disabled):hover {
+      background-color: $base;
+      color: white;
+    }
+  }
+
+}
+
+.button--tertiary {
+  font-family: $button-font-family;
+  box-shadow: none;
+  background: none;
+  border: none;
+  padding: 0;
+  color: $secondary-font-color;
+  cursor: pointer;
+
+  &:not(:disabled):hover {
+    color: $shadow-color-grey;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: $btn-disabled-opacity;
+  }
+
+  .button_text {
+    margin: 0;
+  }
+}
+
+.button--green  { @include button-theme($base-color-green, $highlight-color-green, $shadow-color-green); }
+.button--blue   { @include button-theme($base-color-blue, $highlight-color-blue, $shadow-color-blue); }
+.button--red    { @include button-theme($base-color-red, $highlight-color-red, $shadow-color-red); }
+.button--brown  { @include button-theme($base-color-brown, $highlight-color-brown, $shadow-color-brown); }
+.button--purple { @include button-theme($base-color-purple, $highlight-color-purple, $shadow-color-purple); }
+.button--orange { @include button-theme($base-color-orange, $highlight-color-orange, $shadow-color-orange); }
+.button--grey   { @include button-theme($base-color-grey, $highlight-color-grey, $shadow-color-grey); }

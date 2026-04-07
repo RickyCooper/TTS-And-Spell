@@ -1,0 +1,74 @@
+@use "../../styles/variables" as *;
+
+.game-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .game-input__helper-text {
+    font-size: 1rem;
+    font-family: $title-font-family;
+    color: $secondary-font-color;
+  }
+}
+
+.game-input__textarea {
+  width: 100%;
+  max-width: 400px;
+  font-size: 1.4rem;
+  padding: 0.2rem;
+  text-align: center;
+  font-family: $input-font-family;
+  font-optical-sizing: auto;
+  font-weight: lighter;
+  line-height: 1;
+  border: 0.1rem solid $shadow-color-grey;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 0 0.2rem $highlight-color-grey;
+  outline: none;
+  transition:
+    border-color 0.2s,
+    color 0.2s,
+    background 0.2s,
+    box-shadow 0.2s;
+}
+
+.game-input__textarea--correct {
+  border-color: $base-color-green;
+  box-shadow: 0 0 0 0.2rem $highlight-color-green;
+  color: $base-color-green;
+}
+
+.game-input__textarea--incorrect {
+  border-color: $base-color-red;
+  box-shadow: 0 0 0 0.2rem $highlight-color-red;
+  color: $base-color-red;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  15% {
+    transform: translateX(-8px);
+  }
+  30% {
+    transform: translateX(8px);
+  }
+  45% {
+    transform: translateX(-8px);
+  }
+  60% {
+    transform: translateX(8px);
+  }
+  75% {
+    transform: translateX(-8px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.game-input__textarea--shake {
+  animation: shake 0.4s;
+}

@@ -1,0 +1,73 @@
+@use "../../styles/variables" as *;
+
+.audio-button {
+  width: 4.5rem;
+  height: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: $base-color-green;
+  border: 0.2rem solid $shadow-color-green;
+  box-shadow: 0 0 0 0.15rem $shadow-color-green,
+    0 0.3rem 0 0.15rem $shadow-color-green;
+  border-radius: 12px;
+  transition:
+    transform 0.1s ease,
+    box-shadow 0.1s ease,
+    filter 0.1s ease;
+  
+  border: 2px solid transparent;
+  
+  background-image:
+  linear-gradient($base-color-green, $base-color-green),
+  linear-gradient(to top, $highlight-color-green, $base-color-green);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  &:not(:disabled):hover {
+    filter: brightness(1.05);
+  }
+
+  &:not(:disabled):active {
+    transform: translateY(0.2rem);
+    box-shadow: 0 0 0 0.15rem $shadow-color-green,
+      0 0.1rem 0 0.15rem $shadow-color-green;
+
+  }
+
+  .audio-button__icon {
+    width: 2.3rem;
+    object-fit: contain;
+  }
+
+  &.audio-button--small {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+    border: 0.15rem solid $shadow-color-green;
+    box-shadow: 0 0 0 0.15rem $shadow-color-green,
+      0 0.2rem 0 0.05rem $shadow-color-green;
+
+        
+    border: 2px solid transparent;
+    background-image:
+    linear-gradient($base-color-green, $base-color-green),
+    linear-gradient(to top, $highlight-color-green, $base-color-green);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+
+    &:not(:disabled):active {
+      transform: translateY(0.2rem);
+      box-shadow: 0 0 0 0.15rem $shadow-color-green,
+        0 0.1rem 0 0.01rem $shadow-color-green;
+
+    }
+
+    .audio-button__icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+@use "../../styles/variables" as *;
+
+.review-card {
+  width: 100%;
+  scroll-snap-align: start;
+  display: flex;
+  overflow: visible;
+  flex-direction: column;
+
+  background-color: white;
+  border-radius: 20px;
+  border: 3px solid #575757;
+  box-shadow: 0 0.4rem 0 $base-color-grey;
+}
+
+.review-card_header {
+  border-radius: 20px 20px 0px 0px;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 1rem;
+  background-color: white;
+  text-transform: capitalize;
+
+  &.review-card--closed {
+    border-bottom: 1px solid #575757;;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    font-family: $title-font-family;
+    font-weight: lighter;
+    color: black;
+    margin: 0;
+  }
+}
+
+.review-card_attempt {
+  padding: 0.45rem 1rem;
+  font-size: 1rem;
+  font-family: $body-font-family;
+  color: white;
+
+  &.review-card_attempt--incorrect {
+    border-bottom: 1px solid $shadow-color-red;
+    background-color: #c85050;
+  }
+
+  &.review-card_attempt--correct {
+    border-radius: 0 0 16px 16px;
+    border: 2px solid transparent;
+    background-image:
+      linear-gradient($base-color-green, $base-color-green),
+      linear-gradient(to top, #64c79f, #33a275);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+
+  &.review-card_attempt--skipped {
+    border-radius: 0 0 16px 16px;
+    border: 2px solid transparent;
+    background-image:
+      linear-gradient(#9d9d9d, #9d9d9d),
+      linear-gradient(to top, #c9c9c9, #9d9d9d);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+}
+
+.review-card_attempts-container {
+  display: grid;
+  grid-template-rows: var(--rows);
+  transition: grid-template-rows 100ms;
+    text-transform: capitalize;
+
+}

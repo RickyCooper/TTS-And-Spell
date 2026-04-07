@@ -1,0 +1,5082 @@
+{
+  "beginner": [
+    {
+      "word": "cat",
+      "definition": "A small furry animal often kept as a pet.",
+      "sentence": "The cat sat by the warm fire."
+    },
+    {
+      "word": "dog",
+      "definition": "A domesticated animal known for its loyalty.",
+      "sentence": "The dog wagged its tail at the door."
+    },
+    {
+      "word": "sun",
+      "definition": "The star at the centre of our solar system that gives us light and warmth.",
+      "sentence": "The sun came out after the rain."
+    },
+    {
+      "word": "hat",
+      "definition": "A covering worn on the head.",
+      "sentence": "She put on her hat before going outside."
+    },
+    {
+      "word": "mud",
+      "definition": "Soft, wet earth.",
+      "sentence": "The children splashed through the mud."
+    },
+    {
+      "word": "pet",
+      "definition": "An animal kept at home for company and enjoyment.",
+      "sentence": "Her pet rabbit lived in a hutch in the garden."
+    },
+    {
+      "word": "boy",
+      "definition": "A male child.",
+      "sentence": "The boy scored a goal in the last minute."
+    },
+    {
+      "word": "toy",
+      "definition": "An object made for children to play with.",
+      "sentence": "She put every toy back in the box."
+    },
+    {
+      "word": "jam",
+      "definition": "A sweet spread made from fruit and sugar.",
+      "sentence": "He spread strawberry jam on his toast."
+    },
+    {
+      "word": "pin",
+      "definition": "A thin sharp piece of metal used for fastening.",
+      "sentence": "She used a pin to hold the badge to her jumper."
+    },
+    {
+      "word": "bag",
+      "definition": "A container made from fabric or plastic for carrying things.",
+      "sentence": "She packed her bag the night before school."
+    },
+    {
+      "word": "den",
+      "definition": "A cosy room or the home of a wild animal.",
+      "sentence": "The fox cubs played outside their den."
+    },
+    {
+      "word": "ham",
+      "definition": "Cured meat from the leg of a pig.",
+      "sentence": "She made a ham sandwich for her lunchbox."
+    },
+    {
+      "word": "jar",
+      "definition": "A wide-mouthed glass container for storing food.",
+      "sentence": "She filled the jar with homemade lemon curd."
+    },
+    {
+      "word": "joy",
+      "definition": "A feeling of great happiness.",
+      "sentence": "The children laughed with joy at the news."
+    },
+    {
+      "word": "tin",
+      "definition": "A metal container used to store food.",
+      "sentence": "She opened a tin of tomatoes for the sauce."
+    },
+    {
+      "word": "zoo",
+      "definition": "A place where animals are kept and shown to visitors.",
+      "sentence": "They spent the afternoon at the zoo."
+    },
+    {
+      "word": "sky",
+      "definition": "The region of the atmosphere seen above the earth.",
+      "sentence": "The sky turned orange and pink at sunset."
+    },
+    {
+      "word": "son",
+      "definition": "A male child in relation to his parents.",
+      "sentence": "Their son won first place at the school sports day."
+    },
+    {
+      "word": "eye",
+      "definition": "The organ of sight.",
+      "sentence": "She had a speck of dust in her eye."
+    },
+    {
+      "word": "bed",
+      "definition": "A piece of furniture used for sleeping.",
+      "sentence": "He made his bed before coming downstairs."
+    },
+    {
+      "word": "ant",
+      "definition": "A small insect that lives in large colonies.",
+      "sentence": "A tiny ant carried a crumb across the path."
+    },
+    {
+      "word": "bug",
+      "definition": "A small insect or creeping creature.",
+      "sentence": "A shiny bug landed on the leaf."
+    },
+    {
+      "word": "cap",
+      "definition": "A flat soft hat with a peak at the front.",
+      "sentence": "He wore his cap to keep the sun out of his eyes."
+    },
+    {
+      "word": "fog",
+      "definition": "Thick cloud near the ground that reduces visibility.",
+      "sentence": "The fog made driving very difficult."
+    },
+    {
+      "word": "hen",
+      "definition": "A female chicken.",
+      "sentence": "The hen laid a warm egg in the straw."
+    },
+    {
+      "word": "egg",
+      "definition": "An oval object laid by birds, from which chicks hatch.",
+      "sentence": "She boiled an egg for breakfast."
+    },
+    {
+      "word": "ear",
+      "definition": "The organ used for hearing.",
+      "sentence": "She tucked her hair behind her ear."
+    },
+    {
+      "word": "arm",
+      "definition": "The limb connecting the shoulder to the hand.",
+      "sentence": "He broke his arm falling from the climbing frame."
+    },
+    {
+      "word": "ash",
+      "definition": "The powdery remains left after something has burned.",
+      "sentence": "Ash from the bonfire drifted across the garden."
+    },
+    {
+      "word": "oak",
+      "definition": "A large tree that produces acorns.",
+      "sentence": "An ancient oak stood at the edge of the meadow."
+    },
+    {
+      "word": "bee",
+      "definition": "A flying insect that makes honey and pollinates flowers.",
+      "sentence": "A bee buzzed lazily among the lavender."
+    },
+    {
+      "word": "fish",
+      "definition": "A cold-blooded animal that lives in water and breathes through gills.",
+      "sentence": "She watched the fish glide through the clear water."
+    },
+    {
+      "word": "bird",
+      "definition": "A feathered, warm-blooded animal with wings.",
+      "sentence": "A small bird perched on the garden fence and sang."
+    },
+    {
+      "word": "coat",
+      "definition": "An outer garment worn to keep warm.",
+      "sentence": "She buttoned up her coat before heading outside."
+    },
+    {
+      "word": "boot",
+      "definition": "A sturdy shoe that covers the ankle or lower leg.",
+      "sentence": "He pulled on his boot before going into the muddy field."
+    },
+    {
+      "word": "ring",
+      "definition": "A small circular band worn on a finger.",
+      "sentence": "The ring had been in the family for many years."
+    },
+    {
+      "word": "bath",
+      "definition": "A large container filled with water for washing.",
+      "sentence": "She ran a warm bath before bedtime."
+    },
+    {
+      "word": "soap",
+      "definition": "A cleansing substance used for washing.",
+      "sentence": "He lathered his hands with soap at the sink."
+    },
+    {
+      "word": "face",
+      "definition": "The front part of the head containing the eyes, nose, and mouth.",
+      "sentence": "She splashed cold water on her face to wake up."
+    },
+    {
+      "word": "hand",
+      "definition": "The part of the body at the end of the arm.",
+      "sentence": "He held her hand as they crossed the road."
+    },
+    {
+      "word": "foot",
+      "definition": "The lower part of the leg used for standing and walking.",
+      "sentence": "She stepped on a stone and hurt her foot."
+    },
+    {
+      "word": "head",
+      "definition": "The upper part of the body containing the brain.",
+      "sentence": "She shook her head to say no."
+    },
+    {
+      "word": "leaf",
+      "definition": "A flat green part of a plant attached to a branch.",
+      "sentence": "An autumn leaf drifted slowly to the ground."
+    },
+    {
+      "word": "boat",
+      "definition": "A small vessel used to travel on water.",
+      "sentence": "They rowed the little boat across the lake."
+    },
+    {
+      "word": "star",
+      "definition": "A ball of hot gas seen as a point of light in the night sky.",
+      "sentence": "The star twinkled in the clear night sky."
+    },
+    {
+      "word": "moon",
+      "definition": "The natural satellite that orbits the Earth.",
+      "sentence": "The moon cast a silver glow across the water."
+    },
+    {
+      "word": "food",
+      "definition": "Any substance eaten to provide nourishment.",
+      "sentence": "She prepared hot food for the whole family."
+    },
+    {
+      "word": "lamp",
+      "definition": "A device that produces light.",
+      "sentence": "She switched on the bedside lamp to read."
+    },
+    {
+      "word": "wall",
+      "definition": "A vertical structure forming the side of a building.",
+      "sentence": "He leaned against the garden wall in the sunshine."
+    },
+    {
+      "word": "roof",
+      "definition": "The structure covering the top of a building.",
+      "sentence": "A sparrow landed on the roof and began to chirp."
+    },
+    {
+      "word": "door",
+      "definition": "A hinged barrier used to open or close a room entrance.",
+      "sentence": "She knocked on the door and waited."
+    },
+    {
+      "word": "book",
+      "definition": "A written or printed work with bound pages.",
+      "sentence": "He read the whole book in one afternoon."
+    },
+    {
+      "word": "ball",
+      "definition": "A round object used in many sports and games.",
+      "sentence": "She kicked the ball straight into the goal."
+    },
+    {
+      "word": "frog",
+      "definition": "A small amphibian with long back legs used for jumping.",
+      "sentence": "A green frog leapt from the bank into the pond."
+    },
+    {
+      "word": "duck",
+      "definition": "A water bird with webbed feet and a flat bill.",
+      "sentence": "The duck waddled along the edge of the pond."
+    },
+    {
+      "word": "rose",
+      "definition": "A flowering plant with thorny stems and fragrant blooms.",
+      "sentence": "She picked a red rose from the garden."
+    },
+    {
+      "word": "tree",
+      "definition": "A tall woody plant with a trunk, branches, and leaves.",
+      "sentence": "The children climbed the old tree in the garden."
+    },
+    {
+      "word": "rock",
+      "definition": "A hard natural mineral material forming part of the earth.",
+      "sentence": "She balanced carefully on the large flat rock."
+    },
+    {
+      "word": "rain",
+      "definition": "Water drops falling from clouds in the sky.",
+      "sentence": "The rain pattered softly against the windowpane."
+    },
+    {
+      "word": "snow",
+      "definition": "Frozen water that falls from the sky as white flakes.",
+      "sentence": "The garden was covered in a blanket of snow."
+    },
+    {
+      "word": "wind",
+      "definition": "Air moving across the surface of the earth.",
+      "sentence": "The wind rattled the gate at the bottom of the garden."
+    },
+    {
+      "word": "cake",
+      "definition": "A sweet baked food made from flour, eggs, and sugar.",
+      "sentence": "She blew out the candles on her birthday cake."
+    },
+    {
+      "word": "milk",
+      "definition": "A white liquid produced by mammals and used as a drink.",
+      "sentence": "She poured cold milk over her cereal."
+    },
+    {
+      "word": "path",
+      "definition": "A narrow track made for walking along.",
+      "sentence": "The path through the wood was covered in leaves."
+    },
+    {
+      "word": "bin",
+      "definition": "A container used for rubbish or recycling.",
+      "sentence": "She put the empty bottle in the bin."
+    },
+    {
+      "word": "box",
+      "definition": "A container with flat sides used for storage.",
+      "sentence": "She packed her pencils into the box."
+    },
+    {
+      "word": "bun",
+      "definition": "A small round bread roll or sweet cake.",
+      "sentence": "She ate a warm bun at the bakery."
+    },
+    {
+      "word": "bus",
+      "definition": "A large vehicle that carries passengers along a set route.",
+      "sentence": "They caught the bus to the town centre."
+    },
+    {
+      "word": "cod",
+      "definition": "A large sea fish commonly eaten as food.",
+      "sentence": "They ordered battered cod at the seaside cafe."
+    },
+    {
+      "word": "cow",
+      "definition": "A large female farm animal that produces milk.",
+      "sentence": "The cow grazed peacefully in the field."
+    },
+    {
+      "word": "cub",
+      "definition": "A young bear, fox, or lion.",
+      "sentence": "The bear cub stayed close to its mother."
+    },
+    {
+      "word": "cup",
+      "definition": "A small container with a handle used for drinking.",
+      "sentence": "She poured tea into her favourite cup."
+    },
+    {
+      "word": "elf",
+      "definition": "A small magical creature from folklore.",
+      "sentence": "The elf hid behind the mushroom and peered out."
+    },
+    {
+      "word": "elk",
+      "definition": "A large deer with wide flat antlers.",
+      "sentence": "An elk stood at the edge of the pine forest."
+    },
+    {
+      "word": "fan",
+      "definition": "A device that moves air by rotating blades.",
+      "sentence": "She switched on the fan to cool the room."
+    },
+    {
+      "word": "fin",
+      "definition": "A flat limb on a fish used for balance and steering.",
+      "sentence": "The fin of the shark cut through the water's surface."
+    },
+    {
+      "word": "fox",
+      "definition": "A wild animal with reddish-brown fur and a bushy tail.",
+      "sentence": "A fox crept quietly through the garden at dusk."
+    },
+    {
+      "word": "gem",
+      "definition": "A precious stone valued for its beauty.",
+      "sentence": "The crown was set with a sparkling gem."
+    },
+    {
+      "word": "hip",
+      "definition": "The side of the body between the waist and the top of the leg.",
+      "sentence": "She rested her hand on her hip."
+    },
+    {
+      "word": "hut",
+      "definition": "A small simple building used as a shelter.",
+      "sentence": "The shepherd sheltered in a stone hut on the hill."
+    },
+    {
+      "word": "ice",
+      "definition": "Water that has frozen into a solid.",
+      "sentence": "She added ice to her glass of lemonade."
+    },
+    {
+      "word": "ink",
+      "definition": "A coloured liquid used for writing and printing.",
+      "sentence": "The pen ran out of ink mid-sentence."
+    },
+    {
+      "word": "inn",
+      "definition": "A small country pub that offers food and lodging.",
+      "sentence": "Travellers stopped at the inn to rest for the night."
+    },
+    {
+      "word": "jug",
+      "definition": "A container with a handle and a lip used for pouring liquids.",
+      "sentence": "She filled the jug with cold water from the tap."
+    },
+    {
+      "word": "kid",
+      "definition": "A young goat, or an informal word for a child.",
+      "sentence": "The kid bounded playfully across the farmyard."
+    },
+    {
+      "word": "lad",
+      "definition": "A boy or young man.",
+      "sentence": "The lad helped carry the heavy shopping inside."
+    },
+    {
+      "word": "leg",
+      "definition": "A limb used for walking and supporting the body.",
+      "sentence": "He hurt his leg playing in the garden."
+    },
+    {
+      "word": "lid",
+      "definition": "A removable cover placed over a container.",
+      "sentence": "She lifted the lid off the saucepan carefully."
+    },
+    {
+      "word": "lip",
+      "definition": "One of the two soft fleshy edges of the mouth.",
+      "sentence": "She bit her lip while thinking hard."
+    },
+    {
+      "word": "log",
+      "definition": "A thick piece of wood cut from a tree.",
+      "sentence": "He tossed another log onto the crackling fire."
+    },
+    {
+      "word": "man",
+      "definition": "An adult male person.",
+      "sentence": "The man helped carry the heavy bags upstairs."
+    },
+    {
+      "word": "map",
+      "definition": "A flat drawing that shows the layout of an area.",
+      "sentence": "They used a map to find the campsite."
+    },
+    {
+      "word": "mat",
+      "definition": "A flat piece of material placed on a floor or surface.",
+      "sentence": "She wiped her feet on the mat at the door."
+    },
+    {
+      "word": "mop",
+      "definition": "A cleaning tool with a long handle and a soft absorbent head.",
+      "sentence": "He used a mop to clean the kitchen floor."
+    },
+    {
+      "word": "mug",
+      "definition": "A large cup with a handle used for hot drinks.",
+      "sentence": "She wrapped her hands around a warm mug of cocoa."
+    },
+    {
+      "word": "nap",
+      "definition": "A short sleep taken during the day.",
+      "sentence": "The toddler had a nap after lunch."
+    },
+    {
+      "word": "net",
+      "definition": "A material made from knotted threads with holes between them.",
+      "sentence": "The ball landed in the back of the net."
+    },
+    {
+      "word": "nut",
+      "definition": "A hard-shelled seed or fruit that can be eaten.",
+      "sentence": "The squirrel buried a nut deep in the ground."
+    },
+    {
+      "word": "oar",
+      "definition": "A long pole with a flat blade used to row a boat.",
+      "sentence": "She dipped the oar gently into the still water."
+    },
+    {
+      "word": "oil",
+      "definition": "A smooth liquid used in cooking or to lubricate machines.",
+      "sentence": "He drizzled olive oil over the salad."
+    },
+    {
+      "word": "pad",
+      "definition": "A flat cushioned surface or a block of writing paper.",
+      "sentence": "She wrote a reminder on her notepad."
+    },
+    {
+      "word": "pan",
+      "definition": "A flat metal container used for frying or cooking on a hob.",
+      "sentence": "She fried eggs in a pan on the stove."
+    },
+    {
+      "word": "paw",
+      "definition": "The foot of a mammal that has claws.",
+      "sentence": "The dog lifted its paw to shake hands."
+    },
+    {
+      "word": "pea",
+      "definition": "A small round green vegetable that grows in a pod.",
+      "sentence": "She shelled a bowl of pea pods for dinner."
+    },
+    {
+      "word": "peg",
+      "definition": "A small clip used to fasten washing to a line.",
+      "sentence": "She used a peg to hang the shirt on the washing line."
+    },
+    {
+      "word": "pen",
+      "definition": "A tool used for writing with ink.",
+      "sentence": "He signed the card with a blue pen."
+    },
+    {
+      "word": "pig",
+      "definition": "A farm animal with a round snout and curly tail.",
+      "sentence": "The pig rolled happily in the cool mud."
+    },
+    {
+      "word": "pod",
+      "definition": "A long seed case in which peas or beans grow.",
+      "sentence": "She split open the pod and tipped out the peas."
+    },
+    {
+      "word": "pop",
+      "definition": "A short sharp sound, like a balloon bursting.",
+      "sentence": "The balloon made a loud pop when it burst."
+    },
+    {
+      "word": "pot",
+      "definition": "A round deep container used for cooking or storing things.",
+      "sentence": "She stirred the soup in the pot on the stove."
+    },
+    {
+      "word": "rag",
+      "definition": "A torn or worn piece of old cloth.",
+      "sentence": "He used a damp rag to wipe the muddy table."
+    },
+    {
+      "word": "ram",
+      "definition": "An adult male sheep.",
+      "sentence": "The ram stood proudly at the top of the hill."
+    },
+    {
+      "word": "rat",
+      "definition": "A small rodent with a long tail, larger than a mouse.",
+      "sentence": "A rat scurried along the edge of the barn wall."
+    },
+    {
+      "word": "ray",
+      "definition": "A narrow beam of light or warmth.",
+      "sentence": "A ray of sunshine fell through the bedroom curtains."
+    },
+    {
+      "word": "red",
+      "definition": "The colour of ripe tomatoes and fire engines.",
+      "sentence": "She painted the garden gate a bright red."
+    },
+    {
+      "word": "rim",
+      "definition": "The outer edge or border of a round object.",
+      "sentence": "There was a tiny chip on the rim of the cup."
+    },
+    {
+      "word": "rod",
+      "definition": "A thin straight stick or metal bar.",
+      "sentence": "He used a fishing rod to catch trout in the river."
+    },
+    {
+      "word": "row",
+      "definition": "A line of people or objects placed side by side.",
+      "sentence": "The children sat in a row on the wooden bench."
+    },
+    {
+      "word": "rug",
+      "definition": "A thick piece of fabric laid on a floor for warmth or decoration.",
+      "sentence": "The cat slept curled up on the rug by the fire."
+    },
+    {
+      "word": "sap",
+      "definition": "The liquid that carries nutrients through a plant.",
+      "sentence": "Sap oozed from the cut in the tree bark."
+    },
+    {
+      "word": "sum",
+      "definition": "The total reached by adding numbers together.",
+      "sentence": "She worked out the sum in her head quickly."
+    },
+    {
+      "word": "tab",
+      "definition": "A small flap used to open a container or to label something.",
+      "sentence": "She pulled the tab to open the tin of soup."
+    },
+    {
+      "word": "tan",
+      "definition": "A golden-brown colour, or a brown colour gained from sunshine.",
+      "sentence": "She came home with a light tan after the holiday."
+    },
+    {
+      "word": "tar",
+      "definition": "A dark sticky substance used to surface roads.",
+      "sentence": "Road workers spread fresh tar along the lane."
+    },
+    {
+      "word": "tip",
+      "definition": "The pointed end of something, or a helpful piece of advice.",
+      "sentence": "The tip of the pencil broke when she pressed too hard."
+    },
+    {
+      "word": "toe",
+      "definition": "One of the five digits on a human foot.",
+      "sentence": "She stubbed her toe on the leg of the chair."
+    },
+    {
+      "word": "tub",
+      "definition": "A large round container used for bathing or storing things.",
+      "sentence": "She soaked in a warm tub before bedtime."
+    },
+    {
+      "word": "tug",
+      "definition": "A short sharp pull on something.",
+      "sentence": "She felt a tug on her sleeve and turned around."
+    },
+    {
+      "word": "van",
+      "definition": "A vehicle used for carrying goods or equipment.",
+      "sentence": "The delivery van arrived early in the morning."
+    },
+    {
+      "word": "wax",
+      "definition": "A soft smooth solid substance used in candles and furniture polish.",
+      "sentence": "The candle was made from sweet-smelling beeswax."
+    },
+    {
+      "word": "web",
+      "definition": "A delicate net-like structure spun by a spider.",
+      "sentence": "The spider web sparkled with drops of morning dew."
+    },
+    {
+      "word": "wig",
+      "definition": "A covering of artificial hair worn on the head.",
+      "sentence": "The actor wore a curly red wig for the play."
+    },
+    {
+      "word": "yak",
+      "definition": "A large shaggy animal used as a pack animal in high mountain regions.",
+      "sentence": "A yak carried heavy loads across the steep mountain path."
+    },
+    {
+      "word": "yam",
+      "definition": "A starchy root vegetable cooked as food.",
+      "sentence": "She roasted a yam with herbs and olive oil."
+    },
+    {
+      "word": "zip",
+      "definition": "A fastener with two rows of teeth used on clothing and bags.",
+      "sentence": "She pulled the zip up on her coat before going out."
+    },
+    {
+      "word": "barn",
+      "definition": "A large farm building used for animals and storing crops.",
+      "sentence": "The horses were led back to the barn at sunset."
+    },
+    {
+      "word": "bell",
+      "definition": "A hollow metal object that makes a ringing sound when struck.",
+      "sentence": "The bell rang to signal the end of the lesson."
+    },
+    {
+      "word": "bone",
+      "definition": "One of the hard white pieces that form the skeleton.",
+      "sentence": "The dog chewed happily on a large bone."
+    },
+    {
+      "word": "bush",
+      "definition": "A shrub with many leafy branches.",
+      "sentence": "A robin was singing from deep inside the leafy bush."
+    },
+    {
+      "word": "cave",
+      "definition": "A hollow space inside a rock or cliff.",
+      "sentence": "They explored the cave with torches and hard hats."
+    },
+    {
+      "word": "clay",
+      "definition": "A sticky kind of earth used for making pots and bricks.",
+      "sentence": "She shaped the wet clay into a small bowl."
+    },
+    {
+      "word": "crab",
+      "definition": "A sea creature with a hard shell, pincers, and eight legs.",
+      "sentence": "A small crab scuttled across the rock pool."
+    },
+    {
+      "word": "crow",
+      "definition": "A large black bird with a loud, harsh call.",
+      "sentence": "A crow landed on the fence post and cawed loudly."
+    },
+    {
+      "word": "deer",
+      "definition": "A graceful wild animal with long legs found in forests.",
+      "sentence": "A deer stepped silently out from between the trees."
+    },
+    {
+      "word": "drum",
+      "definition": "A percussion instrument with a skin stretched over a hollow frame.",
+      "sentence": "She beat the drum enthusiastically in the school band."
+    },
+    {
+      "word": "dusk",
+      "definition": "The time just after sunset when daylight begins to fade.",
+      "sentence": "The bats came out to feed at dusk."
+    },
+    {
+      "word": "dust",
+      "definition": "Fine dry powder that settles on surfaces.",
+      "sentence": "She wiped the dust from the bookshelf with a soft cloth."
+    },
+    {
+      "word": "farm",
+      "definition": "An area of land used for growing crops and raising animals.",
+      "sentence": "They visited a farm and helped to feed the lambs."
+    },
+    {
+      "word": "flag",
+      "definition": "A piece of coloured cloth used as the symbol of a country or group.",
+      "sentence": "The flag flew in the breeze above the school entrance."
+    },
+    {
+      "word": "gill",
+      "definition": "The breathing organ of a fish, used to extract oxygen from water.",
+      "sentence": "Water passes over the gill so the fish can breathe."
+    },
+    {
+      "word": "glow",
+      "definition": "A steady warm light produced by something lit or heated.",
+      "sentence": "The fire gave off a warm glow in the dark room."
+    },
+    {
+      "word": "gold",
+      "definition": "A precious yellow metal used in jewellery and coins.",
+      "sentence": "She wore a delicate gold ring on her finger."
+    },
+    {
+      "word": "hill",
+      "definition": "A raised area of land, smaller than a mountain.",
+      "sentence": "They climbed the hill to admire the view from the top."
+    },
+    {
+      "word": "hive",
+      "definition": "A box-like structure in which bees live and make honey.",
+      "sentence": "The beekeeper carefully lifted the lid of the hive."
+    },
+    {
+      "word": "horn",
+      "definition": "A hard pointed growth on the head of some animals.",
+      "sentence": "The goat lowered its horn and charged at the gate."
+    },
+    {
+      "word": "iron",
+      "definition": "A strong common metal, or a device used to press clothes flat.",
+      "sentence": "She used the iron to press the creases from her shirt."
+    },
+    {
+      "word": "king",
+      "definition": "A male ruler of a country or kingdom.",
+      "sentence": "The king sat on his golden throne in the great hall."
+    },
+    {
+      "word": "lace",
+      "definition": "A delicate fabric made from fine threads woven into patterns.",
+      "sentence": "The tablecloth was trimmed with white lace."
+    },
+    {
+      "word": "lake",
+      "definition": "A large area of still water surrounded by land.",
+      "sentence": "They paddled a canoe across the calm lake."
+    },
+    {
+      "word": "lamb",
+      "definition": "A young sheep.",
+      "sentence": "The lamb stayed close beside its mother in the field."
+    },
+    {
+      "word": "lava",
+      "definition": "Hot molten rock that flows from a volcano.",
+      "sentence": "The lava flowed slowly down the mountainside."
+    },
+    {
+      "word": "lawn",
+      "definition": "An area of short, well-kept grass around a building.",
+      "sentence": "Dad mowed the lawn every Saturday morning."
+    },
+    {
+      "word": "lion",
+      "definition": "A large wild cat with a golden coat and a tufted tail.",
+      "sentence": "The lion yawned and stretched out lazily in the shade."
+    },
+    {
+      "word": "lock",
+      "definition": "A fastening device that is opened with a key.",
+      "sentence": "She turned the key in the lock and pushed open the door."
+    },
+    {
+      "word": "mane",
+      "definition": "The long hair that grows along the neck of a horse or lion.",
+      "sentence": "She gently stroked the horse's thick flowing mane."
+    },
+    {
+      "word": "mole",
+      "definition": "A small burrowing mammal with velvety fur and tiny eyes.",
+      "sentence": "A mole had pushed up a row of hills across the lawn."
+    },
+    {
+      "word": "moss",
+      "definition": "A soft green plant that grows in damp shady places.",
+      "sentence": "Thick moss covered every stone in the old wall."
+    },
+    {
+      "word": "moth",
+      "definition": "An insect similar to a butterfly that usually flies at night.",
+      "sentence": "A large moth fluttered around the porch light."
+    },
+    {
+      "word": "nail",
+      "definition": "A small metal spike hammered into wood to join things together.",
+      "sentence": "He hammered a nail into the wall to hang the picture."
+    },
+    {
+      "word": "neck",
+      "definition": "The part of the body connecting the head to the shoulders.",
+      "sentence": "She wrapped a warm scarf around her neck."
+    },
+    {
+      "word": "nest",
+      "definition": "A cup-shaped structure built by a bird to hold its eggs.",
+      "sentence": "A robin had built a neat nest in the hedge."
+    },
+    {
+      "word": "palm",
+      "definition": "The inner surface of the hand, or a tall tropical tree.",
+      "sentence": "She held the tiny seed in the palm of her hand."
+    },
+    {
+      "word": "pear",
+      "definition": "A sweet fruit with yellowish-green skin and soft white flesh.",
+      "sentence": "She bit into a ripe pear and the juice ran down her chin."
+    },
+    {
+      "word": "pine",
+      "definition": "An evergreen tree with long needles and woody cones.",
+      "sentence": "A squirrel leapt between the branches of the tall pine tree."
+    },
+    {
+      "word": "plum",
+      "definition": "A small smooth fruit with sweet dark flesh and a stone inside.",
+      "sentence": "She picked a ripe plum straight from the tree."
+    },
+    {
+      "word": "pond",
+      "definition": "A small area of still water, smaller than a lake.",
+      "sentence": "Ducks paddled happily across the pond in the park."
+    },
+    {
+      "word": "pony",
+      "definition": "A small horse.",
+      "sentence": "She rode the pony around the paddock at a gentle trot."
+    },
+    {
+      "word": "reef",
+      "definition": "A ridge of coral or rock just below the surface of the sea.",
+      "sentence": "Colourful fish darted in and out of the coral reef."
+    },
+    {
+      "word": "rope",
+      "definition": "A thick cord made from twisted fibres.",
+      "sentence": "She tied the boat to the dock with a rope."
+    },
+    {
+      "word": "rust",
+      "definition": "A reddish-brown coating that forms on iron when exposed to moisture.",
+      "sentence": "The old gate was covered in flaking rust."
+    },
+    {
+      "word": "salt",
+      "definition": "A white mineral used for seasoning and preserving food.",
+      "sentence": "She added a pinch of salt to the pasta water."
+    },
+    {
+      "word": "seed",
+      "definition": "A small part of a plant from which a new plant grows.",
+      "sentence": "She planted a seed in a pot on the sunny windowsill."
+    },
+    {
+      "word": "silk",
+      "definition": "A fine smooth fabric made from the thread of silkworms.",
+      "sentence": "The scarf was made from the softest silk."
+    },
+    {
+      "word": "yolk",
+      "definition": "The round yellow part in the centre of an egg.",
+      "sentence": "She pricked the yolk carefully with the tip of her fork."
+    },
+    {
+      "word": "toad",
+      "definition": "An amphibian similar to a frog but with drier, bumpier skin.",
+      "sentence": "A warty toad sat motionless on the garden path."
+    },
+    {
+      "word": "swan",
+      "definition": "A large white water bird with a long graceful neck.",
+      "sentence": "A swan glided serenely across the still lake."
+    },
+    {
+      "word": "lime",
+      "definition": "A small green citrus fruit with a sharp, sour taste.",
+      "sentence": "She squeezed lime juice into the cold drink."
+    },
+    {
+      "word": "dove",
+      "definition": "A white bird regarded as a symbol of peace.",
+      "sentence": "A dove settled on the windowsill and cooed softly."
+    },
+    {
+      "word": "bat",
+      "definition": "A stick used to hit a ball in sports, or a small flying mammal.",
+      "sentence": "She gripped the bat tightly before her turn."
+    },
+    {
+      "word": "top",
+      "definition": "The highest point or surface of something.",
+      "sentence": "The flag waved at the top of the pole."
+    },
+    {
+      "word": "art",
+      "definition": "Creative works such as paintings, drawings, or sculptures.",
+      "sentence": "She loved art class more than any other lesson."
+    },
+    {
+      "word": "big",
+      "definition": "Large in size or amount.",
+      "sentence": "She carried a big bag to school every day."
+    },
+    {
+      "word": "coal",
+      "definition": "A hard black mineral fuel dug from the ground.",
+      "sentence": "In winter, coal was used to heat the old house."
+    },
+    {
+      "word": "corn",
+      "definition": "A cereal plant grown for its grain.",
+      "sentence": "She bit into a golden cob of corn."
+    },
+    {
+      "word": "fern",
+      "definition": "A flowerless green plant with feathery leaves.",
+      "sentence": "A cluster of fern grew beside the woodland path."
+    },
+    {
+      "word": "gust",
+      "definition": "A sudden strong rush of wind.",
+      "sentence": "A gust of wind sent the leaves swirling."
+    },
+    {
+      "word": "lark",
+      "definition": "A small brown songbird known for its musical call.",
+      "sentence": "A lark rose into the sky, singing as it climbed."
+    },
+    {
+      "word": "mule",
+      "definition": "An animal that is the offspring of a horse and a donkey.",
+      "sentence": "The mule carried the heavy baskets up the rocky path."
+    },
+    {
+      "word": "lung",
+      "definition": "One of the two organs in the chest used for breathing.",
+      "sentence": "She took a deep breath to fill her lung with fresh air."
+    }
+  ],
+  "easy": [
+    {
+      "word": "bread",
+      "definition": "A baked food made from flour, water, and yeast.",
+      "sentence": "She sliced the fresh bread for the sandwiches."
+    },
+    {
+      "word": "train",
+      "definition": "A vehicle made of connected carriages that travels on rails.",
+      "sentence": "They caught the early morning train to the city."
+    },
+    {
+      "word": "water",
+      "definition": "A clear liquid essential for all living things.",
+      "sentence": "She poured a glass of cold water from the tap."
+    },
+    {
+      "word": "house",
+      "definition": "A building in which people live.",
+      "sentence": "The family moved into their new house at the weekend."
+    },
+    {
+      "word": "happy",
+      "definition": "Feeling or expressing great pleasure and contentment.",
+      "sentence": "She felt happy when she opened her birthday presents."
+    },
+    {
+      "word": "chair",
+      "definition": "A separate seat for one person with a back and legs.",
+      "sentence": "He pulled up a chair to sit by the fire."
+    },
+    {
+      "word": "table",
+      "definition": "A piece of furniture with a flat top supported by legs.",
+      "sentence": "The family sat around the table for dinner."
+    },
+    {
+      "word": "clock",
+      "definition": "A device used for measuring and displaying time.",
+      "sentence": "The clock on the wall showed half past three."
+    },
+    {
+      "word": "party",
+      "definition": "A social gathering held for celebration or enjoyment.",
+      "sentence": "She invited all her friends to her birthday party."
+    },
+    {
+      "word": "apple",
+      "definition": "A round fruit with red, green, or yellow skin and sweet flesh.",
+      "sentence": "She packed an apple in her lunchbox every morning."
+    },
+    {
+      "word": "beach",
+      "definition": "An area of sand or pebbles beside the sea.",
+      "sentence": "The children built sandcastles on the beach."
+    },
+    {
+      "word": "dance",
+      "definition": "To move the body rhythmically to music.",
+      "sentence": "She loved to dance at family celebrations."
+    },
+    {
+      "word": "friend",
+      "definition": "A person one likes, trusts, and enjoys spending time with.",
+      "sentence": "Her best friend came to stay for the holidays."
+    },
+    {
+      "word": "smile",
+      "definition": "A pleased or friendly expression formed by turning up the corners of the mouth.",
+      "sentence": "She gave a wide smile when she saw her granny."
+    },
+    {
+      "word": "dream",
+      "definition": "A series of images and thoughts experienced during sleep.",
+      "sentence": "He woke up after a very strange dream."
+    },
+    {
+      "word": "light",
+      "definition": "The natural energy that makes things visible.",
+      "sentence": "She switched on the light when it grew dark."
+    },
+    {
+      "word": "night",
+      "definition": "The time when it is dark, between sunset and sunrise.",
+      "sentence": "The stars were brilliant on a clear night."
+    },
+    {
+      "word": "phone",
+      "definition": "A device used to make and receive calls.",
+      "sentence": "She called her mum on the phone after school."
+    },
+    {
+      "word": "snake",
+      "definition": "A legless reptile with a long slender body.",
+      "sentence": "A grass snake slid silently through the long grass."
+    },
+    {
+      "word": "tiger",
+      "definition": "A large wild cat with orange fur and black stripes.",
+      "sentence": "The tiger paced slowly around its enclosure."
+    },
+    {
+      "word": "cloud",
+      "definition": "A visible mass of water droplets floating in the sky.",
+      "sentence": "A single white cloud drifted across the blue sky."
+    },
+    {
+      "word": "storm",
+      "definition": "A period of very bad weather with strong winds and rain.",
+      "sentence": "The storm knocked several branches off the trees."
+    },
+    {
+      "word": "grass",
+      "definition": "Short green plants that cover lawns and meadows.",
+      "sentence": "The children lay on the cool grass in the garden."
+    },
+    {
+      "word": "lemon",
+      "definition": "A yellow citrus fruit with a sharp, sour taste.",
+      "sentence": "She squeezed a lemon over the fish."
+    },
+    {
+      "word": "ghost",
+      "definition": "The spirit of a dead person believed to haunt places.",
+      "sentence": "He dressed as a ghost for the Halloween parade."
+    },
+    {
+      "word": "robot",
+      "definition": "A machine programmed to carry out tasks automatically.",
+      "sentence": "The robot sorted packages along the conveyor belt."
+    },
+    {
+      "word": "space",
+      "definition": "The vast region beyond the Earth's atmosphere.",
+      "sentence": "She dreamed of one day travelling into space."
+    },
+    {
+      "word": "earth",
+      "definition": "The planet on which we live, or the soil beneath our feet.",
+      "sentence": "She planted the seeds in rich dark earth."
+    },
+    {
+      "word": "towel",
+      "definition": "A piece of absorbent fabric used for drying.",
+      "sentence": "She wrapped herself in a warm towel after her bath."
+    },
+    {
+      "word": "brush",
+      "definition": "A tool with bristles used for painting or grooming.",
+      "sentence": "She used a brush to paint the garden fence."
+    },
+    {
+      "word": "tooth",
+      "definition": "One of the hard white structures in the mouth used for biting.",
+      "sentence": "She lost her first tooth and placed it under her pillow."
+    },
+    {
+      "word": "dress",
+      "definition": "A one-piece garment covering the body from the shoulders down.",
+      "sentence": "She wore her favourite dress to the party."
+    },
+    {
+      "word": "shirt",
+      "definition": "A garment worn on the upper body with a collar and buttons.",
+      "sentence": "He ironed his shirt for the school photograph."
+    },
+    {
+      "word": "cheese",
+      "definition": "A food made from pressed curds of milk.",
+      "sentence": "She grated cheese over the pasta bake."
+    },
+    {
+      "word": "butter",
+      "definition": "A pale yellow fatty substance made from churned cream.",
+      "sentence": "She spread butter on her warm slice of toast."
+    },
+    {
+      "word": "sugar",
+      "definition": "A sweet crystalline substance used to sweeten food and drink.",
+      "sentence": "She stirred a spoonful of sugar into her tea."
+    },
+    {
+      "word": "honey",
+      "definition": "A sweet golden liquid made by bees from flower nectar.",
+      "sentence": "She drizzled honey over her yoghurt."
+    },
+    {
+      "word": "juice",
+      "definition": "A liquid obtained by squeezing fruit or vegetables.",
+      "sentence": "She drank a glass of fresh orange juice."
+    },
+    {
+      "word": "fruit",
+      "definition": "The sweet, fleshy produce of a plant that contains seeds.",
+      "sentence": "She filled the bowl with colourful seasonal fruit."
+    },
+    {
+      "word": "onion",
+      "definition": "A round vegetable with a strong smell and flavour.",
+      "sentence": "Chopping the onion made her eyes water."
+    },
+    {
+      "word": "garlic",
+      "definition": "A plant bulb with a pungent taste and smell, used in cooking.",
+      "sentence": "She crushed a clove of garlic for the sauce."
+    },
+    {
+      "word": "market",
+      "definition": "A place where goods are bought and sold.",
+      "sentence": "She bought fresh vegetables at the market."
+    },
+    {
+      "word": "garden",
+      "definition": "An area of land used for growing plants and flowers.",
+      "sentence": "She spent the afternoon weeding the garden."
+    },
+    {
+      "word": "school",
+      "definition": "A place where children are educated by teachers.",
+      "sentence": "She walked to school with her neighbour every morning."
+    },
+    {
+      "word": "pencil",
+      "definition": "A thin writing tool made from wood with a graphite centre.",
+      "sentence": "She sharpened her pencil before the test."
+    },
+    {
+      "word": "paper",
+      "definition": "Thin material used for writing, printing, or wrapping.",
+      "sentence": "She folded the paper into an origami crane."
+    },
+    {
+      "word": "jacket",
+      "definition": "A short coat covering the upper body.",
+      "sentence": "He hung his jacket on the hook by the door."
+    },
+    {
+      "word": "bottle",
+      "definition": "A glass or plastic container with a narrow neck for liquids.",
+      "sentence": "He filled his bottle before the football match."
+    },
+    {
+      "word": "candle",
+      "definition": "A wax cylinder with a wick that gives light when lit.",
+      "sentence": "She lit a candle on the birthday cake."
+    },
+    {
+      "word": "circle",
+      "definition": "A perfectly round flat shape.",
+      "sentence": "The children sat in a circle on the classroom floor."
+    },
+    {
+      "word": "corner",
+      "definition": "The point where two lines or edges meet.",
+      "sentence": "She turned the corner and spotted the library ahead."
+    },
+    {
+      "word": "flower",
+      "definition": "The colourful, often fragrant part of a plant.",
+      "sentence": "She picked a bunch of wildflowers \u2014 each flower a different colour."
+    },
+    {
+      "word": "forest",
+      "definition": "A large area of land densely covered with trees.",
+      "sentence": "They went for a long walk through the ancient forest."
+    },
+    {
+      "word": "hammer",
+      "definition": "A tool with a heavy head used for driving in nails.",
+      "sentence": "He used a hammer to hang the picture on the wall."
+    },
+    {
+      "word": "lesson",
+      "definition": "A period of time during which someone is taught a subject.",
+      "sentence": "She had her piano lesson every Thursday afternoon."
+    },
+    {
+      "word": "letter",
+      "definition": "A written message sent from one person to another.",
+      "sentence": "She received a letter from her pen pal in France."
+    },
+    {
+      "word": "lizard",
+      "definition": "A reptile with a long body, four legs, and a tail.",
+      "sentence": "A small lizard sunned itself on the warm rock."
+    },
+    {
+      "word": "tunnel",
+      "definition": "A passage built underground or through a hill.",
+      "sentence": "The train disappeared into the dark tunnel."
+    },
+    {
+      "word": "winter",
+      "definition": "The coldest season of the year.",
+      "sentence": "They huddled by the fire during the bitter winter months."
+    },
+    {
+      "word": "summer",
+      "definition": "The warmest season of the year.",
+      "sentence": "The long summer days were perfect for playing outside."
+    },
+    {
+      "word": "spider",
+      "definition": "A small eight-legged creature that spins webs to catch insects.",
+      "sentence": "A spider had spun a web across the garden gate."
+    },
+    {
+      "word": "acorn",
+      "definition": "A small oval nut produced by an oak tree.",
+      "sentence": "A squirrel found a fat acorn beneath the old oak."
+    },
+    {
+      "word": "alarm",
+      "definition": "A device or sound that warns of danger or wakes someone up.",
+      "sentence": "The alarm woke her before the sun had risen."
+    },
+    {
+      "word": "angel",
+      "definition": "A spiritual being believed to act as a messenger of God.",
+      "sentence": "She dressed as an angel for the nativity play."
+    },
+    {
+      "word": "ankle",
+      "definition": "The joint connecting the foot to the leg.",
+      "sentence": "She twisted her ankle stepping off the kerb."
+    },
+    {
+      "word": "arrow",
+      "definition": "A thin pointed shaft fired from a bow.",
+      "sentence": "The archer aimed the arrow carefully at the target."
+    },
+    {
+      "word": "attic",
+      "definition": "A room or storage space just below the roof of a building.",
+      "sentence": "She found an old trunk of clothes up in the attic."
+    },
+    {
+      "word": "badge",
+      "definition": "A small piece of metal or fabric worn to identify someone.",
+      "sentence": "He pinned his name badge to his school jumper."
+    },
+    {
+      "word": "beast",
+      "definition": "A large or dangerous wild animal.",
+      "sentence": "The story told of a fearsome beast that lived in the forest."
+    },
+    {
+      "word": "bench",
+      "definition": "A long seat designed for several people.",
+      "sentence": "They sat on a wooden bench beside the river."
+    },
+    {
+      "word": "brave",
+      "definition": "Ready to face danger or difficulty without showing fear.",
+      "sentence": "She was brave enough to give a speech in front of the whole school."
+    },
+    {
+      "word": "brick",
+      "definition": "A small rectangular block of baked clay used in building.",
+      "sentence": "The old school was built from warm red brick."
+    },
+    {
+      "word": "brook",
+      "definition": "A small stream flowing over rocks.",
+      "sentence": "They stepped across the brook on flat stones."
+    },
+    {
+      "word": "brown",
+      "definition": "A colour like that of wood or earth.",
+      "sentence": "The leaves turned brown and fell slowly in autumn."
+    },
+    {
+      "word": "bunch",
+      "definition": "A number of things fastened or grouped together.",
+      "sentence": "She bought a bunch of sunflowers from the market stall."
+    },
+    {
+      "word": "cabin",
+      "definition": "A small simple house in a rural area.",
+      "sentence": "They stayed in a cosy log cabin in the mountains."
+    },
+    {
+      "word": "canoe",
+      "definition": "A narrow lightweight boat moved using a paddle.",
+      "sentence": "They paddled a canoe along the winding river."
+    },
+    {
+      "word": "chase",
+      "definition": "To run after someone or something in order to catch them.",
+      "sentence": "The children loved to chase each other around the garden."
+    },
+    {
+      "word": "chess",
+      "definition": "A strategy board game played between two players.",
+      "sentence": "He spent an hour practising chess with his grandfather."
+    },
+    {
+      "word": "child",
+      "definition": "A young human being who has not yet grown up.",
+      "sentence": "Every child in the class had their hand up."
+    },
+    {
+      "word": "cliff",
+      "definition": "A steep rock face, especially at the edge of the sea.",
+      "sentence": "They stood at the top of the cliff and looked out to sea."
+    },
+    {
+      "word": "cloth",
+      "definition": "Woven or felted fabric made from threads.",
+      "sentence": "She wiped the table with a clean damp cloth."
+    },
+    {
+      "word": "comet",
+      "definition": "A body of rock and ice with a bright tail, orbiting the sun.",
+      "sentence": "The comet was visible in the night sky for several weeks."
+    },
+    {
+      "word": "coral",
+      "definition": "A hard substance formed from the skeletons of tiny sea creatures.",
+      "sentence": "The divers swam over a vivid coral reef."
+    },
+    {
+      "word": "crane",
+      "definition": "A large machine for lifting heavy objects, or a tall wading bird.",
+      "sentence": "The crane lifted the steel beam high into the air."
+    },
+    {
+      "word": "crisp",
+      "definition": "Pleasantly firm and dry; fresh and cool.",
+      "sentence": "She bit into a crisp green apple with a satisfying crunch."
+    },
+    {
+      "word": "crown",
+      "definition": "A circular ornament worn on the head by a monarch.",
+      "sentence": "The queen wore a golden crown at the state ceremony."
+    },
+    {
+      "word": "crumb",
+      "definition": "A small fragment that breaks off bread or a biscuit.",
+      "sentence": "She brushed the crumb from the front of her uniform."
+    },
+    {
+      "word": "cycle",
+      "definition": "A bicycle, or a repeating series of events.",
+      "sentence": "She put on her helmet before getting on her cycle."
+    },
+    {
+      "word": "daisy",
+      "definition": "A small wildflower with white petals and a yellow centre.",
+      "sentence": "She made a long daisy chain on the lawn."
+    },
+    {
+      "word": "dwarf",
+      "definition": "A person or creature that is much smaller than normal size.",
+      "sentence": "The fairy tale featured a dwarf who lived under a bridge."
+    },
+    {
+      "word": "eagle",
+      "definition": "A large and powerful bird of prey with a hooked beak.",
+      "sentence": "An eagle circled high above the valley below."
+    },
+    {
+      "word": "elbow",
+      "definition": "The joint between the upper and lower arm.",
+      "sentence": "He rested his elbow on the windowsill and gazed outside."
+    },
+    {
+      "word": "ember",
+      "definition": "A small glowing piece of coal or wood in a dying fire.",
+      "sentence": "The last ember glowed red in the cold fireplace."
+    },
+    {
+      "word": "fable",
+      "definition": "A short story with a moral, often featuring animals as characters.",
+      "sentence": "The teacher read a fable about a fox and some grapes."
+    },
+    {
+      "word": "fairy",
+      "definition": "A tiny imaginary creature with wings and magical powers.",
+      "sentence": "She dressed as a fairy with silver wings for the parade."
+    },
+    {
+      "word": "feast",
+      "definition": "A large celebratory meal with many dishes.",
+      "sentence": "The harvest feast was spread across long wooden tables."
+    },
+    {
+      "word": "ferry",
+      "definition": "A boat that carries passengers across a stretch of water.",
+      "sentence": "They caught the ferry across the bay to the old town."
+    },
+    {
+      "word": "field",
+      "definition": "An open area of land, especially one used for crops or sport.",
+      "sentence": "The cows wandered slowly across the sunny field."
+    },
+    {
+      "word": "flame",
+      "definition": "A hot glowing stream of burning gas produced by fire.",
+      "sentence": "The candle flame flickered gently in the draught."
+    },
+    {
+      "word": "flash",
+      "definition": "A sudden brief burst of bright light.",
+      "sentence": "A flash of lightning lit up the night sky."
+    },
+    {
+      "word": "flock",
+      "definition": "A group of birds or sheep moving together.",
+      "sentence": "A flock of geese flew overhead in a perfect V shape."
+    },
+    {
+      "word": "flood",
+      "definition": "An overflow of water that submerges land not normally covered.",
+      "sentence": "Heavy rain caused a flood in the low-lying fields."
+    },
+    {
+      "word": "flour",
+      "definition": "Fine white powder made by grinding grain, used for baking.",
+      "sentence": "She sieved the flour carefully into the mixing bowl."
+    },
+    {
+      "word": "frost",
+      "definition": "A layer of tiny ice crystals formed when the temperature falls below freezing.",
+      "sentence": "Frost covered every blade of grass on the cold winter morning."
+    },
+    {
+      "word": "glove",
+      "definition": "A covering for the hand with separate sections for each finger.",
+      "sentence": "She pulled on her warm glove before heading out into the cold."
+    },
+    {
+      "word": "haven",
+      "definition": "A place of safety or refuge.",
+      "sentence": "The library was a haven of peace after a noisy day."
+    },
+    {
+      "word": "heart",
+      "definition": "The organ that pumps blood around the body.",
+      "sentence": "Her heart was beating fast after running the race."
+    },
+    {
+      "word": "heavy",
+      "definition": "Of great weight; difficult to lift or move.",
+      "sentence": "The bag was too heavy for her to carry on her own."
+    },
+    {
+      "word": "hedge",
+      "definition": "A line of bushes or shrubs planted close together as a boundary.",
+      "sentence": "A blackbird sang cheerfully from the top of the hedge."
+    },
+    {
+      "word": "heron",
+      "definition": "A large grey wading bird with long legs and a pointed beak.",
+      "sentence": "A heron stood completely still at the edge of the pond."
+    },
+    {
+      "word": "medal",
+      "definition": "A metal disc given as an award for achievement.",
+      "sentence": "She won a gold medal at the regional swimming competition."
+    },
+    {
+      "word": "mouse",
+      "definition": "A small rodent with a pointed nose and a long thin tail.",
+      "sentence": "A tiny mouse scurried quickly across the kitchen floor."
+    },
+    {
+      "word": "mouth",
+      "definition": "The opening in the face used for eating and speaking.",
+      "sentence": "She opened her mouth to speak but could not find the words."
+    },
+    {
+      "word": "north",
+      "definition": "The direction towards the North Pole.",
+      "sentence": "The explorers set out to travel north across the frozen tundra."
+    },
+    {
+      "word": "novel",
+      "definition": "A long work of fiction written as a book.",
+      "sentence": "She read the novel from cover to cover in one weekend."
+    },
+    {
+      "word": "nurse",
+      "definition": "A person trained to care for sick or injured people.",
+      "sentence": "The nurse checked the patient's temperature every few hours."
+    },
+    {
+      "word": "olive",
+      "definition": "A small oval fruit with a bitter taste used in cooking and salads.",
+      "sentence": "She scattered a few olive pieces over the pizza."
+    },
+    {
+      "word": "orbit",
+      "definition": "The curved path of a planet or satellite around a larger body.",
+      "sentence": "The moon takes about a month to complete one orbit of the earth."
+    },
+    {
+      "word": "otter",
+      "definition": "A playful semiaquatic mammal with a sleek body and webbed feet.",
+      "sentence": "An otter slid down the muddy riverbank into the water."
+    },
+    {
+      "word": "panda",
+      "definition": "A large black-and-white bear native to China.",
+      "sentence": "The giant panda chewed contentedly on a stalk of bamboo."
+    },
+    {
+      "word": "petal",
+      "definition": "Each of the coloured parts of a flower.",
+      "sentence": "A pink petal drifted slowly from the cherry tree."
+    },
+    {
+      "word": "pilot",
+      "definition": "A person who operates the controls of an aircraft.",
+      "sentence": "The pilot announced they would soon begin their descent."
+    },
+    {
+      "word": "pitch",
+      "definition": "An area of ground marked out for playing a sport.",
+      "sentence": "The team practised on the school pitch every Tuesday afternoon."
+    },
+    {
+      "word": "plant",
+      "definition": "A living organism that grows in soil and makes food from sunlight.",
+      "sentence": "She watered the plant on the windowsill each morning."
+    },
+    {
+      "word": "plate",
+      "definition": "A flat dish used for serving and eating food.",
+      "sentence": "She placed a warm plate of pasta on the table."
+    },
+    {
+      "word": "poppy",
+      "definition": "A bright red wildflower with delicate papery petals.",
+      "sentence": "A single poppy grew among the wheat in the sunny field."
+    },
+    {
+      "word": "pound",
+      "definition": "The basic unit of British currency, or a unit of weight.",
+      "sentence": "She found a pound coin in the bottom of her coat pocket."
+    },
+    {
+      "word": "power",
+      "definition": "The ability to do something or produce an effect; electrical energy.",
+      "sentence": "The storm cut off power to hundreds of homes overnight."
+    },
+    {
+      "word": "pride",
+      "definition": "A feeling of pleasure at one's achievements; a group of lions.",
+      "sentence": "He felt a great sense of pride when his team won."
+    },
+    {
+      "word": "queen",
+      "definition": "A female monarch or the wife of a king.",
+      "sentence": "The queen waved to the cheering crowds from the balcony."
+    },
+    {
+      "word": "quiet",
+      "definition": "Making little or no noise; calm and peaceful.",
+      "sentence": "The library was so quiet she could hear herself breathe."
+    },
+    {
+      "word": "royal",
+      "definition": "Relating to or belonging to a king or queen.",
+      "sentence": "The royal family attended the national celebration."
+    },
+    {
+      "word": "sauce",
+      "definition": "A liquid or semi-liquid mixture served with food to add flavour.",
+      "sentence": "She poured warm tomato sauce over the freshly cooked pasta."
+    },
+    {
+      "word": "shark",
+      "definition": "A large and often powerful sea fish with several rows of sharp teeth.",
+      "sentence": "The shark circled slowly beneath the hull of the boat."
+    },
+    {
+      "word": "sharp",
+      "definition": "Having a fine edge or point capable of cutting or piercing.",
+      "sentence": "She used a sharp knife to slice the vegetables."
+    },
+    {
+      "word": "shelf",
+      "definition": "A flat horizontal board fixed to a wall for storing objects.",
+      "sentence": "The books were arranged neatly on the shelf."
+    },
+    {
+      "word": "shell",
+      "definition": "A hard outer casing protecting an egg, nut, or mollusc.",
+      "sentence": "She found a perfect shell on the beach."
+    },
+    {
+      "word": "shine",
+      "definition": "To give out a bright light; to be very good at something.",
+      "sentence": "She polished the shoes until they began to shine."
+    },
+    {
+      "word": "sight",
+      "definition": "The ability to see; something worth seeing.",
+      "sentence": "The sight of the snow-capped mountains took her breath away."
+    },
+    {
+      "word": "skill",
+      "definition": "The ability to do something well, developed through practice.",
+      "sentence": "She developed great skill as a painter over the years."
+    },
+    {
+      "word": "smart",
+      "definition": "Intelligent; or neat and well dressed.",
+      "sentence": "She looked very smart in her freshly pressed uniform."
+    },
+    {
+      "word": "snail",
+      "definition": "A small creature with a soft body that carries a spiral shell.",
+      "sentence": "A snail left a shiny trail across the garden path."
+    },
+    {
+      "word": "spark",
+      "definition": "A small fiery particle thrown off from a fire.",
+      "sentence": "A spark flew from the bonfire and landed on the dry grass."
+    },
+    {
+      "word": "speed",
+      "definition": "The rate at which someone or something moves.",
+      "sentence": "The train gathered speed as it left the station."
+    },
+    {
+      "word": "sweet",
+      "definition": "Tasting of sugar; kind and gentle in manner.",
+      "sentence": "She had a sweet tooth and always chose the pudding."
+    },
+    {
+      "word": "sword",
+      "definition": "A weapon with a long sharp metal blade and a handle.",
+      "sentence": "The knight drew his sword and stood his ground."
+    },
+    {
+      "word": "thorn",
+      "definition": "A stiff sharp point growing from the stem of a plant.",
+      "sentence": "She pricked her finger on a thorn from the rosebush."
+    },
+    {
+      "word": "toast",
+      "definition": "Sliced bread browned by heat; a speech made to honour someone.",
+      "sentence": "She ate toast with thick marmalade every morning."
+    },
+    {
+      "word": "torch",
+      "definition": "A portable battery-powered electric light.",
+      "sentence": "She switched on the torch to find her way in the dark."
+    },
+    {
+      "word": "tower",
+      "definition": "A tall narrow building or structure.",
+      "sentence": "They climbed to the top of the clock tower for the view."
+    },
+    {
+      "word": "treat",
+      "definition": "Something special and enjoyable outside the ordinary routine.",
+      "sentence": "She saved her pocket money to buy herself a treat."
+    },
+    {
+      "word": "truth",
+      "definition": "The quality of being accurate; a fact that is accepted as true.",
+      "sentence": "She always told the truth, even when it was difficult."
+    },
+    {
+      "word": "tulip",
+      "definition": "A brightly coloured spring flower that grows from a bulb.",
+      "sentence": "A row of red tulip blooms brightened the garden border."
+    },
+    {
+      "word": "upset",
+      "definition": "Unhappy or troubled by something that has happened.",
+      "sentence": "She was upset when she heard the trip had been cancelled."
+    },
+    {
+      "word": "value",
+      "definition": "The importance or worth of something.",
+      "sentence": "She always understood the value of working hard."
+    },
+    {
+      "word": "watch",
+      "definition": "A small clock worn on the wrist; to observe something carefully.",
+      "sentence": "She checked her watch and realised she was already late."
+    },
+    {
+      "word": "worry",
+      "definition": "To feel anxious about something; a source of concern.",
+      "sentence": "She tried not to worry about the test the next morning."
+    },
+    {
+      "word": "yacht",
+      "definition": "A medium or large sailing or motor boat used for pleasure.",
+      "sentence": "The yacht glided gracefully across the calm harbour."
+    },
+    {
+      "word": "young",
+      "definition": "Having lived or existed for only a short time; not yet mature.",
+      "sentence": "The young foal stood shakily on its long legs."
+    },
+    {
+      "word": "youth",
+      "definition": "The period of being young; young people considered as a group.",
+      "sentence": "The youth club met in the village hall every Friday evening."
+    },
+    {
+      "word": "solar",
+      "definition": "Relating to or derived from the sun.",
+      "sentence": "The school installed solar panels on the south-facing roof."
+    },
+    {
+      "word": "trout",
+      "definition": "A freshwater fish prized for sport and as food.",
+      "sentence": "He caught a speckled trout in the shallow river."
+    },
+    {
+      "word": "vista",
+      "definition": "A pleasing view, especially one seen across an open landscape.",
+      "sentence": "They stopped to admire the vista stretching across the valley."
+    },
+    {
+      "word": "chest",
+      "definition": "The front part of the body between the neck and abdomen, or a large strong box.",
+      "sentence": "She kept her art supplies in an old wooden chest."
+    },
+    {
+      "word": "spade",
+      "definition": "A tool with a flat blade used for digging soil.",
+      "sentence": "He used a spade to turn over the vegetable patch."
+    },
+    {
+      "word": "globe",
+      "definition": "A spherical model of the earth, or the earth itself.",
+      "sentence": "She spun the globe and pointed to Australia."
+    },
+    {
+      "word": "grime",
+      "definition": "Dirt that is deeply embedded in a surface.",
+      "sentence": "He scrubbed the grime from the garden furniture."
+    },
+    {
+      "word": "grove",
+      "definition": "A small group of trees.",
+      "sentence": "They picnicked in a shady grove of oak trees."
+    },
+    {
+      "word": "quill",
+      "definition": "A large feather from a bird's wing or tail, or a porcupine's spine.",
+      "sentence": "She wrote with a quill dipped in black ink."
+    },
+    {
+      "word": "ridge",
+      "definition": "A long narrow raised strip of land; the top edge of a roof.",
+      "sentence": "They walked along the ridge with views on both sides."
+    },
+    {
+      "word": "swamp",
+      "definition": "A boggy area of low-lying land flooded in wet seasons.",
+      "sentence": "The explorers waded through the murky swamp."
+    },
+    {
+      "word": "tepid",
+      "definition": "Lukewarm; not hot or cold.",
+      "sentence": "She tested the tepid bath water with her elbow."
+    },
+    {
+      "word": "troop",
+      "definition": "A group of soldiers, scouts, or other people.",
+      "sentence": "The troop of scouts marched smartly across the field."
+    },
+    {
+      "word": "twigs",
+      "definition": "Small thin branches broken from a tree or bush.",
+      "sentence": "They collected twigs to use as kindling for the fire."
+    },
+    {
+      "word": "udder",
+      "definition": "The bag-like organ of a cow or goat from which milk is taken.",
+      "sentence": "The farmer gently milked the cow's full udder."
+    },
+    {
+      "word": "vinyl",
+      "definition": "A type of strong plastic, or a record made from it.",
+      "sentence": "She played an old vinyl record on the turntable."
+    },
+    {
+      "word": "waltz",
+      "definition": "A ballroom dance in triple time with a turning gliding movement.",
+      "sentence": "They learned to waltz for the school end-of-year show."
+    },
+    {
+      "word": "wheat",
+      "definition": "A cereal plant whose grain is ground to make flour.",
+      "sentence": "The wheat in the field swayed gently in the breeze."
+    },
+    {
+      "word": "yield",
+      "definition": "To produce or provide; to give way under pressure.",
+      "sentence": "The apple trees had a good yield that autumn."
+    },
+    {
+      "word": "zebra",
+      "definition": "An African animal related to the horse, with black and white stripes.",
+      "sentence": "The zebra trotted across the open grassland."
+    },
+    {
+      "word": "ozone",
+      "definition": "A form of oxygen that forms a layer protecting the earth from ultraviolet radiation.",
+      "sentence": "She learned about the ozone layer in her science lesson."
+    },
+    {
+      "word": "plaza",
+      "definition": "A public open square in a town or city.",
+      "sentence": "The market was held in the central plaza every Thursday."
+    },
+    {
+      "word": "prawn",
+      "definition": "A small edible shellfish with a curved body.",
+      "sentence": "She peeled the prawn and added it to the salad."
+    },
+    {
+      "word": "seize",
+      "definition": "To take hold of suddenly and forcibly.",
+      "sentence": "The goalkeeper managed to seize the ball before it crossed the line."
+    },
+    {
+      "word": "shawl",
+      "definition": "A large piece of fabric worn around the shoulders or head.",
+      "sentence": "She wrapped a warm shawl around her shoulders."
+    },
+    {
+      "word": "shrub",
+      "definition": "A woody plant smaller than a tree with several stems.",
+      "sentence": "A fragrant shrub grew beside the garden gate."
+    },
+    {
+      "word": "tepee",
+      "definition": "A conical tent used by some Native American peoples.",
+      "sentence": "They built a model tepee for the history project."
+    },
+    {
+      "word": "tiara",
+      "definition": "A jewelled ornamental crown worn on the head.",
+      "sentence": "The princess wore a sparkling tiara to the royal ball."
+    },
+    {
+      "word": "tidal",
+      "definition": "Relating to or affected by tides.",
+      "sentence": "The tidal pool was full of sea creatures at low tide."
+    },
+    {
+      "word": "vigil",
+      "definition": "A period of keeping awake to watch over someone or something.",
+      "sentence": "The family kept a vigil through the long night."
+    },
+    {
+      "word": "viola",
+      "definition": "A stringed instrument slightly larger than a violin.",
+      "sentence": "She played the viola in the school orchestra."
+    },
+    {
+      "word": "vivid",
+      "definition": "Producing powerful feelings or clear images; very bright in colour.",
+      "sentence": "She had a vivid dream about flying over the ocean."
+    },
+    {
+      "word": "walrus",
+      "definition": "A large sea mammal with long tusks and whiskers.",
+      "sentence": "A walrus hauled itself onto the icy shore."
+    },
+    {
+      "word": "wrath",
+      "definition": "Extreme anger.",
+      "sentence": "The teacher's wrath fell on those who had not done their homework."
+    },
+    {
+      "word": "atlas",
+      "definition": "A book of maps.",
+      "sentence": "She looked up the country in the atlas."
+    },
+    {
+      "word": "blaze",
+      "definition": "A large strong fire; a bright light or display.",
+      "sentence": "The campfire was a warm blaze in the dark night."
+    },
+    {
+      "word": "blend",
+      "definition": "To mix two or more things together smoothly.",
+      "sentence": "She used a spoon to blend the colours together on the palette."
+    },
+    {
+      "word": "bloom",
+      "definition": "A flower, or the state of being in flower.",
+      "sentence": "Every bloom in the garden was open after the rain."
+    },
+    {
+      "word": "blunt",
+      "definition": "Having a worn edge or point; direct and straightforward.",
+      "sentence": "The blunt pencil would not write clearly."
+    },
+    {
+      "word": "brace",
+      "definition": "A device that holds something firmly in place.",
+      "sentence": "The dentist fitted her with a brace to straighten her teeth."
+    },
+    {
+      "word": "braid",
+      "definition": "A length of hair or cord formed by plaiting three strands.",
+      "sentence": "She wore her hair in a single long braid down her back."
+    },
+    {
+      "word": "brisk",
+      "definition": "Active, lively, and cheerfully quick.",
+      "sentence": "They set off at a brisk pace to warm up."
+    },
+    {
+      "word": "cameo",
+      "definition": "A small piece of sculpture on a stone or shell; a brief notable appearance.",
+      "sentence": "She gave a memorable cameo in the school production."
+    },
+    {
+      "word": "cedar",
+      "definition": "A large evergreen tree with sweet-smelling reddish wood.",
+      "sentence": "A tall cedar tree shaded the corner of the garden."
+    }
+  ],
+  "medium": [
+    {
+      "word": "guitar",
+      "definition": "A musical instrument with strings plucked or strummed by the fingers.",
+      "sentence": "He played a gentle melody on his acoustic guitar."
+    },
+    {
+      "word": "puzzle",
+      "definition": "A game or problem that requires skill and thought to solve.",
+      "sentence": "She spent the afternoon completing a jigsaw puzzle."
+    },
+    {
+      "word": "camera",
+      "definition": "A device used to take photographs or record film.",
+      "sentence": "She pointed the camera at the sunset and pressed the button."
+    },
+    {
+      "word": "bridge",
+      "definition": "A structure built to span a river, road, or other gap.",
+      "sentence": "The old stone bridge arched gracefully over the river."
+    },
+    {
+      "word": "castle",
+      "definition": "A large fortified building from medieval times.",
+      "sentence": "The castle on the hill had stood for centuries."
+    },
+    {
+      "word": "engine",
+      "definition": "A machine that converts energy into mechanical movement.",
+      "sentence": "The engine of the train roared as it pulled out of the station."
+    },
+    {
+      "word": "giraffe",
+      "definition": "A tall African mammal with a very long neck and spotted coat.",
+      "sentence": "The giraffe stretched its neck to reach the highest branch."
+    },
+    {
+      "word": "harbour",
+      "definition": "A sheltered area of water where boats can anchor safely.",
+      "sentence": "The fishing boats returned to the harbour at dusk."
+    },
+    {
+      "word": "island",
+      "definition": "A piece of land completely surrounded by water.",
+      "sentence": "They sailed to a small island off the coast."
+    },
+    {
+      "word": "kitten",
+      "definition": "A young cat.",
+      "sentence": "The tiny kitten batted a ball of wool across the floor."
+    },
+    {
+      "word": "magnet",
+      "definition": "An object that attracts iron and steel.",
+      "sentence": "She held the magnet over the pins and watched them cling to it."
+    },
+    {
+      "word": "monkey",
+      "definition": "A primate with a long tail that lives in trees.",
+      "sentence": "The monkey swung from branch to branch with ease."
+    },
+    {
+      "word": "balloon",
+      "definition": "A small rubber bag inflated with air or gas.",
+      "sentence": "A cluster of balloon decorations bobbed above the party table."
+    },
+    {
+      "word": "bicycle",
+      "definition": "A two-wheeled vehicle powered by pedalling.",
+      "sentence": "She cycled to the shops on her bicycle."
+    },
+    {
+      "word": "blanket",
+      "definition": "A large piece of warm fabric used as a bed covering.",
+      "sentence": "She pulled the blanket up to her chin on the cold night."
+    },
+    {
+      "word": "blossom",
+      "definition": "The flowers that appear on a tree before its fruit.",
+      "sentence": "Cherry blossom filled the park with soft pink petals."
+    },
+    {
+      "word": "buffalo",
+      "definition": "A large bovine animal with curved horns found on plains.",
+      "sentence": "A herd of buffalo grazed on the open plain."
+    },
+    {
+      "word": "cabbage",
+      "definition": "A leafy green vegetable with tightly packed leaves.",
+      "sentence": "She shredded the cabbage to make coleslaw."
+    },
+    {
+      "word": "ceiling",
+      "definition": "The upper interior surface of a room.",
+      "sentence": "The ceiling of the old church was beautifully painted."
+    },
+    {
+      "word": "chicken",
+      "definition": "A common farm bird reared for its meat and eggs.",
+      "sentence": "She roasted a chicken with herbs for Sunday dinner."
+    },
+    {
+      "word": "compass",
+      "definition": "An instrument that shows direction using a magnetic needle.",
+      "sentence": "He used a compass to navigate across the hillside."
+    },
+    {
+      "word": "cottage",
+      "definition": "A small house, usually in the countryside.",
+      "sentence": "They stayed in a cosy stone cottage for the weekend."
+    },
+    {
+      "word": "cushion",
+      "definition": "A soft pad used to make a seat more comfortable.",
+      "sentence": "She propped herself up with a cushion to read her book."
+    },
+    {
+      "word": "diamond",
+      "definition": "A precious gemstone, or a four-sided shape with equal sides.",
+      "sentence": "The ring was set with a small sparkling diamond."
+    },
+    {
+      "word": "dolphin",
+      "definition": "A highly intelligent sea mammal that swims in groups.",
+      "sentence": "A dolphin leapt gracefully out of the water beside the boat."
+    },
+    {
+      "word": "feather",
+      "definition": "One of the soft growths forming the outer covering of a bird.",
+      "sentence": "She found a blue feather on the woodland path."
+    },
+    {
+      "word": "fountain",
+      "definition": "A structure that sends a jet of water into the air.",
+      "sentence": "Children threw coins into the fountain for luck."
+    },
+    {
+      "word": "gorilla",
+      "definition": "The largest of the great apes, found in African forests.",
+      "sentence": "The gorilla sat quietly, watching its young play."
+    },
+    {
+      "word": "hamster",
+      "definition": "A small furry rodent often kept as a pet.",
+      "sentence": "Her hamster spent hours spinning on its wheel."
+    },
+    {
+      "word": "insect",
+      "definition": "A small creature with six legs and a body divided into three parts.",
+      "sentence": "She used a magnifying glass to examine the insect closely."
+    },
+    {
+      "word": "kettle",
+      "definition": "A container with a spout and handle used for boiling water.",
+      "sentence": "She filled the kettle and switched it on for tea."
+    },
+    {
+      "word": "oyster",
+      "definition": "A shellfish with a rough shell, sometimes eaten as food.",
+      "sentence": "He ordered fresh oyster dishes at the seafood restaurant."
+    },
+    {
+      "word": "parrot",
+      "definition": "A brightly coloured tropical bird that can mimic human speech.",
+      "sentence": "The parrot repeated every word the children said."
+    },
+    {
+      "word": "pattern",
+      "definition": "A regular arrangement of shapes, colours, or designs.",
+      "sentence": "She chose wallpaper with a floral pattern for her bedroom."
+    },
+    {
+      "word": "pillow",
+      "definition": "A soft cushion used to rest the head whilst sleeping.",
+      "sentence": "She fluffed her pillow before settling down for the night."
+    },
+    {
+      "word": "pirate",
+      "definition": "A person who robs ships at sea.",
+      "sentence": "He dressed as a pirate for the fancy dress party."
+    },
+    {
+      "word": "pocket",
+      "definition": "A small pouch sewn into clothing for carrying items.",
+      "sentence": "She kept her keys safely in her coat pocket."
+    },
+    {
+      "word": "pumpkin",
+      "definition": "A large round orange vegetable with a hard shell.",
+      "sentence": "She carved a face into the pumpkin for Halloween."
+    },
+    {
+      "word": "rabbit",
+      "definition": "A small furry mammal with long ears and a short tail.",
+      "sentence": "A wild rabbit nibbled the grass at the edge of the field."
+    },
+    {
+      "word": "sailor",
+      "definition": "A person who works on a ship.",
+      "sentence": "The sailor tied the rope tightly to the dock."
+    },
+    {
+      "word": "screen",
+      "definition": "A flat surface that displays images or text electronically.",
+      "sentence": "She watched the film on the large screen at the cinema."
+    },
+    {
+      "word": "season",
+      "definition": "One of the four divisions of the year.",
+      "sentence": "Autumn is her favourite season because of the coloured leaves."
+    },
+    {
+      "word": "secret",
+      "definition": "Something kept hidden and not shared with others.",
+      "sentence": "She whispered a secret into her best friend's ear."
+    },
+    {
+      "word": "shadow",
+      "definition": "A dark shape made when something blocks light.",
+      "sentence": "His shadow stretched long across the pavement in the evening sun."
+    },
+    {
+      "word": "shelter",
+      "definition": "A place that gives protection from weather or danger.",
+      "sentence": "They ran for shelter when the rain began."
+    },
+    {
+      "word": "signal",
+      "definition": "A gesture or sign used to convey information or instruction.",
+      "sentence": "The teacher gave the signal for the class to stop writing."
+    },
+    {
+      "word": "silver",
+      "definition": "A shiny precious metal, or its grey-white colour.",
+      "sentence": "The necklace was made from polished silver."
+    },
+    {
+      "word": "sponge",
+      "definition": "A soft absorbent material used for washing or cleaning.",
+      "sentence": "She used a sponge to wipe down the kitchen worktop."
+    },
+    {
+      "word": "station",
+      "definition": "A building where trains or buses stop for passengers.",
+      "sentence": "They arrived at the station just in time for the train."
+    },
+    {
+      "word": "stream",
+      "definition": "A small narrow river flowing over rocks.",
+      "sentence": "She dipped her feet into the cool stream."
+    },
+    {
+      "word": "sunset",
+      "definition": "The time each evening when the sun sinks below the horizon.",
+      "sentence": "They sat on the hillside to watch the sunset together."
+    },
+    {
+      "word": "turtle",
+      "definition": "A reptile with a hard shell that lives mainly in water.",
+      "sentence": "The turtle moved slowly along the sandy seabed."
+    },
+    {
+      "word": "umbrella",
+      "definition": "A folding device on a stick used to shelter from rain.",
+      "sentence": "She opened her umbrella the moment it started to rain."
+    },
+    {
+      "word": "uniform",
+      "definition": "A set of clothes worn by members of a particular group.",
+      "sentence": "She laid out her school uniform the night before."
+    },
+    {
+      "word": "valley",
+      "definition": "A low area of land between hills, often with a river.",
+      "sentence": "The village sat peacefully at the bottom of the valley."
+    },
+    {
+      "word": "velvet",
+      "definition": "A soft, thick fabric with a smooth sheen.",
+      "sentence": "She wore a deep blue velvet dress to the concert."
+    },
+    {
+      "word": "village",
+      "definition": "A small settlement, usually in the countryside.",
+      "sentence": "The village held a summer fete on the green every year."
+    },
+    {
+      "word": "violin",
+      "definition": "A stringed musical instrument played with a bow.",
+      "sentence": "She practised the violin for an hour every evening."
+    },
+    {
+      "word": "wallet",
+      "definition": "A small flat case for carrying money and cards.",
+      "sentence": "He put his ticket safely inside his wallet."
+    },
+    {
+      "word": "window",
+      "definition": "An opening in a wall fitted with glass to let in light.",
+      "sentence": "She looked out of the window at the falling snow."
+    },
+    {
+      "word": "canyon",
+      "definition": "A deep gorge with steep rocky sides, often carved by a river.",
+      "sentence": "The river had cut deep into the canyon over millions of years."
+    },
+    {
+      "word": "orchard",
+      "definition": "A piece of land where fruit trees are grown.",
+      "sentence": "They picked apples in the orchard on a crisp autumn morning."
+    },
+    {
+      "word": "thunder",
+      "definition": "The loud rumbling sound that follows a flash of lightning.",
+      "sentence": "The thunder shook the windows during the storm."
+    },
+    {
+      "word": "harvest",
+      "definition": "The process of gathering ripe crops from the fields.",
+      "sentence": "The farmers worked long hours during the harvest."
+    },
+    {
+      "word": "lantern",
+      "definition": "A portable light enclosed in a transparent or glass case.",
+      "sentence": "She carried a lantern along the dark woodland path."
+    },
+    {
+      "word": "notebook",
+      "definition": "A small book of blank or lined pages for writing notes.",
+      "sentence": "She filled an entire notebook with her story ideas."
+    },
+    {
+      "word": "volcano",
+      "definition": "A mountain with a crater through which lava, ash, and gas can erupt.",
+      "sentence": "The volcano sent plumes of smoke high into the sky."
+    },
+    {
+      "word": "butterfly",
+      "definition": "An insect with large, often brightly coloured wings.",
+      "sentence": "A butterfly landed gently on the flower."
+    },
+    {
+      "word": "adventure",
+      "definition": "An unusual, exciting, and daring experience or journey.",
+      "sentence": "Every walk in the forest felt like a new adventure."
+    },
+    {
+      "word": "ancient",
+      "definition": "Very old; belonging to the far distant past.",
+      "sentence": "The museum displayed artefacts from an ancient civilisation."
+    },
+    {
+      "word": "announce",
+      "definition": "To make a formal or public statement about something.",
+      "sentence": "The head teacher stood up to announce the winners."
+    },
+    {
+      "word": "approach",
+      "definition": "To come near or nearer to something; a way of dealing with a problem.",
+      "sentence": "She watched the thunderstorm approach slowly across the hills."
+    },
+    {
+      "word": "argument",
+      "definition": "An exchange of opposing views; a reason put forward in support of an idea.",
+      "sentence": "They had a brief argument about which film to watch that evening."
+    },
+    {
+      "word": "captain",
+      "definition": "The leader of a team, ship, or aircraft.",
+      "sentence": "She was elected captain of the school football team."
+    },
+    {
+      "word": "challenge",
+      "definition": "A task or situation that tests ability and determination.",
+      "sentence": "The climbing wall was a real challenge for the younger children."
+    },
+    {
+      "word": "chimney",
+      "definition": "A vertical channel that carries smoke from a fire up and out of a building.",
+      "sentence": "Smoke curled lazily from the chimney of the old cottage."
+    },
+    {
+      "word": "comfort",
+      "definition": "A state of ease and freedom from pain; to ease someone's distress.",
+      "sentence": "The warm blanket brought great comfort on the cold night."
+    },
+    {
+      "word": "consider",
+      "definition": "To think carefully about something before deciding.",
+      "sentence": "She paused to consider all her options before choosing."
+    },
+    {
+      "word": "convince",
+      "definition": "To persuade someone that something is true or the right thing to do.",
+      "sentence": "He tried hard to convince his parents to let him have a pet."
+    },
+    {
+      "word": "corridor",
+      "definition": "A long passage in a building with rooms opening off it.",
+      "sentence": "The children walked quietly along the corridor to assembly."
+    },
+    {
+      "word": "curious",
+      "definition": "Eager to know or learn about something; strange or unusual.",
+      "sentence": "The curious kitten investigated every corner of the new house."
+    },
+    {
+      "word": "cylinder",
+      "definition": "A three-dimensional shape with two parallel circular ends.",
+      "sentence": "The tin can is the shape of a cylinder."
+    },
+    {
+      "word": "decision",
+      "definition": "A conclusion reached after thinking carefully about options.",
+      "sentence": "It was a difficult decision, but she chose the harder course."
+    },
+    {
+      "word": "delight",
+      "definition": "Great pleasure or joy; to please someone greatly.",
+      "sentence": "The children shrieked with delight when the snow began to fall."
+    },
+    {
+      "word": "diameter",
+      "definition": "A straight line passing from side to side through the centre of a circle.",
+      "sentence": "He measured the diameter of the trunk for his science project."
+    },
+    {
+      "word": "dramatic",
+      "definition": "Exciting and impressive; relating to drama or the theatre.",
+      "sentence": "The final goal was the most dramatic moment of the entire match."
+    },
+    {
+      "word": "elegant",
+      "definition": "Pleasingly graceful and stylish in appearance or manner.",
+      "sentence": "She wore an elegant gown to the end-of-year concert."
+    },
+    {
+      "word": "enormous",
+      "definition": "Very large in size, amount, or degree.",
+      "sentence": "The elephant was enormous, standing taller than the gate."
+    },
+    {
+      "word": "estimate",
+      "definition": "To judge the approximate value, size, or cost of something.",
+      "sentence": "She asked the class to estimate the number of beans in the jar."
+    },
+    {
+      "word": "exchange",
+      "definition": "To give something and receive something similar in return.",
+      "sentence": "The pen pals decided to exchange books every term."
+    },
+    {
+      "word": "extreme",
+      "definition": "Reaching a very high or the most intense degree.",
+      "sentence": "The team trained in extreme conditions to prepare themselves."
+    },
+    {
+      "word": "fascinate",
+      "definition": "To attract and hold someone's complete interest.",
+      "sentence": "The natural history museum never failed to fascinate her."
+    },
+    {
+      "word": "flexible",
+      "definition": "Able to bend without breaking; willing to adapt to changes.",
+      "sentence": "The new timetable was much more flexible for everyone."
+    },
+    {
+      "word": "genuine",
+      "definition": "Truly what it claims to be; without pretence or deceit.",
+      "sentence": "The smile on her face was entirely genuine."
+    },
+    {
+      "word": "guidance",
+      "definition": "Advice or information aimed at helping someone solve a problem.",
+      "sentence": "The teacher offered gentle guidance when she got stuck."
+    },
+    {
+      "word": "horrible",
+      "definition": "Causing horror or disgust; very unpleasant.",
+      "sentence": "The smell from the bins in the summer heat was horrible."
+    },
+    {
+      "word": "imagine",
+      "definition": "To form a mental picture of something not actually present.",
+      "sentence": "She closed her eyes to imagine what the island would look like."
+    },
+    {
+      "word": "improve",
+      "definition": "To make or become better in quality or standard.",
+      "sentence": "She practised every day to improve her tennis serve."
+    },
+    {
+      "word": "inspire",
+      "definition": "To fill someone with the desire to do something creative or worthwhile.",
+      "sentence": "The story was written to inspire young readers to love books."
+    },
+    {
+      "word": "intense",
+      "definition": "Very great in strength or degree; showing strong feeling.",
+      "sentence": "The afternoon sun was intense on the open hillside."
+    },
+    {
+      "word": "jealous",
+      "definition": "Feeling resentment towards someone for their advantages or possessions.",
+      "sentence": "She was a little jealous of her friend's new bicycle."
+    },
+    {
+      "word": "journal",
+      "definition": "A daily written record of events; a published periodical.",
+      "sentence": "She kept a journal of everything that happened on the school trip."
+    },
+    {
+      "word": "kingdom",
+      "definition": "A country or territory ruled by a king or queen.",
+      "sentence": "The tale told of a brave knight who saved the kingdom."
+    },
+    {
+      "word": "language",
+      "definition": "A system of words and grammar used by a community for communication.",
+      "sentence": "She was determined to learn a new language before her holiday."
+    },
+    {
+      "word": "laughter",
+      "definition": "The sound and physical action of laughing.",
+      "sentence": "The room filled with laughter when he told the joke."
+    },
+    {
+      "word": "lecture",
+      "definition": "An educational talk delivered to an audience on a particular subject.",
+      "sentence": "The scientist gave a fascinating lecture about the planets."
+    },
+    {
+      "word": "logical",
+      "definition": "Following the rules of clear reasoning; sensible and well thought out.",
+      "sentence": "She gave a very logical explanation for her decision."
+    },
+    {
+      "word": "marmalade",
+      "definition": "A preserve made from citrus fruit and sugar, especially orange.",
+      "sentence": "She spread thick marmalade on her morning toast."
+    },
+    {
+      "word": "massive",
+      "definition": "Very large and heavy or impressive.",
+      "sentence": "The castle was protected by a massive stone wall."
+    },
+    {
+      "word": "measure",
+      "definition": "To find the size, quantity, or extent of something using a standard unit.",
+      "sentence": "She used a ruler to measure the length of the tabletop."
+    },
+    {
+      "word": "mention",
+      "definition": "To refer briefly to something in speech or writing.",
+      "sentence": "She forgot to mention that the trip had been cancelled."
+    },
+    {
+      "word": "miracle",
+      "definition": "A remarkable and welcome event that seems to have no natural explanation.",
+      "sentence": "It seemed like a miracle that the old tree had survived the storm."
+    },
+    {
+      "word": "moonlight",
+      "definition": "The pale light that falls from the moon at night.",
+      "sentence": "They walked home through the silver moonlight."
+    },
+    {
+      "word": "mountain",
+      "definition": "A large natural elevation of the earth's surface, larger than a hill.",
+      "sentence": "They could see the snow-capped mountain from the village."
+    },
+    {
+      "word": "movement",
+      "definition": "An act of moving; a group of people working together for a cause.",
+      "sentence": "The slow movement of the clouds suggested rain was coming."
+    },
+    {
+      "word": "mystery",
+      "definition": "Something that is difficult or impossible to understand or explain.",
+      "sentence": "How the key had vanished was a complete mystery to everyone."
+    },
+    {
+      "word": "nervous",
+      "definition": "Easily agitated; feeling worry or anxiety about something.",
+      "sentence": "She felt nervous before the audition but took a deep breath."
+    },
+    {
+      "word": "observe",
+      "definition": "To notice or watch carefully; to follow a rule or custom.",
+      "sentence": "They had to observe the birds without disturbing them."
+    },
+    {
+      "word": "opinion",
+      "definition": "A personal view or judgement not necessarily based on fact.",
+      "sentence": "She was never afraid to share her opinion in class."
+    },
+    {
+      "word": "opposite",
+      "definition": "Having a position or nature that is entirely different or contrary.",
+      "sentence": "She sat in the seat directly opposite the window."
+    },
+    {
+      "word": "patience",
+      "definition": "The ability to wait calmly or accept difficulty without complaint.",
+      "sentence": "Sea fishing required a great deal of patience."
+    },
+    {
+      "word": "peculiar",
+      "definition": "Different from what is normal or expected; strange or unusual.",
+      "sentence": "There was a peculiar smell drifting from the science laboratory."
+    },
+    {
+      "word": "pleasant",
+      "definition": "Giving a feeling of enjoyment and satisfaction.",
+      "sentence": "The afternoon spent in the garden was very pleasant."
+    },
+    {
+      "word": "possible",
+      "definition": "Able to be done or achieved; perhaps true or actual.",
+      "sentence": "She did everything possible to finish her project on time."
+    },
+    {
+      "word": "precious",
+      "definition": "Of great value; greatly loved or cherished.",
+      "sentence": "The old photograph was her most precious possession."
+    },
+    {
+      "word": "pretend",
+      "definition": "To behave as if something untrue is real, especially in play.",
+      "sentence": "They liked to pretend they were explorers in the wild garden."
+    },
+    {
+      "word": "prevent",
+      "definition": "To keep something from happening; to stop someone from doing something.",
+      "sentence": "She wore her helmet to prevent injury if she fell."
+    },
+    {
+      "word": "process",
+      "definition": "A series of actions carried out in order to achieve a particular result.",
+      "sentence": "Making sourdough bread is a long process of mixing and fermenting."
+    },
+    {
+      "word": "protect",
+      "definition": "To keep safe from harm, injury, or damage.",
+      "sentence": "The thick fleece was designed to protect against the biting cold."
+    },
+    {
+      "word": "purpose",
+      "definition": "The reason for which something exists or is done.",
+      "sentence": "She thought carefully about the purpose of each paragraph she wrote."
+    },
+    {
+      "word": "quarter",
+      "definition": "One of four equal parts of something.",
+      "sentence": "She cut the orange into a quarter for each of the children."
+    },
+    {
+      "word": "receive",
+      "definition": "To be given or presented with something.",
+      "sentence": "She was thrilled to receive a long letter from her pen pal."
+    },
+    {
+      "word": "refresh",
+      "definition": "To give new energy or strength; to restore vigour.",
+      "sentence": "A cool drink helped to refresh her after the long walk."
+    },
+    {
+      "word": "replace",
+      "definition": "To take the place of something; to put something new in its place.",
+      "sentence": "She had to replace the batteries in the smoke alarm."
+    },
+    {
+      "word": "resolve",
+      "definition": "To settle or find a solution to a problem or difficulty.",
+      "sentence": "They managed to resolve the argument calmly and fairly."
+    },
+    {
+      "word": "respond",
+      "definition": "To say or do something in reply to something said or done.",
+      "sentence": "She did not respond to the question straight away."
+    },
+    {
+      "word": "restore",
+      "definition": "To return something to its original condition.",
+      "sentence": "Volunteers worked to restore the old clock to working order."
+    },
+    {
+      "word": "rhythm",
+      "definition": "A strong regular repeated pattern of sound or movement.",
+      "sentence": "She clapped her hands in time with the rhythm of the music."
+    },
+    {
+      "word": "satisfy",
+      "definition": "To meet the expectations or needs of someone.",
+      "sentence": "A bowl of warm soup was enough to satisfy her hunger."
+    },
+    {
+      "word": "seagull",
+      "definition": "A white or grey seabird commonly found near the coast.",
+      "sentence": "A seagull swooped down and stole a chip from her hand."
+    },
+    {
+      "word": "serious",
+      "definition": "Requiring careful thought; not trivial or joking.",
+      "sentence": "The teacher gave her a serious look across the room."
+    },
+    {
+      "word": "silence",
+      "definition": "The complete absence of sound.",
+      "sentence": "A sudden silence fell over the room when the teacher entered."
+    },
+    {
+      "word": "sorrow",
+      "definition": "A feeling of deep distress caused by loss or disappointment.",
+      "sentence": "She felt great sorrow when she heard the sad news."
+    },
+    {
+      "word": "support",
+      "definition": "To bear the weight of; to give help or encouragement to someone.",
+      "sentence": "Her friends were there to support her before the performance."
+    },
+    {
+      "word": "swallow",
+      "definition": "A migratory bird with a forked tail; to cause food to pass down the throat.",
+      "sentence": "A swallow darted low over the surface of the pond."
+    },
+    {
+      "word": "symbol",
+      "definition": "A mark, shape, or sign that represents something else.",
+      "sentence": "The dove is a universal symbol of peace."
+    },
+    {
+      "word": "terrible",
+      "definition": "Extremely bad, unpleasant, or distressing.",
+      "sentence": "The weather was terrible on the day of the outdoor concert."
+    },
+    {
+      "word": "transport",
+      "definition": "To carry people or goods from one place to another.",
+      "sentence": "They hired a van to transport the costumes to the theatre."
+    },
+    {
+      "word": "unique",
+      "definition": "Being the only one of its kind; unlike anything else.",
+      "sentence": "Every snowflake is unique in its intricate pattern."
+    },
+    {
+      "word": "venture",
+      "definition": "A risky or daring journey or undertaking.",
+      "sentence": "They decided to venture further into the dark cave."
+    },
+    {
+      "word": "vibrant",
+      "definition": "Full of energy and life; bright and striking in colour.",
+      "sentence": "The market was a vibrant mix of colour, noise, and activity."
+    },
+    {
+      "word": "visitor",
+      "definition": "A person who visits a person or place.",
+      "sentence": "A visitor arrived at the school to give a talk about wildlife."
+    },
+    {
+      "word": "wardrobe",
+      "definition": "A large upright cupboard for hanging clothes.",
+      "sentence": "She sorted through her wardrobe at the start of each new season."
+    },
+    {
+      "word": "weather",
+      "definition": "The state of the atmosphere at a particular time and place.",
+      "sentence": "The weather forecast warned of heavy rain by the afternoon."
+    },
+    {
+      "word": "damage",
+      "definition": "Physical harm that reduces the value or usefulness of something.",
+      "sentence": "The storm caused significant damage to the seafront buildings."
+    },
+    {
+      "word": "flavour",
+      "definition": "The distinctive taste of a food or drink.",
+      "sentence": "The soup had a rich, warming flavour that she loved."
+    },
+    {
+      "word": "popular",
+      "definition": "Liked or enjoyed by many people.",
+      "sentence": "The new lunch menu was very popular with the pupils."
+    },
+    {
+      "word": "freedom",
+      "definition": "The power to act, speak, or think without restraint.",
+      "sentence": "The wide open countryside gave her a wonderful sense of freedom."
+    },
+    {
+      "word": "certain",
+      "definition": "Known for sure; established beyond doubt.",
+      "sentence": "She was absolutely certain she had left her bag on the chair."
+    },
+    {
+      "word": "crowded",
+      "definition": "Full of people or things packed closely together.",
+      "sentence": "The market was crowded with shoppers on Saturday morning."
+    },
+    {
+      "word": "deserve",
+      "definition": "To be worthy of receiving something good or bad.",
+      "sentence": "She worked hard all term and felt she truly deserved a rest."
+    },
+    {
+      "word": "distant",
+      "definition": "Far away in space or time; not closely related.",
+      "sentence": "They could hear the distant rumble of thunder over the hills."
+    },
+    {
+      "word": "drought",
+      "definition": "A prolonged period of abnormally low rainfall.",
+      "sentence": "The garden suffered badly during the long summer drought."
+    },
+    {
+      "word": "evening",
+      "definition": "The period of time at the end of the day before night.",
+      "sentence": "They sat together on the porch to watch the evening sky."
+    },
+    {
+      "word": "flicker",
+      "definition": "To shine unsteadily; to appear and disappear briefly.",
+      "sentence": "The candle began to flicker when the door opened."
+    },
+    {
+      "word": "arrange",
+      "definition": "To put things in a particular order or position.",
+      "sentence": "She helped to arrange the flowers in the vase."
+    },
+    {
+      "word": "balance",
+      "definition": "An even distribution of weight; a state of stability.",
+      "sentence": "She tried to balance the books on top of each other."
+    },
+    {
+      "word": "capture",
+      "definition": "To take someone prisoner; to record something accurately.",
+      "sentence": "She tried to capture the beauty of the sunset in her drawing."
+    },
+    {
+      "word": "caution",
+      "definition": "Care taken to avoid danger or mistakes.",
+      "sentence": "He approached the edge of the cliff with great caution."
+    },
+    {
+      "word": "century",
+      "definition": "A period of one hundred years.",
+      "sentence": "The castle had stood for over a century."
+    },
+    {
+      "word": "climate",
+      "definition": "The typical weather conditions of an area over a long period.",
+      "sentence": "The rainforest has a warm, wet climate all year round."
+    },
+    {
+      "word": "combine",
+      "definition": "To put two or more things together to form a whole.",
+      "sentence": "She decided to combine her love of art and science in her project."
+    },
+    {
+      "word": "compete",
+      "definition": "To take part in a contest to win something.",
+      "sentence": "She trained for months to compete in the regional gymnastics event."
+    },
+    {
+      "word": "complex",
+      "definition": "Consisting of many different and connected parts; not simple.",
+      "sentence": "The instructions were complex and took time to follow."
+    },
+    {
+      "word": "compose",
+      "definition": "To write music or poetry; to make up or constitute something.",
+      "sentence": "She sat at the piano to compose a short melody."
+    },
+    {
+      "word": "connect",
+      "definition": "To join two things together; to associate one thing with another.",
+      "sentence": "She used a cable to connect the tablet to the printer."
+    },
+    {
+      "word": "contain",
+      "definition": "To have something inside; to keep something under control.",
+      "sentence": "The box was large enough to contain all her craft supplies."
+    },
+    {
+      "word": "context",
+      "definition": "The circumstances that form the background for an event or idea.",
+      "sentence": "She read the passage twice to understand the context."
+    },
+    {
+      "word": "convert",
+      "definition": "To change from one form, use, or system to another.",
+      "sentence": "The old barn had been converted into a comfortable house."
+    },
+    {
+      "word": "courage",
+      "definition": "The ability to face fear, pain, or difficulty without giving in.",
+      "sentence": "It took great courage to stand up and speak in front of everyone."
+    },
+    {
+      "word": "created",
+      "definition": "Brought into existence; made something new.",
+      "sentence": "She created a beautiful mosaic from pieces of coloured tile."
+    },
+    {
+      "word": "culture",
+      "definition": "The ideas, customs, and social behaviour of a people or society.",
+      "sentence": "The festival was a wonderful celebration of local culture."
+    },
+    {
+      "word": "current",
+      "definition": "Belonging to the present time; a flow of water, air, or electricity.",
+      "sentence": "The river current was too strong to swim across safely."
+    },
+    {
+      "word": "declare",
+      "definition": "To announce something formally and publicly.",
+      "sentence": "The referee was about to declare the match finished."
+    },
+    {
+      "word": "durable",
+      "definition": "Able to withstand wear and last a long time.",
+      "sentence": "She chose durable boots for the long walking trip."
+    },
+    {
+      "word": "dynamic",
+      "definition": "Characterised by constant change and activity; energetic.",
+      "sentence": "The young teacher was a dynamic and inspiring presence."
+    },
+    {
+      "word": "eclipse",
+      "definition": "The blocking of light from one celestial body by another.",
+      "sentence": "The whole school gathered outside to watch the solar eclipse."
+    },
+    {
+      "word": "enclose",
+      "definition": "To surround on all sides; to include something in an envelope.",
+      "sentence": "She decided to enclose a photograph with the letter."
+    },
+    {
+      "word": "episode",
+      "definition": "An event or period in a sequence; one part of a television series.",
+      "sentence": "She watched the final episode of the drama on Saturday night."
+    },
+    {
+      "word": "exhibit",
+      "definition": "To display something publicly; an object or collection on display.",
+      "sentence": "The school was invited to exhibit their artwork at the gallery."
+    },
+    {
+      "word": "factual",
+      "definition": "Based on or concerned with facts rather than opinions.",
+      "sentence": "She was asked to write a factual report about the trip."
+    },
+    {
+      "word": "ferocious",
+      "definition": "Savagely fierce, cruel, or violent.",
+      "sentence": "The ferocious wind rattled every window in the house."
+    },
+    {
+      "word": "fiction",
+      "definition": "Literature that describes imaginary events and people.",
+      "sentence": "She preferred reading fiction to factual books."
+    },
+    {
+      "word": "fragile",
+      "definition": "Easily broken or damaged; not strong or sturdy.",
+      "sentence": "She wrapped the fragile ornament carefully in tissue paper."
+    },
+    {
+      "word": "glacier",
+      "definition": "A slow-moving mass of ice formed from compressed snow.",
+      "sentence": "The glacier had carved the valley over thousands of years."
+    },
+    {
+      "word": "gradual",
+      "definition": "Taking place slowly over a long period of time.",
+      "sentence": "The gradual improvement in her writing pleased her teacher."
+    },
+    {
+      "word": "graphic",
+      "definition": "Relating to images; very clear and vivid.",
+      "sentence": "She used graphic design software to create the school poster."
+    },
+    {
+      "word": "habitat",
+      "definition": "The natural environment in which an animal or plant normally lives.",
+      "sentence": "The wetland was the natural habitat of the bittern."
+    },
+    {
+      "word": "harmony",
+      "definition": "A pleasing combination of musical notes; peaceful agreement.",
+      "sentence": "The choir sang in perfect harmony throughout the performance."
+    },
+    {
+      "word": "horizon",
+      "definition": "The line where the earth or sea appears to meet the sky.",
+      "sentence": "They watched the sun sink slowly below the horizon."
+    },
+    {
+      "word": "hostile",
+      "definition": "Aggressively unfriendly or opposed to something.",
+      "sentence": "The hostile weather forced them to abandon the climb."
+    },
+    {
+      "word": "however",
+      "definition": "Used to introduce a contrasting statement.",
+      "sentence": "She worked hard; however, the test proved more difficult than expected."
+    },
+    {
+      "word": "humming",
+      "definition": "Making a low continuous sound; being very busy.",
+      "sentence": "She was humming quietly to herself as she worked."
+    },
+    {
+      "word": "identity",
+      "definition": "The characteristics that make a person or thing who or what they are.",
+      "sentence": "The class discussed how language is part of cultural identity."
+    },
+    {
+      "word": "illness",
+      "definition": "A disease or period of poor health.",
+      "sentence": "She missed a week of school due to a brief illness."
+    },
+    {
+      "word": "impulse",
+      "definition": "A sudden urge to do something without thinking it through.",
+      "sentence": "On impulse, she decided to rearrange all the furniture in her room."
+    },
+    {
+      "word": "include",
+      "definition": "To make someone or something part of a whole.",
+      "sentence": "She remembered to include her name and class on the answer sheet."
+    },
+    {
+      "word": "initial",
+      "definition": "Existing at the beginning; the first letter of a word or name.",
+      "sentence": "The initial results looked very promising indeed."
+    },
+    {
+      "word": "justice",
+      "definition": "Fair treatment; the system by which laws are applied.",
+      "sentence": "She believed strongly in the importance of justice for all."
+    }
+  ],
+  "hard": [
+    {
+      "word": "accommodate",
+      "definition": "To provide space or make room for a person or thing.",
+      "sentence": "The large hall could accommodate the entire school for the ceremony."
+    },
+    {
+      "word": "conscientious",
+      "definition": "Taking great care to do things correctly and thoroughly.",
+      "sentence": "She was a conscientious student who always checked her work twice."
+    },
+    {
+      "word": "bureaucracy",
+      "definition": "A system of complex rules and procedures within a large organisation.",
+      "sentence": "Applying for the permit involved a great deal of bureaucracy."
+    },
+    {
+      "word": "miscellaneous",
+      "definition": "Made up of a mixture of various types or elements.",
+      "sentence": "She put all the miscellaneous items into a labelled drawer."
+    },
+    {
+      "word": "entrepreneur",
+      "definition": "A person who sets up and runs their own business, taking on financial risk.",
+      "sentence": "The young entrepreneur launched her first business from her bedroom."
+    },
+    {
+      "word": "silhouette",
+      "definition": "The dark outline of a person or object seen against a lighter background.",
+      "sentence": "The silhouette of the castle was striking against the setting sun."
+    },
+    {
+      "word": "lieutenant",
+      "definition": "A military or naval officer of middle rank.",
+      "sentence": "The lieutenant led her troops through the training exercise."
+    },
+    {
+      "word": "hierarchy",
+      "definition": "A system in which people or things are ranked according to importance.",
+      "sentence": "The class soon understood the social hierarchy of the playground."
+    },
+    {
+      "word": "millennium",
+      "definition": "A period of one thousand years.",
+      "sentence": "The city held grand celebrations to mark the new millennium."
+    },
+    {
+      "word": "pneumonia",
+      "definition": "A serious lung infection that causes inflammation and breathing difficulty.",
+      "sentence": "She developed pneumonia and spent several days in hospital."
+    },
+    {
+      "word": "camaraderie",
+      "definition": "A spirit of friendship, trust, and mutual support among a group.",
+      "sentence": "The long camping trip built wonderful camaraderie among the pupils."
+    },
+    {
+      "word": "cemetery",
+      "definition": "A place, usually outside a church, where the dead are buried.",
+      "sentence": "They laid flowers at the grave in the old cemetery."
+    },
+    {
+      "word": "chauffeur",
+      "definition": "A person employed to drive someone else's car.",
+      "sentence": "The chauffeur waited outside the hotel for the guests."
+    },
+    {
+      "word": "colloquial",
+      "definition": "Used in everyday informal speech rather than formal writing.",
+      "sentence": "The teacher explained that some words were too colloquial for a formal essay."
+    },
+    {
+      "word": "consensus",
+      "definition": "General agreement reached by all members of a group.",
+      "sentence": "The committee finally reached a consensus after a long discussion."
+    },
+    {
+      "word": "fluorescent",
+      "definition": "Emitting a very bright glow, often under ultraviolet light.",
+      "sentence": "The safety jacket was fluorescent yellow so workers could be seen easily."
+    },
+    {
+      "word": "guarantee",
+      "definition": "A formal promise that something will be done or will be of good quality.",
+      "sentence": "The manufacturer offered a full guarantee on every appliance."
+    },
+    {
+      "word": "handkerchief",
+      "definition": "A small square of fabric used for wiping the nose or face.",
+      "sentence": "He offered her his handkerchief when she began to cry."
+    },
+    {
+      "word": "haemorrhage",
+      "definition": "A severe loss of blood from a ruptured blood vessel.",
+      "sentence": "The surgeon worked quickly to stop the internal haemorrhage."
+    },
+    {
+      "word": "hygiene",
+      "definition": "Conditions and practices that maintain health and prevent the spread of disease.",
+      "sentence": "Good hand hygiene is essential to avoid spreading infection."
+    },
+    {
+      "word": "hypocrisy",
+      "definition": "The practice of claiming to have moral standards one does not actually follow.",
+      "sentence": "She pointed out the hypocrisy of demanding honesty while telling lies."
+    },
+    {
+      "word": "inoculate",
+      "definition": "To inject a person or animal with a vaccine to protect against disease.",
+      "sentence": "The nurse came to inoculate the children before the winter season."
+    },
+    {
+      "word": "liaison",
+      "definition": "Communication and cooperation between groups or organisations.",
+      "sentence": "She acted as liaison between the school and the local council."
+    },
+    {
+      "word": "medieval",
+      "definition": "Relating to the Middle Ages, roughly the fifth to fifteenth centuries.",
+      "sentence": "The museum displayed a fine collection of medieval armour."
+    },
+    {
+      "word": "minuscule",
+      "definition": "Extremely tiny in size.",
+      "sentence": "The writing on the label was so minuscule it was hard to read."
+    },
+    {
+      "word": "mischievous",
+      "definition": "Playfully causing trouble or annoyance to others.",
+      "sentence": "The mischievous puppy had chewed through the television cable."
+    },
+    {
+      "word": "necessary",
+      "definition": "Required for a particular purpose; essential.",
+      "sentence": "It is necessary to read the instructions carefully before you begin."
+    },
+    {
+      "word": "occurrence",
+      "definition": "An incident or event that takes place.",
+      "sentence": "The teachers logged every unusual occurrence in the school report."
+    },
+    {
+      "word": "parliament",
+      "definition": "The group of elected representatives who make the laws of a country.",
+      "sentence": "The new law was debated in parliament for several weeks."
+    },
+    {
+      "word": "playwright",
+      "definition": "A person who writes plays for the theatre.",
+      "sentence": "The playwright received a standing ovation at the end of the performance."
+    },
+    {
+      "word": "conscience",
+      "definition": "An inner sense of right and wrong that guides a person's behaviour.",
+      "sentence": "His conscience would not let him keep the money he had found."
+    },
+    {
+      "word": "definitely",
+      "definition": "Without doubt or question; certainly.",
+      "sentence": "She definitely wanted to join the school choir next term."
+    },
+    {
+      "word": "discipline",
+      "definition": "Training to follow rules and behave properly; a branch of knowledge.",
+      "sentence": "Good discipline helps children feel safe and confident."
+    },
+    {
+      "word": "exhilarate",
+      "definition": "To make someone feel intensely happy, animated, and alive.",
+      "sentence": "The rollercoaster seemed to exhilarate every single passenger."
+    },
+    {
+      "word": "fiery",
+      "definition": "Consisting of or resembling fire; passionate and full of spirit.",
+      "sentence": "She delivered a fiery speech that silenced the entire assembly."
+    },
+    {
+      "word": "grateful",
+      "definition": "Feeling or showing thanks for kindness or a benefit received.",
+      "sentence": "She was deeply grateful to everyone who had helped during the event."
+    },
+    {
+      "word": "independent",
+      "definition": "Not relying on others; free from outside control.",
+      "sentence": "The school encouraged pupils to become independent and confident learners."
+    },
+    {
+      "word": "judgement",
+      "definition": "The ability to make a considered decision; an official verdict.",
+      "sentence": "The judge reserved his judgement until all the evidence was heard."
+    },
+    {
+      "word": "leisure",
+      "definition": "Time free from work used for relaxation and personal enjoyment.",
+      "sentence": "She spent her leisure time reading and tending the garden."
+    },
+    {
+      "word": "licence",
+      "definition": "An official permit allowing someone to do, own, or use something.",
+      "sentence": "He passed his test and received his driving licence."
+    },
+    {
+      "word": "library",
+      "definition": "A building containing a collection of books and other materials for public use.",
+      "sentence": "She borrowed three books from the local library."
+    },
+    {
+      "word": "miniature",
+      "definition": "A very small version of something; extremely small in scale.",
+      "sentence": "She collected miniature teapots from every country she visited."
+    },
+    {
+      "word": "neighbour",
+      "definition": "A person who lives next door or nearby.",
+      "sentence": "Their neighbour brought over a pot of soup when they were unwell."
+    },
+    {
+      "word": "noticeable",
+      "definition": "Easily observed or apparent.",
+      "sentence": "The improvement in her spelling was noticeable by the end of term."
+    },
+    {
+      "word": "nucleus",
+      "definition": "The central part of an atom or biological cell.",
+      "sentence": "The diagram showed electrons orbiting the nucleus."
+    },
+    {
+      "word": "nuisance",
+      "definition": "A person or thing that causes inconvenience or annoyance.",
+      "sentence": "The constant noise from next door was a real nuisance."
+    },
+    {
+      "word": "parallel",
+      "definition": "Side by side with the same distance between them throughout.",
+      "sentence": "She drew two parallel lines down the centre of the page."
+    },
+    {
+      "word": "perseverance",
+      "definition": "Continued effort and determination despite difficulty or delay.",
+      "sentence": "Her perseverance paid off when she finally mastered the violin piece."
+    },
+    {
+      "word": "privilege",
+      "definition": "A special advantage or right available only to a particular person or group.",
+      "sentence": "It was a privilege to meet the author after the reading."
+    },
+    {
+      "word": "pronunciation",
+      "definition": "The way in which a word is spoken aloud.",
+      "sentence": "The teacher gently corrected the pronunciation of several difficult words."
+    },
+    {
+      "word": "psychology",
+      "definition": "The scientific study of the human mind and behaviour.",
+      "sentence": "She hoped to study psychology at university."
+    },
+    {
+      "word": "quarantine",
+      "definition": "A period of isolation imposed to prevent the spread of disease.",
+      "sentence": "The animals were kept in quarantine on arrival at the port."
+    },
+    {
+      "word": "refrigerator",
+      "definition": "A kitchen appliance that keeps food and drink cool.",
+      "sentence": "She put the leftovers straight in the refrigerator."
+    },
+    {
+      "word": "remarkable",
+      "definition": "Worthy of attention because it is unusual or impressive.",
+      "sentence": "The children made remarkable progress throughout the year."
+    },
+    {
+      "word": "renaissance",
+      "definition": "A revival of interest and activity; a great European cultural movement.",
+      "sentence": "The small town was experiencing a renaissance in arts and crafts."
+    },
+    {
+      "word": "reservoir",
+      "definition": "A large natural or artificial lake used as a source of water supply.",
+      "sentence": "The reservoir supplied drinking water to the whole county."
+    },
+    {
+      "word": "successful",
+      "definition": "Having achieved a desired result or outcome.",
+      "sentence": "The school fair was a highly successful and enjoyable event."
+    },
+    {
+      "word": "superstition",
+      "definition": "A belief based on fear of the unknown rather than reason or evidence.",
+      "sentence": "Breaking a mirror is considered bad luck according to superstition."
+    },
+    {
+      "word": "temperature",
+      "definition": "A measure of how hot or cold something is.",
+      "sentence": "The temperature dropped sharply overnight as the frost set in."
+    },
+    {
+      "word": "thorough",
+      "definition": "Carried out completely and with great care and attention to detail.",
+      "sentence": "She did a thorough job of checking every line of her essay."
+    },
+    {
+      "word": "unanimous",
+      "definition": "Agreed upon by everyone without exception.",
+      "sentence": "The vote to name the new classroom was unanimous."
+    },
+    {
+      "word": "versatile",
+      "definition": "Able to adapt to many different functions or activities.",
+      "sentence": "She was a versatile performer, equally skilled in drama and dance."
+    },
+    {
+      "word": "vulnerable",
+      "definition": "Open to harm, attack, or criticism; not fully protected.",
+      "sentence": "Young animals can be particularly vulnerable in harsh winter conditions."
+    },
+    {
+      "word": "wilderness",
+      "definition": "A wild and uncultivated area of land, uninhabited by people.",
+      "sentence": "They camped deep in the Scottish wilderness for a week."
+    },
+    {
+      "word": "bibliography",
+      "definition": "A list of books or sources used as references in a piece of research.",
+      "sentence": "She added a bibliography to the end of her history project."
+    },
+    {
+      "word": "comprehensive",
+      "definition": "Including all or nearly all elements; thorough and wide-ranging.",
+      "sentence": "The teacher gave a comprehensive explanation of the new topic."
+    },
+    {
+      "word": "confectionery",
+      "definition": "Sweets, chocolates, and other foods made chiefly of sugar.",
+      "sentence": "The corner shop had a wonderful display of confectionery."
+    },
+    {
+      "word": "contemporary",
+      "definition": "Existing or occurring at the same time; belonging to the present.",
+      "sentence": "The gallery showed contemporary art alongside classical paintings."
+    },
+    {
+      "word": "crystallise",
+      "definition": "To form into crystals; to make a concept clear and definite.",
+      "sentence": "The cold caused moisture to crystallise on the windowpane."
+    },
+    {
+      "word": "exaggerate",
+      "definition": "To represent something as larger, better, or worse than it really is.",
+      "sentence": "He had a tendency to exaggerate whenever he told a story."
+    },
+    {
+      "word": "extraordinary",
+      "definition": "Very unusual or remarkable; going far beyond the ordinary.",
+      "sentence": "The choir gave an extraordinary performance that moved everyone to tears."
+    },
+    {
+      "word": "manoeuvre",
+      "definition": "A carefully planned movement or action requiring skill.",
+      "sentence": "The pilot executed a difficult manoeuvre to land safely in the crosswind."
+    },
+    {
+      "word": "jewellery",
+      "definition": "Decorative items worn on the body, such as rings, necklaces, and bracelets.",
+      "sentence": "She kept her jewellery in a small velvet-lined box."
+    },
+    {
+      "word": "kaleidoscope",
+      "definition": "A tube containing mirrors that create shifting, colourful patterns when rotated.",
+      "sentence": "She peered through the kaleidoscope and gasped at the brilliant patterns."
+    },
+    {
+      "word": "phenomenon",
+      "definition": "A remarkable fact or event that can be observed.",
+      "sentence": "The northern lights are a breathtaking natural phenomenon."
+    },
+    {
+      "word": "disastrous",
+      "definition": "Causing great damage or suffering; extremely bad in its effects.",
+      "sentence": "The flooding had a disastrous effect on the local harvest."
+    },
+    {
+      "word": "differentiate",
+      "definition": "To recognise or show a distinction between two or more things.",
+      "sentence": "The test was designed to differentiate between different ability levels."
+    },
+    {
+      "word": "corroborate",
+      "definition": "To confirm or give support to a statement or theory.",
+      "sentence": "Witnesses came forward to corroborate her account of the events."
+    },
+    {
+      "word": "courteous",
+      "definition": "Polite, respectful, and considerate in manner.",
+      "sentence": "The courteous young man held the door open for everyone."
+    },
+    {
+      "word": "aberrant",
+      "definition": "Departing from what is normal or expected.",
+      "sentence": "The scientist noted an aberrant result in the experiment."
+    },
+    {
+      "word": "accessible",
+      "definition": "Able to be reached, used, or entered easily.",
+      "sentence": "The new lift made the whole building accessible to wheelchair users."
+    },
+    {
+      "word": "achievement",
+      "definition": "A thing accomplished successfully with great effort and skill.",
+      "sentence": "Winning the regional spelling bee was her greatest achievement."
+    },
+    {
+      "word": "acquaintance",
+      "definition": "A person one knows slightly but not as a close friend.",
+      "sentence": "He was a friendly acquaintance from her previous school."
+    },
+    {
+      "word": "ambiguous",
+      "definition": "Open to more than one interpretation; not clear in meaning.",
+      "sentence": "The ambiguous instructions left everyone unsure what to do."
+    },
+    {
+      "word": "anonymous",
+      "definition": "Not identified by name; of unknown authorship.",
+      "sentence": "The generous donation had been made by an anonymous benefactor."
+    },
+    {
+      "word": "archaeology",
+      "definition": "The study of human history through excavation of sites and analysis of artefacts.",
+      "sentence": "She developed a passion for archaeology after visiting a Roman villa."
+    },
+    {
+      "word": "atmosphere",
+      "definition": "The layer of gases surrounding a planet; the pervading mood of a place.",
+      "sentence": "The atmosphere in the hall was electric before the performance began."
+    },
+    {
+      "word": "camouflage",
+      "definition": "The use of colouring or patterning to blend in with surroundings.",
+      "sentence": "The stick insect used natural camouflage to hide among the twigs."
+    },
+    {
+      "word": "catastrophe",
+      "definition": "An event causing great and sudden damage or suffering.",
+      "sentence": "The flooding was a catastrophe for the farming community."
+    },
+    {
+      "word": "collaborate",
+      "definition": "To work jointly with others on a shared task or project.",
+      "sentence": "The two schools agreed to collaborate on a joint art exhibition."
+    },
+    {
+      "word": "commemorate",
+      "definition": "To recall and honour a person or event through a ceremony or memorial.",
+      "sentence": "The plaque was unveiled to commemorate the school's centenary."
+    },
+    {
+      "word": "compassion",
+      "definition": "Sympathetic concern for the suffering of others.",
+      "sentence": "She showed great compassion when her friend was struggling."
+    },
+    {
+      "word": "complement",
+      "definition": "A thing that completes or enhances something when combined with it.",
+      "sentence": "The sauce was the perfect complement to the roasted vegetables."
+    },
+    {
+      "word": "compliment",
+      "definition": "A polite expression of praise or admiration.",
+      "sentence": "She was pleased to receive a genuine compliment on her essay."
+    },
+    {
+      "word": "concentrate",
+      "definition": "To focus all one's attention or mental effort on something.",
+      "sentence": "She found it hard to concentrate with all the noise outside."
+    },
+    {
+      "word": "consequence",
+      "definition": "A result or effect of an action or condition.",
+      "sentence": "Missing the bus was a direct consequence of leaving too late."
+    },
+    {
+      "word": "contentious",
+      "definition": "Causing or likely to cause disagreement or argument.",
+      "sentence": "The proposed changes to the uniform were contentious."
+    },
+    {
+      "word": "controversy",
+      "definition": "A prolonged public disagreement or heated debate about something.",
+      "sentence": "The new building design caused considerable controversy in the town."
+    },
+    {
+      "word": "conventional",
+      "definition": "Based on what is generally accepted or widely used.",
+      "sentence": "She preferred a conventional approach to planning her essay."
+    },
+    {
+      "word": "counterfeit",
+      "definition": "Made as an imitation with the intention to deceive; not genuine.",
+      "sentence": "The shopkeeper immediately identified the counterfeit note."
+    },
+    {
+      "word": "deficiency",
+      "definition": "A lack or shortage of something that is essential.",
+      "sentence": "The doctor diagnosed a vitamin deficiency and prescribed supplements."
+    },
+    {
+      "word": "deliberate",
+      "definition": "Done consciously and with full intention; carefully considered.",
+      "sentence": "The deliberate choice of words showed how carefully she had thought."
+    },
+    {
+      "word": "democracy",
+      "definition": "A system of government in which citizens elect their representatives.",
+      "sentence": "They debated the principles of democracy in their citizenship lesson."
+    },
+    {
+      "word": "descendant",
+      "definition": "A person related to another who lived in an earlier generation.",
+      "sentence": "She discovered she was a descendant of a Victorian railway engineer."
+    },
+    {
+      "word": "dilemma",
+      "definition": "A situation requiring a choice between two equally undesirable options.",
+      "sentence": "She faced a real dilemma: stay for the play or catch the last train."
+    },
+    {
+      "word": "diplomatic",
+      "definition": "Skilled at dealing with sensitive situations; relating to diplomacy.",
+      "sentence": "She was very diplomatic when giving feedback to her classmates."
+    },
+    {
+      "word": "discrepancy",
+      "definition": "A difference or inconsistency between two accounts or sets of data.",
+      "sentence": "The examiner noticed a discrepancy between the two sets of results."
+    },
+    {
+      "word": "duplicate",
+      "definition": "An exact copy of something; to make an exact copy.",
+      "sentence": "She made a duplicate of the document for her own records."
+    },
+    {
+      "word": "eloquence",
+      "definition": "Fluent and persuasive use of language in speaking or writing.",
+      "sentence": "The speaker's eloquence held the audience's attention throughout."
+    },
+    {
+      "word": "equilibrium",
+      "definition": "A state of physical balance; a situation in which opposing forces are equal.",
+      "sentence": "The acrobat maintained perfect equilibrium on the tightrope."
+    },
+    {
+      "word": "equivalent",
+      "definition": "Equal in value, function, or meaning.",
+      "sentence": "One kilometre is roughly the metric equivalent of six tenths of a mile."
+    },
+    {
+      "word": "erroneous",
+      "definition": "Wrong; based on false or incorrect information.",
+      "sentence": "The erroneous report had to be withdrawn and corrected."
+    },
+    {
+      "word": "exuberant",
+      "definition": "Filled with lively energy, excitement, and enthusiasm.",
+      "sentence": "The exuberant puppies ran in circles around the garden."
+    },
+    {
+      "word": "feasible",
+      "definition": "Possible to do and sensible to attempt.",
+      "sentence": "The engineer confirmed that the revised plan was perfectly feasible."
+    },
+    {
+      "word": "flamboyant",
+      "definition": "Tending to attract attention by being loud, lively, or showy.",
+      "sentence": "She made a flamboyant entrance in a spectacular homemade costume."
+    },
+    {
+      "word": "fortunate",
+      "definition": "Favoured by luck or good fortune.",
+      "sentence": "She felt very fortunate to have such kind and supportive friends."
+    },
+    {
+      "word": "fragrance",
+      "definition": "A pleasant and sweet natural smell.",
+      "sentence": "The fragrance of the roses drifted through the open window."
+    },
+    {
+      "word": "gregarious",
+      "definition": "Fond of the company of others; sociable and outgoing.",
+      "sentence": "She was a gregarious child who made friends wherever she went."
+    },
+    {
+      "word": "haphazard",
+      "definition": "Lacking any plan, order, or direction; random.",
+      "sentence": "The books had been put back on the shelf in a haphazard manner."
+    },
+    {
+      "word": "hesitant",
+      "definition": "Slow to act or speak due to uncertainty or reluctance.",
+      "sentence": "She was hesitant to raise her hand even though she knew the answer."
+    },
+    {
+      "word": "immaculate",
+      "definition": "Perfectly clean and tidy; containing no flaw or error.",
+      "sentence": "Her handwriting was immaculate throughout the entire examination paper."
+    },
+    {
+      "word": "inevitable",
+      "definition": "Certain to happen and unable to be avoided.",
+      "sentence": "With such dark clouds gathering, rain seemed inevitable."
+    },
+    {
+      "word": "inheritance",
+      "definition": "Money, property, or a quality received from a parent or predecessor.",
+      "sentence": "The old painting had been part of her grandmother's inheritance."
+    },
+    {
+      "word": "irrelevant",
+      "definition": "Not connected with or pertinent to the matter being discussed.",
+      "sentence": "The details about the weather were entirely irrelevant to the argument."
+    },
+    {
+      "word": "knowledgeable",
+      "definition": "Intelligent and well-informed about a particular subject.",
+      "sentence": "The guide was extremely knowledgeable about the history of the castle."
+    },
+    {
+      "word": "legitimate",
+      "definition": "Conforming to the law or accepted standards; valid.",
+      "sentence": "She had a completely legitimate reason for missing the afternoon session."
+    },
+    {
+      "word": "mediocre",
+      "definition": "Of only average quality; not particularly good.",
+      "sentence": "She refused to accept a mediocre piece of work and rewrote it entirely."
+    },
+    {
+      "word": "melancholy",
+      "definition": "A feeling of pensive sadness with no obvious cause.",
+      "sentence": "A melancholy tune drifted from the old piano in the corner of the room."
+    },
+    {
+      "word": "meticulous",
+      "definition": "Taking great care over every detail; very precise and thorough.",
+      "sentence": "She was meticulous in her research, verifying every single source."
+    },
+    {
+      "word": "monotonous",
+      "definition": "Dull and tedious because of a lack of variety.",
+      "sentence": "The monotonous drumming of rain on the roof made it hard to think."
+    },
+    {
+      "word": "negligible",
+      "definition": "So small or unimportant as to not be worth considering.",
+      "sentence": "The difference between the two measurements was negligible."
+    },
+    {
+      "word": "nutritious",
+      "definition": "Efficient as food; containing substances necessary for growth and health.",
+      "sentence": "She tried to make every packed lunch as nutritious as possible."
+    },
+    {
+      "word": "obligation",
+      "definition": "A duty or commitment to which a person is morally or legally bound.",
+      "sentence": "She felt a strong obligation to help whenever she possibly could."
+    },
+    {
+      "word": "obstinate",
+      "definition": "Stubbornly refusing to change one's opinion or course of action.",
+      "sentence": "The obstinate puppy refused to come inside despite repeated calls."
+    },
+    {
+      "word": "optimistic",
+      "definition": "Hopeful and confident that good things will happen in the future.",
+      "sentence": "Despite the setback, she remained optimistic about the final outcome."
+    },
+    {
+      "word": "organisation",
+      "definition": "An organised body of people with a shared purpose; the act of organising.",
+      "sentence": "The charity was a well-respected organisation in the local community."
+    },
+    {
+      "word": "pertinent",
+      "definition": "Relevant or applicable to a particular matter at hand.",
+      "sentence": "She made a highly pertinent point during the class discussion."
+    },
+    {
+      "word": "plausible",
+      "definition": "Seeming reasonable or probable; convincing.",
+      "sentence": "He offered a plausible explanation for why the homework was late."
+    },
+    {
+      "word": "precipitate",
+      "definition": "To cause an event to happen suddenly or sooner than expected.",
+      "sentence": "The disagreement seemed to precipitate the sudden end of the meeting."
+    },
+    {
+      "word": "predominant",
+      "definition": "Present as the strongest or main element.",
+      "sentence": "The predominant colour in the painting was a deep oceanic blue."
+    },
+    {
+      "word": "prejudice",
+      "definition": "An unreasonable dislike or distrust of people different from oneself.",
+      "sentence": "The lesson explored how prejudice can cause harm in any community."
+    },
+    {
+      "word": "preliminary",
+      "definition": "Coming before and preparing for the main action or event.",
+      "sentence": "The preliminary sketches were pinned up before the final design was chosen."
+    },
+    {
+      "word": "preposterous",
+      "definition": "Contrary to reason or common sense; utterly absurd.",
+      "sentence": "The idea of walking to school in fancy dress seemed utterly preposterous."
+    },
+    {
+      "word": "prevalent",
+      "definition": "Widespread in a particular area or time.",
+      "sentence": "Colds are particularly prevalent during the winter months."
+    },
+    {
+      "word": "proportion",
+      "definition": "A part or share of a whole; the relative size of parts.",
+      "sentence": "She devoted a large proportion of her free time to reading."
+    },
+    {
+      "word": "punctuation",
+      "definition": "Marks used in writing to separate sentences and clarify meaning.",
+      "sentence": "She checked the punctuation in every sentence before submitting her work."
+    },
+    {
+      "word": "reconcile",
+      "definition": "To restore friendly relations; to make two things compatible.",
+      "sentence": "After the argument, they were relieved to reconcile and move forward."
+    },
+    {
+      "word": "resilience",
+      "definition": "The ability to recover quickly from difficulties or setbacks.",
+      "sentence": "Her resilience after such a difficult year was deeply admired."
+    },
+    {
+      "word": "reverence",
+      "definition": "Deep respect and admiration for someone or something.",
+      "sentence": "She spoke of her great-grandmother with obvious reverence."
+    },
+    {
+      "word": "scrutinise",
+      "definition": "To examine or inspect closely and thoroughly.",
+      "sentence": "The examiner began to scrutinise each answer with great attention."
+    },
+    {
+      "word": "significant",
+      "definition": "Important; of great consequence or meaning.",
+      "sentence": "The discovery was a significant moment in the history of the school."
+    },
+    {
+      "word": "simultaneous",
+      "definition": "Occurring, operating, or done at the same time.",
+      "sentence": "There was a simultaneous gasp from the audience at the twist in the story."
+    },
+    {
+      "word": "sceptical",
+      "definition": "Not easily convinced; having doubts about something.",
+      "sentence": "She was sceptical when he claimed to have finished all his homework."
+    },
+    {
+      "word": "sovereign",
+      "definition": "A supreme ruler; possessing supreme or ultimate power.",
+      "sentence": "The sovereign addressed the parliament in a formal ceremony."
+    },
+    {
+      "word": "stereotype",
+      "definition": "A widely held but oversimplified idea about a type of person or thing.",
+      "sentence": "The class discussed how a stereotype can be both inaccurate and unfair."
+    },
+    {
+      "word": "sufficient",
+      "definition": "Enough for a particular purpose; adequate.",
+      "sentence": "She checked there was sufficient time to finish before the bell went."
+    },
+    {
+      "word": "summarise",
+      "definition": "To give a brief statement of the main points.",
+      "sentence": "She was asked to summarise the main themes of the chapter."
+    },
+    {
+      "word": "technically",
+      "definition": "According to the exact facts; in a technical sense.",
+      "sentence": "Technically, the answer was correct but she had not shown her working."
+    },
+    {
+      "word": "transparent",
+      "definition": "Allowing light to pass through; easy to see through or understand.",
+      "sentence": "The teacher was transparent about how marks had been allocated."
+    },
+    {
+      "word": "tremendous",
+      "definition": "Very great in amount, scale, or intensity.",
+      "sentence": "She put in a tremendous amount of effort for the final performance."
+    },
+    {
+      "word": "triumphant",
+      "definition": "Having achieved a great victory or success.",
+      "sentence": "The team returned triumphant after winning the regional championship."
+    },
+    {
+      "word": "turbulent",
+      "definition": "Moving unsteadily or violently; involving disorder or conflict.",
+      "sentence": "The plane shook violently as it flew through turbulent air."
+    },
+    {
+      "word": "unavoidable",
+      "definition": "Not able to be prevented or escaped.",
+      "sentence": "Some delay was unavoidable given the severity of the storm."
+    },
+    {
+      "word": "undermine",
+      "definition": "To weaken or damage something gradually or insidiously.",
+      "sentence": "She would never let setbacks undermine her confidence."
+    },
+    {
+      "word": "unscrupulous",
+      "definition": "Having no moral principles; not honest or fair.",
+      "sentence": "The unscrupulous trader was reported to the trading standards office."
+    },
+    {
+      "word": "warranted",
+      "definition": "Justified or officially authorised.",
+      "sentence": "Her concern was fully warranted given the circumstances."
+    },
+    {
+      "word": "withstand",
+      "definition": "To remain undamaged or resist the force or effect of something.",
+      "sentence": "The old bridge was built to withstand centuries of heavy traffic."
+    },
+    {
+      "word": "zealous",
+      "definition": "Having or showing great energy and enthusiasm in pursuit of a cause.",
+      "sentence": "She was a zealous member of the school's environmental group."
+    },
+    {
+      "word": "apprehensive",
+      "definition": "Anxious or fearful about a future event.",
+      "sentence": "She was apprehensive about the first day at her new school."
+    },
+    {
+      "word": "benevolent",
+      "definition": "Generous and kind in one's attitude towards others.",
+      "sentence": "The benevolent donor funded the entire school library refurbishment."
+    },
+    {
+      "word": "biennial",
+      "definition": "Taking place every two years; a plant that lives for two years.",
+      "sentence": "The biennial arts festival attracted visitors from across the region."
+    },
+    {
+      "word": "bureaucratic",
+      "definition": "Following official rules and procedures in an overly rigid way.",
+      "sentence": "The bureaucratic process made a simple task very complicated."
+    },
+    {
+      "word": "coincidence",
+      "definition": "A remarkable concurrence of events or circumstances by chance.",
+      "sentence": "It was a strange coincidence that they had read the same book."
+    },
+    {
+      "word": "commendable",
+      "definition": "Deserving praise and admiration.",
+      "sentence": "Her commendable effort throughout the year had not gone unnoticed."
+    },
+    {
+      "word": "concealment",
+      "definition": "The action of hiding something or keeping it secret.",
+      "sentence": "The concealment of the surprise party required great secrecy."
+    },
+    {
+      "word": "confiscate",
+      "definition": "To officially take something away from someone as a penalty.",
+      "sentence": "The teacher had to confiscate the phone during the examination."
+    },
+    {
+      "word": "consecutive",
+      "definition": "Following one another in an unbroken sequence.",
+      "sentence": "She won the cup three consecutive years in a row."
+    },
+    {
+      "word": "contemplate",
+      "definition": "To think about something carefully; to consider doing something.",
+      "sentence": "She would often sit and contemplate the view from her window."
+    },
+    {
+      "word": "corrosion",
+      "definition": "The process of being worn away or destroyed by chemical action.",
+      "sentence": "Corrosion had weakened the iron gate over many years."
+    },
+    {
+      "word": "counsellor",
+      "definition": "A person trained to give guidance on personal or psychological problems.",
+      "sentence": "She found it helpful to speak to a school counsellor."
+    },
+    {
+      "word": "deliberately",
+      "definition": "On purpose; consciously and intentionally.",
+      "sentence": "She deliberately left the last biscuit for her sister."
+    },
+    {
+      "word": "distinguished",
+      "definition": "Very successful, authoritative, and commanding respect.",
+      "sentence": "The distinguished guest was welcomed warmly by the head teacher."
+    },
+    {
+      "word": "economical",
+      "definition": "Using as little money or resources as possible; not wasteful.",
+      "sentence": "She found an economical way to heat the room during winter."
+    },
+    {
+      "word": "encyclopaedia",
+      "definition": "A reference work containing detailed information across many subjects.",
+      "sentence": "She looked up the topic in a well-thumbed encyclopaedia."
+    },
+    {
+      "word": "independently",
+      "definition": "Without outside help or influence; on one's own.",
+      "sentence": "She completed the project independently and was very proud of the result."
+    },
+    {
+      "word": "maintenance",
+      "definition": "The process of keeping something in good condition.",
+      "sentence": "Regular maintenance of the equipment was essential for everyone's safety."
+    },
+    {
+      "word": "accumulate",
+      "definition": "To gather together or acquire an increasing number of things over time.",
+      "sentence": "She managed to accumulate enough points to win the prize."
+    },
+    {
+      "word": "acquiesce",
+      "definition": "To accept something without protest, often reluctantly.",
+      "sentence": "He chose to acquiesce rather than start an argument."
+    },
+    {
+      "word": "alleviate",
+      "definition": "To make suffering or a problem less severe.",
+      "sentence": "The medicine helped to alleviate her symptoms overnight."
+    },
+    {
+      "word": "ambivalent",
+      "definition": "Having mixed feelings or contradictory ideas about something.",
+      "sentence": "She felt ambivalent about moving to a new school."
+    },
+    {
+      "word": "antiquated",
+      "definition": "Very old-fashioned and no longer suitable for modern times.",
+      "sentence": "The antiquated heating system struggled in cold weather."
+    },
+    {
+      "word": "articulate",
+      "definition": "Able to express oneself clearly and effectively in words.",
+      "sentence": "She gave an articulate and well-structured presentation."
+    },
+    {
+      "word": "assimilate",
+      "definition": "To take in and fully understand information; to blend in.",
+      "sentence": "She worked hard to assimilate all the new material before the test."
+    },
+    {
+      "word": "compulsory",
+      "definition": "Required by law or a rule; obligatory.",
+      "sentence": "Attendance at the safety briefing was compulsory for all staff."
+    },
+    {
+      "word": "connoisseur",
+      "definition": "An expert judge in matters of taste, especially in the arts.",
+      "sentence": "The connoisseur examined the painting carefully before giving his verdict."
+    },
+    {
+      "word": "expenditure",
+      "definition": "The action of spending money; the amount of money spent.",
+      "sentence": "The school reviewed its annual expenditure carefully."
+    },
+    {
+      "word": "deteriorate",
+      "definition": "To become progressively worse over time.",
+      "sentence": "The condition of the old bridge continued to deteriorate."
+    },
+    {
+      "word": "affluent",
+      "definition": "Having a great deal of money or wealth.",
+      "sentence": "The school was located in an affluent area of the city."
+    },
+    {
+      "word": "herbaceous",
+      "definition": "Relating to plants with soft stems rather than woody ones.",
+      "sentence": "She planted a long herbaceous border along the garden path."
+    },
+    {
+      "word": "innocuous",
+      "definition": "Not harmful or offensive in any way.",
+      "sentence": "The remark was entirely innocuous and not meant to offend."
+    }
+  ],
+  "expert": [
+    {
+      "word": "sesquipedalian",
+      "definition": "Characterised by the use of long words; given to using lengthy vocabulary.",
+      "sentence": "The professor's sesquipedalian prose left many students reaching for a dictionary."
+    },
+    {
+      "word": "onomatopoeia",
+      "definition": "The use of words that phonetically imitate the sound they describe.",
+      "sentence": "The poet used onomatopoeia brilliantly, with words like hiss, buzz, and crash."
+    },
+    {
+      "word": "perspicacious",
+      "definition": "Having a ready insight; keenly perceptive and mentally sharp.",
+      "sentence": "The perspicacious detective noticed details that others had completely overlooked."
+    },
+    {
+      "word": "obsequious",
+      "definition": "Excessively eager to serve or please; obedient to a fault.",
+      "sentence": "The obsequious assistant agreed with every word his employer said."
+    },
+    {
+      "word": "tergiversation",
+      "definition": "The repeated changing of one's attitude or statements; evasion of a clear position.",
+      "sentence": "The politician's tergiversation on the issue frustrated journalists greatly."
+    },
+    {
+      "word": "recalcitrant",
+      "definition": "Stubbornly resistant to authority or discipline.",
+      "sentence": "The recalcitrant pupil refused to sit down despite repeated requests from the teacher."
+    },
+    {
+      "word": "mellifluous",
+      "definition": "Having a pleasantly smooth, rich, and flowing sound.",
+      "sentence": "The singer's mellifluous voice silenced the entire audience."
+    },
+    {
+      "word": "loquacious",
+      "definition": "Tending to talk a great deal; extremely talkative.",
+      "sentence": "The loquacious guide kept speaking long after the tour had ended."
+    },
+    {
+      "word": "surreptitious",
+      "definition": "Done secretly to avoid notice or detection.",
+      "sentence": "She gave a surreptitious glance at the clock during the exam."
+    },
+    {
+      "word": "ephemeral",
+      "definition": "Lasting for only a very short time; transitory.",
+      "sentence": "The rainbow was ephemeral, fading within moments of appearing."
+    },
+    {
+      "word": "idiosyncratic",
+      "definition": "Peculiar to a specific individual; distinctive and unusual in character.",
+      "sentence": "Each musician had their own idiosyncratic way of holding the bow."
+    },
+    {
+      "word": "ostentatious",
+      "definition": "Characterised by a vulgar display of wealth or learning, designed to impress.",
+      "sentence": "The ostentatious decorations made the simple hall look rather garish."
+    },
+    {
+      "word": "perfidious",
+      "definition": "Guilty of betrayal; deceitful and untrustworthy.",
+      "sentence": "The perfidious spy had been deceiving his colleagues for years."
+    },
+    {
+      "word": "magnanimous",
+      "definition": "Very generous and forgiving, especially towards a rival or enemy.",
+      "sentence": "She was magnanimous in defeat, congratulating every member of the winning team."
+    },
+    {
+      "word": "indefatigable",
+      "definition": "Never tiring; persisting tirelessly despite great effort.",
+      "sentence": "The indefatigable researcher worked through the night without complaint."
+    },
+    {
+      "word": "inscrutable",
+      "definition": "Impossible to understand or interpret; mysterious.",
+      "sentence": "The headmistress's expression remained completely inscrutable throughout the meeting."
+    },
+    {
+      "word": "labyrinthine",
+      "definition": "Like a labyrinth; intricate, complex, and difficult to navigate.",
+      "sentence": "The old building's labyrinthine corridors confused every new visitor."
+    },
+    {
+      "word": "nonchalant",
+      "definition": "Feeling or appearing casually calm and relaxed; showing little concern.",
+      "sentence": "He gave a nonchalant shrug as if nothing had happened."
+    },
+    {
+      "word": "quintessential",
+      "definition": "Representing the most perfect or typical example of something.",
+      "sentence": "The thatched cottage was quintessential English countryside living."
+    },
+    {
+      "word": "supercilious",
+      "definition": "Behaving as if one is superior to others; disdainful and condescending.",
+      "sentence": "She dismissed the question with a supercilious raise of her eyebrow."
+    },
+    {
+      "word": "ubiquitous",
+      "definition": "Present, appearing, or found everywhere at the same time.",
+      "sentence": "Smartphones have become ubiquitous in everyday modern life."
+    },
+    {
+      "word": "verisimilitude",
+      "definition": "The appearance of being true or real; believable authenticity.",
+      "sentence": "The novel's verisimilitude made it feel like a genuine account of true events."
+    },
+    {
+      "word": "chrysanthemum",
+      "definition": "A garden plant producing large, dense, colourful flowers in autumn.",
+      "sentence": "She arranged a bunch of chrysanthemum blooms in a tall glass vase."
+    },
+    {
+      "word": "circumlocution",
+      "definition": "The use of many words where fewer would suffice; indirect or roundabout expression.",
+      "sentence": "His answer was full of circumlocution and never quite reached the point."
+    },
+    {
+      "word": "desultory",
+      "definition": "Lacking a clear plan or purpose; going from one thing to another without purpose.",
+      "sentence": "The students made desultory attempts to tidy the classroom before the bell went."
+    },
+    {
+      "word": "diaphanous",
+      "definition": "Light, delicate, and almost completely transparent.",
+      "sentence": "The curtains were made from diaphanous silk that drifted softly in the breeze."
+    },
+    {
+      "word": "facetious",
+      "definition": "Treating serious matters with inappropriate humour; flippant.",
+      "sentence": "His facetious comments during the assembly drew disapproving looks from the staff."
+    },
+    {
+      "word": "grandiloquent",
+      "definition": "Pompous or extravagant in language, style, or manner.",
+      "sentence": "The grandiloquent speech impressed nobody with its hollow phrases."
+    },
+    {
+      "word": "hieroglyphic",
+      "definition": "Relating to or written in the picture-symbol script of ancient Egypt.",
+      "sentence": "The archaeologist studied the hieroglyphic inscriptions on the tomb wall."
+    },
+    {
+      "word": "hyperbole",
+      "definition": "An exaggerated statement not meant to be taken literally, used for emphasis.",
+      "sentence": "Saying you have told someone a thousand times is an example of hyperbole."
+    },
+    {
+      "word": "impecunious",
+      "definition": "Having very little or no money; chronically penniless.",
+      "sentence": "Despite being impecunious, the artist refused to compromise on the quality of his paints."
+    },
+    {
+      "word": "incorrigible",
+      "definition": "Not able to be corrected, improved, or reformed.",
+      "sentence": "He was an incorrigible optimist who found something positive in every situation."
+    },
+    {
+      "word": "insouciance",
+      "definition": "Casual lack of concern; a relaxed and carefree attitude.",
+      "sentence": "She walked into the difficult exam with remarkable insouciance."
+    },
+    {
+      "word": "juxtaposition",
+      "definition": "The placing of two contrasting things close together for effect.",
+      "sentence": "The juxtaposition of the ancient ruin and the modern skyscraper was striking."
+    },
+    {
+      "word": "lackadaisical",
+      "definition": "Lacking enthusiasm and determination; carelessly lazy.",
+      "sentence": "His lackadaisical approach to revision greatly worried his teachers."
+    },
+    {
+      "word": "lugubrious",
+      "definition": "Looking or sounding excessively sad and mournful.",
+      "sentence": "The lugubrious music perfectly matched the sombre mood of the scene."
+    },
+    {
+      "word": "malapropism",
+      "definition": "The mistaken use of a word in place of one that sounds similar.",
+      "sentence": "Saying pacific instead of specific is a classic malapropism."
+    },
+    {
+      "word": "mendacious",
+      "definition": "Not telling the truth; habitually lying.",
+      "sentence": "The mendacious witness changed his story several times under questioning."
+    },
+    {
+      "word": "metamorphosis",
+      "definition": "A transformation from one form or phase of development to another.",
+      "sentence": "The caterpillar's metamorphosis into a butterfly is one of nature's great wonders."
+    },
+    {
+      "word": "multifarious",
+      "definition": "Many and of various types; having great variety.",
+      "sentence": "The museum's multifarious collection ranged from ancient coins to modern sculpture."
+    },
+    {
+      "word": "nefarious",
+      "definition": "Wicked, criminal, or villainous in nature.",
+      "sentence": "The villain's nefarious scheme was finally uncovered by the detective."
+    },
+    {
+      "word": "obstreperous",
+      "definition": "Noisy and difficult to control; aggressively boisterous.",
+      "sentence": "The obstreperous crowd made it impossible for the speaker to be heard."
+    },
+    {
+      "word": "pertinacious",
+      "definition": "Holding stubbornly to an opinion or course of action; persistent.",
+      "sentence": "The pertinacious campaigner refused to give up despite repeated setbacks."
+    },
+    {
+      "word": "pusillanimous",
+      "definition": "Showing a lack of courage or determination; faint-hearted.",
+      "sentence": "The pusillanimous character fled at the first sign of difficulty."
+    },
+    {
+      "word": "querulous",
+      "definition": "Complaining in a petulant or whining manner.",
+      "sentence": "The querulous passenger complained about every aspect of the journey."
+    },
+    {
+      "word": "quixotic",
+      "definition": "Exceedingly idealistic and impractical; romantically visionary.",
+      "sentence": "Her quixotic plan to cycle across the desert raised more than a few eyebrows."
+    },
+    {
+      "word": "recondite",
+      "definition": "Not known by many people; obscure and abstruse.",
+      "sentence": "The professor specialised in a recondite branch of medieval philosophy."
+    },
+    {
+      "word": "sagacious",
+      "definition": "Having or showing keen mental discernment and sound judgement.",
+      "sentence": "The sagacious adviser had foreseen the problem months before it arose."
+    },
+    {
+      "word": "sardonic",
+      "definition": "Grimly mocking or cynical in expression or manner.",
+      "sentence": "He gave a sardonic smile at the suggestion that everything would be fine."
+    },
+    {
+      "word": "taciturn",
+      "definition": "Reserved and saying very little; not readily communicating.",
+      "sentence": "He was taciturn by nature and rarely volunteered an opinion in public."
+    },
+    {
+      "word": "trepidation",
+      "definition": "A feeling of fear or anxiety about something that may happen.",
+      "sentence": "She entered the examination hall with considerable trepidation."
+    },
+    {
+      "word": "unconscionable",
+      "definition": "Not right or reasonable; going beyond what is morally acceptable.",
+      "sentence": "The delay in responding to the complaint was described as unconscionable."
+    },
+    {
+      "word": "unprecedented",
+      "definition": "Never having happened or existed before; without precedent.",
+      "sentence": "The level of public support for the campaign was unprecedented."
+    },
+    {
+      "word": "soliloquy",
+      "definition": "An act of speaking one's thoughts aloud when alone or unaware of listeners.",
+      "sentence": "The actor delivered Hamlet's famous soliloquy with tremendous skill."
+    },
+    {
+      "word": "serendipity",
+      "definition": "The occurrence of fortunate events by chance in a happy or beneficial way.",
+      "sentence": "Finding the perfect cottage for sale at exactly the right moment felt like serendipity."
+    },
+    {
+      "word": "philanthropy",
+      "definition": "The desire to promote the wellbeing of others, often through charitable donations.",
+      "sentence": "Her philanthropy helped fund dozens of community projects across the region."
+    },
+    {
+      "word": "mnemonic",
+      "definition": "A pattern, rhyme, or system that helps one remember something.",
+      "sentence": "The children were taught a mnemonic to help them remember the order of the planets."
+    },
+    {
+      "word": "amalgamation",
+      "definition": "The action of combining or merging two or more things into one.",
+      "sentence": "The amalgamation of the two schools created the largest in the county."
+    },
+    {
+      "word": "archipelago",
+      "definition": "A group of islands clustered together in a sea or ocean.",
+      "sentence": "The explorer charted every island in the vast archipelago."
+    },
+    {
+      "word": "bioluminescence",
+      "definition": "The production and emission of light by living organisms such as deep-sea fish and fireflies.",
+      "sentence": "The bioluminescence of the plankton made the waves glow in the dark."
+    },
+    {
+      "word": "somnambulism",
+      "definition": "The condition of walking and performing actions while asleep; sleepwalking.",
+      "sentence": "The child's somnambulism worried her parents, who consulted their doctor."
+    },
+    {
+      "word": "floccinaucinihilipilification",
+      "definition": "The action or habit of estimating something as worthless or of little value.",
+      "sentence": "His floccinaucinihilipilification of the rare manuscript shocked every expert in the room."
+    },
+    {
+      "word": "abstemious",
+      "definition": "Indulging only very moderately in food and drink.",
+      "sentence": "The abstemious scholar ate very little and drank only water."
+    },
+    {
+      "word": "acrimonious",
+      "definition": "Angry and bitter in manner or speech.",
+      "sentence": "The acrimonious debate continued long after everyone had grown tired."
+    },
+    {
+      "word": "adumbrate",
+      "definition": "To report or represent in outline; to foreshadow.",
+      "sentence": "The opening chapter served to adumbrate the novel's central themes."
+    },
+    {
+      "word": "alacrity",
+      "definition": "Brisk and cheerful readiness to do something.",
+      "sentence": "She accepted the challenge with remarkable alacrity."
+    },
+    {
+      "word": "ambivalence",
+      "definition": "The state of having mixed or contradictory feelings about something.",
+      "sentence": "Her ambivalence about the move was plain to everyone around her."
+    },
+    {
+      "word": "ameliorate",
+      "definition": "To make something bad or unsatisfactory better.",
+      "sentence": "Several measures were taken to ameliorate the conditions in the old building."
+    },
+    {
+      "word": "anachronism",
+      "definition": "A thing that belongs to a different period from the one being described.",
+      "sentence": "A quill pen on a modern desk is a charming anachronism."
+    },
+    {
+      "word": "anthropology",
+      "definition": "The study of human societies, cultures, and their development.",
+      "sentence": "She studied anthropology to better understand cultural differences."
+    },
+    {
+      "word": "antithesis",
+      "definition": "A person or thing that is the direct opposite of another.",
+      "sentence": "Chaos is the antithesis of the order she tried to maintain."
+    },
+    {
+      "word": "apocryphal",
+      "definition": "Of doubtful authenticity, although widely circulated as true.",
+      "sentence": "The story of the missing treasure was most likely apocryphal."
+    },
+    {
+      "word": "approbation",
+      "definition": "Approval or praise.",
+      "sentence": "She sought her teacher's approbation before submitting the final draft."
+    },
+    {
+      "word": "arcane",
+      "definition": "Understood by few; mysterious or secret.",
+      "sentence": "The professor's lecture covered arcane details of ancient linguistics."
+    },
+    {
+      "word": "assiduous",
+      "definition": "Showing great care, attention, and effort.",
+      "sentence": "The assiduous student revised every topic thoroughly before the examination."
+    },
+    {
+      "word": "atavistic",
+      "definition": "Relating to or resembling a reversion to something ancient or ancestral.",
+      "sentence": "He felt an atavistic urge to explore the dark cave."
+    },
+    {
+      "word": "audacious",
+      "definition": "Showing a willingness to take bold risks; shamelessly bold.",
+      "sentence": "Her audacious plan surprised everyone who heard it."
+    },
+    {
+      "word": "auspicious",
+      "definition": "Giving or suggesting a sign of future success; favourable.",
+      "sentence": "The sunny weather was an auspicious start to the school sports day."
+    },
+    {
+      "word": "belligerent",
+      "definition": "Hostile and aggressive; engaged in a war or conflict.",
+      "sentence": "The belligerent response was unnecessary and only made things worse."
+    },
+    {
+      "word": "benign",
+      "definition": "Gentle and kind; not harmful.",
+      "sentence": "The teacher gave a benign smile and said nothing more."
+    },
+    {
+      "word": "Byzantine",
+      "definition": "Excessively complicated and difficult to understand.",
+      "sentence": "The Byzantine rules of the competition bewildered all the participants."
+    },
+    {
+      "word": "cacophony",
+      "definition": "A harsh, discordant mixture of sounds.",
+      "sentence": "The first rehearsal was a cacophony of wrong notes and missed cues."
+    },
+    {
+      "word": "callous",
+      "definition": "Showing or having an insensitive and cruel disregard for others.",
+      "sentence": "The callous dismissal of her efforts left her feeling deeply hurt."
+    },
+    {
+      "word": "categorical",
+      "definition": "Unambiguously explicit and direct; absolute.",
+      "sentence": "She gave a categorical denial that she had been involved."
+    },
+    {
+      "word": "caustic",
+      "definition": "Sarcastic in a scathing way; capable of burning through something.",
+      "sentence": "His caustic remarks during the meeting silenced the room."
+    },
+    {
+      "word": "circumspect",
+      "definition": "Wary and unwilling to take risks; careful about all circumstances.",
+      "sentence": "She was always circumspect before committing to any decision."
+    },
+    {
+      "word": "clandestine",
+      "definition": "Kept secret or done secretively, especially because illicit.",
+      "sentence": "The clandestine meeting took place after dark in the old library."
+    },
+    {
+      "word": "cogent",
+      "definition": "Clear, logical, and convincing.",
+      "sentence": "She made a cogent argument that persuaded the entire committee."
+    },
+    {
+      "word": "compunction",
+      "definition": "A feeling of guilt or moral scruple about doing something.",
+      "sentence": "He felt no compunction about admitting he had been wrong."
+    },
+    {
+      "word": "concomitant",
+      "definition": "Naturally accompanying or associated with something.",
+      "sentence": "Stress and the concomitant health issues are common in busy careers."
+    },
+    {
+      "word": "conflagration",
+      "definition": "A large destructive fire.",
+      "sentence": "The conflagration spread quickly and destroyed several buildings."
+    },
+    {
+      "word": "consternation",
+      "definition": "A feeling of anxiety or dismay, typically at something unexpected.",
+      "sentence": "There was general consternation when the results were announced."
+    },
+    {
+      "word": "contemptuous",
+      "definition": "Showing contempt; scornful.",
+      "sentence": "Her contemptuous glance made it clear what she thought of the idea."
+    },
+    {
+      "word": "contiguous",
+      "definition": "Sharing a common border; touching or adjacent.",
+      "sentence": "The two contiguous fields were separated only by a low stone wall."
+    },
+    {
+      "word": "contrite",
+      "definition": "Feeling or expressing deep remorse for wrongdoing.",
+      "sentence": "He looked genuinely contrite after realising the hurt he had caused."
+    },
+    {
+      "word": "convivial",
+      "definition": "Friendly and lively; relating to good company and festivity.",
+      "sentence": "The end-of-term gathering had a wonderfully convivial atmosphere."
+    },
+    {
+      "word": "copious",
+      "definition": "Abundant in supply or quantity.",
+      "sentence": "She took copious notes during every lecture."
+    },
+    {
+      "word": "corpulent",
+      "definition": "Fat; having a large, heavy body.",
+      "sentence": "The corpulent innkeeper sat cheerfully by the fire."
+    },
+    {
+      "word": "credulous",
+      "definition": "Too willing to believe things without proper evidence.",
+      "sentence": "The credulous child believed every word of the tall tale."
+    },
+    {
+      "word": "deferential",
+      "definition": "Showing respect and high regard; submissively respectful.",
+      "sentence": "He was deferential towards his elders and always listened carefully."
+    },
+    {
+      "word": "demagogue",
+      "definition": "A political leader who appeals to the emotions of the public.",
+      "sentence": "The demagogue stirred up anger rather than offering reasoned solutions."
+    },
+    {
+      "word": "denigrate",
+      "definition": "To criticise unfairly; to disparage.",
+      "sentence": "She refused to denigrate her opponent's work, however fierce the rivalry."
+    },
+    {
+      "word": "derivative",
+      "definition": "Imitative of the work of another; something derived from another source.",
+      "sentence": "The critics felt the film was too derivative of earlier classics."
+    },
+    {
+      "word": "didactic",
+      "definition": "Intended to teach; having the manner of a teacher.",
+      "sentence": "The poem was openly didactic, written to instil moral values."
+    },
+    {
+      "word": "diffident",
+      "definition": "Modest or shy due to a lack of self-confidence.",
+      "sentence": "Despite her talent, she remained diffident about sharing her work."
+    },
+    {
+      "word": "dissonance",
+      "definition": "A lack of harmony; a tension between conflicting elements.",
+      "sentence": "There was a clear dissonance between what she said and what she did."
+    },
+    {
+      "word": "dogmatic",
+      "definition": "Inclined to lay down principles as incontrovertibly true.",
+      "sentence": "Her dogmatic insistence on a single approach stifled creative thinking."
+    },
+    {
+      "word": "ebullient",
+      "definition": "Cheerful and full of energy.",
+      "sentence": "The ebullient crowd cheered from the moment the gates opened."
+    },
+    {
+      "word": "egregious",
+      "definition": "Outstandingly bad; shockingly obvious.",
+      "sentence": "The egregious error in the final paragraph had to be corrected immediately."
+    },
+    {
+      "word": "encomium",
+      "definition": "A speech or piece of writing that praises someone highly.",
+      "sentence": "The retiring head teacher was given a heartfelt encomium by the governors."
+    },
+    {
+      "word": "enigmatic",
+      "definition": "Difficult to interpret or understand; mysterious.",
+      "sentence": "The artist's enigmatic smile appeared in many of the self-portraits."
+    },
+    {
+      "word": "equivocate",
+      "definition": "To use ambiguous language to conceal the truth or avoid commitment.",
+      "sentence": "The politician seemed to equivocate rather than answer directly."
+    },
+    {
+      "word": "erudite",
+      "definition": "Having or showing great knowledge or learning.",
+      "sentence": "The erudite professor could hold a conversation on almost any subject."
+    },
+    {
+      "word": "esoteric",
+      "definition": "Intended for or understood by only a small group with specialised knowledge.",
+      "sentence": "The lecture touched on several esoteric branches of mathematics."
+    },
+    {
+      "word": "ethereal",
+      "definition": "Extremely delicate and light; heavenly and spiritual.",
+      "sentence": "The music had an ethereal quality that seemed to fill the whole building."
+    },
+    {
+      "word": "euphemism",
+      "definition": "A mild or indirect word used in place of one that might seem harsh.",
+      "sentence": "Passed away is a common euphemism for died."
+    },
+    {
+      "word": "expeditious",
+      "definition": "Done with speed and efficiency.",
+      "sentence": "She made an expeditious decision and acted on it at once."
+    },
+    {
+      "word": "fastidious",
+      "definition": "Very attentive to detail; having high standards of cleanliness.",
+      "sentence": "She was fastidious about keeping her notes neat and well organised."
+    },
+    {
+      "word": "flippant",
+      "definition": "Not showing a serious or respectful attitude.",
+      "sentence": "His flippant response to the serious question surprised the panel."
+    },
+    {
+      "word": "fortuitous",
+      "definition": "Happening by chance rather than by design; lucky.",
+      "sentence": "The fortuitous meeting changed the direction of her entire career."
+    },
+    {
+      "word": "garrulous",
+      "definition": "Excessively talkative, especially on trivial matters.",
+      "sentence": "The garrulous market trader talked to every customer at great length."
+    },
+    {
+      "word": "gratuitous",
+      "definition": "Done without good reason; uncalled for.",
+      "sentence": "The gratuitous comments added nothing useful to the discussion."
+    },
+    {
+      "word": "harbinger",
+      "definition": "A person or thing that announces or signals the approach of something.",
+      "sentence": "The first snowdrops are a harbinger of spring."
+    },
+    {
+      "word": "hegemony",
+      "definition": "Leadership or dominance, especially of one country over others.",
+      "sentence": "The essay discussed the historical hegemony of certain trading nations."
+    },
+    {
+      "word": "iconoclast",
+      "definition": "A person who attacks widely accepted beliefs or traditions.",
+      "sentence": "The young designer was an iconoclast who rejected every conventional rule."
+    },
+    {
+      "word": "idiosyncrasy",
+      "definition": "A distinctive habit or characteristic peculiar to an individual.",
+      "sentence": "Collecting antique maps was just one of his many examples of idiosyncrasy."
+    },
+    {
+      "word": "ignominious",
+      "definition": "Deserving or causing public disgrace or shame.",
+      "sentence": "The team suffered an ignominious defeat in the very first round."
+    },
+    {
+      "word": "impetuous",
+      "definition": "Acting or done quickly without thought or care.",
+      "sentence": "Her impetuous decision to change everything at the last minute caused chaos."
+    },
+    {
+      "word": "inadvertent",
+      "definition": "Not resulting from deliberate planning; accidental.",
+      "sentence": "The inadvertent mistake in the programme was quickly corrected."
+    },
+    {
+      "word": "incandescent",
+      "definition": "Emitting light as a result of great heat; extremely angry.",
+      "sentence": "The incandescent response of the head teacher surprised everyone present."
+    },
+    {
+      "word": "incongruous",
+      "definition": "Not in harmony with the surroundings; out of place.",
+      "sentence": "The modern sculpture looked incongruous beside the ancient church."
+    },
+    {
+      "word": "indolent",
+      "definition": "Wanting to avoid activity; habitually lazy.",
+      "sentence": "The indolent student rarely made it to morning lessons on time."
+    },
+    {
+      "word": "inexorable",
+      "definition": "Impossible to stop or prevent; relentless.",
+      "sentence": "The inexorable advance of technology changed the way we all communicate."
+    },
+    {
+      "word": "ingenious",
+      "definition": "Clever, original, and inventive.",
+      "sentence": "She came up with an ingenious solution to the engineering problem."
+    },
+    {
+      "word": "innate",
+      "definition": "Inborn; natural rather than acquired.",
+      "sentence": "She had an innate ability to put people at ease."
+    },
+    {
+      "word": "insipid",
+      "definition": "Lacking flavour; lacking strong qualities of any kind.",
+      "sentence": "The insipid performance did nothing to excite the audience."
+    },
+    {
+      "word": "intransigent",
+      "definition": "Unwilling to change one's views or to agree.",
+      "sentence": "The intransigent committee refused to consider any alternative plan."
+    },
+    {
+      "word": "inveterate",
+      "definition": "Having a habit or activity so firmly established that it is unlikely to change.",
+      "sentence": "She was an inveterate reader who always had a book in her bag."
+    },
+    {
+      "word": "irascible",
+      "definition": "Having or showing a tendency to be easily angered.",
+      "sentence": "The irascible old professor was known for his fierce but fair criticism."
+    },
+    {
+      "word": "jocular",
+      "definition": "Fond of joking; humorous.",
+      "sentence": "He was in a jocular mood and kept the whole table laughing."
+    },
+    {
+      "word": "laconic",
+      "definition": "Using very few words to express a great deal.",
+      "sentence": "His laconic reply told her everything she needed to know."
+    },
+    {
+      "word": "lassitude",
+      "definition": "A state of physical or mental tiredness and lack of energy.",
+      "sentence": "A feeling of lassitude overcame her on the long, hot afternoon."
+    },
+    {
+      "word": "loquacity",
+      "definition": "The quality of talking a great deal; talkativeness.",
+      "sentence": "His loquacity made it almost impossible to get a word in edgeways."
+    },
+    {
+      "word": "luminous",
+      "definition": "Giving off light, especially in the dark; very bright.",
+      "sentence": "The luminous stars were reflected in the still lake below."
+    },
+    {
+      "word": "magniloquent",
+      "definition": "Using high-flown or bombastic language.",
+      "sentence": "His magniloquent speech impressed no one and exhausted most of the audience."
+    },
+    {
+      "word": "malevolent",
+      "definition": "Having or showing a wish to do evil to others.",
+      "sentence": "The villain's malevolent grin made the audience shudder."
+    },
+    {
+      "word": "meretricious",
+      "definition": "Apparently attractive but having in reality no value or integrity.",
+      "sentence": "The meretricious packaging disguised the poor quality of the contents."
+    },
+    {
+      "word": "misanthrope",
+      "definition": "A person who dislikes and distrusts other people generally.",
+      "sentence": "Despite his reputation as a misanthrope, he was generous to those he trusted."
+    },
+    {
+      "word": "munificent",
+      "definition": "Larger or more generous than is usual or necessary.",
+      "sentence": "The munificent donation paid for an entire new wing of the library."
+    },
+    {
+      "word": "nebulous",
+      "definition": "In the form of a cloud; unclear, hazy, or indistinct.",
+      "sentence": "Her ideas for the project remained nebulous for several weeks."
+    },
+    {
+      "word": "obdurate",
+      "definition": "Stubbornly refusing to change one's position, especially in the face of argument.",
+      "sentence": "She remained obdurate despite all the evidence presented against her view."
+    },
+    {
+      "word": "oblique",
+      "definition": "Not direct in expression; indirect; not straight.",
+      "sentence": "He made an oblique reference to the problem without naming it directly."
+    },
+    {
+      "word": "officious",
+      "definition": "Asserting authority in a domineering way; intrusively helpful.",
+      "sentence": "The officious attendant insisted on checking every ticket twice."
+    },
+    {
+      "word": "omniscient",
+      "definition": "Knowing everything; having complete or unlimited knowledge.",
+      "sentence": "The narrator of the novel was omniscient, aware of every character's thoughts."
+    },
+    {
+      "word": "opulent",
+      "definition": "Richly luxurious; ostentatiously wealthy.",
+      "sentence": "The opulent interior of the palace dazzled every visitor."
+    },
+    {
+      "word": "paradigm",
+      "definition": "A typical example or pattern of something; a model.",
+      "sentence": "The experiment was described as a paradigm of careful scientific method."
+    },
+    {
+      "word": "pernicious",
+      "definition": "Having a harmful effect, especially in a gradual or subtle way.",
+      "sentence": "The pernicious influence of rumours spread quickly through the school."
+    },
+    {
+      "word": "perspicacity",
+      "definition": "The quality of having a ready insight into things; shrewdness.",
+      "sentence": "Her perspicacity in spotting the flaw impressed everyone on the panel."
+    },
+    {
+      "word": "petulant",
+      "definition": "Childishly sulky or bad-tempered.",
+      "sentence": "The petulant response did nothing to help resolve the situation."
+    },
+    {
+      "word": "philanthropist",
+      "definition": "A person who seeks to promote the welfare of others, especially through generous donations.",
+      "sentence": "The philanthropist funded the new science block at the local school."
+    },
+    {
+      "word": "plenipotentiary",
+      "definition": "A diplomat with full power to act independently.",
+      "sentence": "The plenipotentiary arrived to negotiate the terms of the agreement."
+    },
+    {
+      "word": "portentous",
+      "definition": "Of great significance; done with a pompous air of great importance.",
+      "sentence": "The portentous silence before the announcement was almost unbearable."
+    },
+    {
+      "word": "pragmatic",
+      "definition": "Dealing with things sensibly and practically, rather than theoretically.",
+      "sentence": "She took a pragmatic approach and focused on what could be done."
+    },
+    {
+      "word": "precipitous",
+      "definition": "Dangerously high or steep; done suddenly and without careful consideration.",
+      "sentence": "The precipitous drop on the far side of the ridge was alarming."
+    },
+    {
+      "word": "presumptuous",
+      "definition": "Failing to observe the limits of what is permitted; overconfident.",
+      "sentence": "It was presumptuous of him to assume he had won before the results were read."
+    },
+    {
+      "word": "profligate",
+      "definition": "Recklessly extravagant; licentious; dissolute.",
+      "sentence": "His profligate spending left him with nothing saved by the end of term."
+    },
+    {
+      "word": "propitious",
+      "definition": "Giving or indicating a good chance of success; favourable.",
+      "sentence": "The calm weather was a propitious sign for the outdoor event."
+    },
+    {
+      "word": "puerile",
+      "definition": "Childishly silly and trivial.",
+      "sentence": "The puerile behaviour in the corridor was completely unacceptable."
+    },
+    {
+      "word": "pugnacious",
+      "definition": "Eager or quick to argue, quarrel, or fight.",
+      "sentence": "The pugnacious debater challenged every point raised by the other side."
+    },
+    {
+      "word": "redoubtable",
+      "definition": "Formidable, especially as an opponent.",
+      "sentence": "The redoubtable champion had never lost a single match in three years."
+    },
+    {
+      "word": "sanguine",
+      "definition": "Optimistic or positive, especially in a difficult situation.",
+      "sentence": "She remained sanguine about the chances of success despite the obstacles."
+    },
+    {
+      "word": "solipsistic",
+      "definition": "Relating to the idea that only one's own mind is real or knowable.",
+      "sentence": "His solipsistic worldview meant he rarely considered anyone else's perspective."
+    },
+    {
+      "word": "sonorous",
+      "definition": "Having a deep, full, rich sound.",
+      "sentence": "The sonorous voice of the narrator filled the entire auditorium."
+    },
+    {
+      "word": "spurious",
+      "definition": "Not being what it purports to be; false or fake.",
+      "sentence": "The examiner dismissed the spurious claim without further consideration."
+    },
+    {
+      "word": "sycophant",
+      "definition": "A person who behaves in an ingratiating way to gain advantage.",
+      "sentence": "The sycophant agreed with every word the manager said."
+    },
+    {
+      "word": "tenacious",
+      "definition": "Tending to keep a firm hold of something; persistent.",
+      "sentence": "Her tenacious spirit carried her through the most difficult periods."
+    },
+    {
+      "word": "timorous",
+      "definition": "Easily frightened; showing a great lack of courage.",
+      "sentence": "The timorous character retreated at the very first sign of difficulty."
+    },
+    {
+      "word": "tractable",
+      "definition": "Easy to deal with; docile and manageable.",
+      "sentence": "The tractable nature of the material made it easy to shape."
+    },
+    {
+      "word": "truculent",
+      "definition": "Eager or quick to argue or fight; aggressively defiant.",
+      "sentence": "The truculent response shocked everyone who had expected a calm discussion."
+    },
+    {
+      "word": "turgid",
+      "definition": "Swollen and distended; pompous or bombastic in style.",
+      "sentence": "The turgid prose was almost impossible to wade through."
+    },
+    {
+      "word": "ubiquity",
+      "definition": "The fact of appearing or being found everywhere.",
+      "sentence": "The ubiquity of mobile phones has changed how people communicate."
+    },
+    {
+      "word": "vacuous",
+      "definition": "Lacking meaning, substance, or intelligence.",
+      "sentence": "The vacuous response failed to address a single point that had been raised."
+    },
+    {
+      "word": "venal",
+      "definition": "Showing or motivated by susceptibility to bribery.",
+      "sentence": "The venal official was eventually dismissed for accepting bribes."
+    },
+    {
+      "word": "verbose",
+      "definition": "Using more words than needed; wordy.",
+      "sentence": "The verbose essay was halved in length without losing any important meaning."
+    },
+    {
+      "word": "vexatious",
+      "definition": "Causing annoyance, frustration, or worry.",
+      "sentence": "The vexatious delays made the project almost impossible to complete on time."
+    },
+    {
+      "word": "vicarious",
+      "definition": "Experienced through another person rather than directly.",
+      "sentence": "She gained vicarious pleasure from reading about others' adventures."
+    },
+    {
+      "word": "vindictive",
+      "definition": "Having or showing a strong desire for revenge.",
+      "sentence": "The vindictive character spent years plotting against those who had wronged him."
+    },
+    {
+      "word": "vitriolic",
+      "definition": "Filled with bitter criticism or malice.",
+      "sentence": "The vitriolic review was so harsh that many readers felt it unfair."
+    },
+    {
+      "word": "voluble",
+      "definition": "Talking fluently, readily, and at length.",
+      "sentence": "The voluble guide described every exhibit in extraordinary detail."
+    },
+    {
+      "word": "voracious",
+      "definition": "Wanting or devouring great quantities; very eager.",
+      "sentence": "She was a voracious reader who finished a new book every few days."
+    },
+    {
+      "word": "wistful",
+      "definition": "Having or showing a feeling of vague or regretful longing.",
+      "sentence": "She gave a wistful smile when she thought about her old school."
+    },
+    {
+      "word": "zealotry",
+      "definition": "Fanaticism; the character or behaviour of a zealot.",
+      "sentence": "The zealotry of his approach made it impossible to have a calm debate."
+    },
+    {
+      "word": "quandary",
+      "definition": "A state of uncertainty about what to do in a difficult situation.",
+      "sentence": "She was in a quandary about which option to choose."
+    },
+    {
+      "word": "subterfuge",
+      "definition": "Deceit used to achieve a goal; a trick or stratagem.",
+      "sentence": "He resorted to subterfuge to avoid the difficult question."
+    },
+    {
+      "word": "perfunctory",
+      "definition": "Carried out without real care, effort, or thought; routine.",
+      "sentence": "She gave only a perfunctory glance at the instructions."
+    },
+    {
+      "word": "circumvent",
+      "definition": "To find a way around an obstacle or rule.",
+      "sentence": "She tried to circumvent the problem rather than face it head-on."
+    },
+    {
+      "word": "compendium",
+      "definition": "A collection of concise information on a particular subject.",
+      "sentence": "He used a compendium of natural history facts for his project."
+    },
+    {
+      "word": "inimitable",
+      "definition": "So unusual or skilled as to be impossible to copy.",
+      "sentence": "The comedian had an inimitable style that no one could replicate."
+    },
+    {
+      "word": "parsimonious",
+      "definition": "Excessively unwilling to spend money; extremely frugal.",
+      "sentence": "The parsimonious landlord refused to fix the broken heating."
+    },
+    {
+      "word": "perspicuous",
+      "definition": "Clearly expressed and easy to understand.",
+      "sentence": "Her perspicuous explanation helped even the most confused pupils."
+    }
+  ]
+}

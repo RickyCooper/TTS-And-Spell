@@ -1,0 +1,75 @@
+@import url("https://fonts.cdnfonts.com/css/merge-one");
+@import url("https://fonts.cdnfonts.com/css/baloo");
+@import url('https://fonts.cdnfonts.com/css/sofia-sans');
+@import url('https://fonts.cdnfonts.com/css/m-plus-1-code');
+@import url('https://fonts.cdnfonts.com/css/baloo-bhaina');
+
+// (Background)
+$primary-background-color: #e5e5e5;
+
+// (Font-Color)
+$primary-font-color: #242424;
+$secondary-font-color: #8b8b8b;
+
+// (Font-Family)
+$title-font-family: "Baloo", "sans-serif";
+$body-font-family: "Merge One", sans-serif;
+$input-font-family: "Merge One", sans-serif;
+$button-font-family: "Baloo Bhaina", sans-serif;
+
+// (Font-Size)
+$xs-font-size: clamp(1rem, 0.5rem + 1vw, 1.2rem);
+$sm-font-size: clamp(1rem, 0.5rem + 1vw, 1.2rem);
+$md-font-size: clamp(1.2rem, 1rem + 1vw, 1.5rem);
+$lg-font-size: clamp(1.5rem, 1.5rem + 1.5vw, 2.5rem);
+$xl-font-size: clamp(2rem, 3rem + 2vw, 5rem);
+
+// (Green)
+$base-color-green: #33a275;
+$highlight-color-green: #7fc7aa;
+$shadow-color-green: #1a6344;
+
+// (Blue)
+$base-color-blue: #3993C0;
+$highlight-color-blue: #62BCEA;
+$shadow-color-blue: #25546B;
+
+// (Red)
+$base-color-red: #bc3232;
+$highlight-color-red: #f87575;
+$shadow-color-red: #770505;
+
+// (Brown)
+$base-color-brown: #b7864f;
+$highlight-color-brown: #edb97f;
+$shadow-color-brown: #785125;
+
+// (Magenta)
+$base-color-magenta: #b0458d;
+$highlight-color-magenta: #e484c4;
+$shadow-color-magenta: #721f57;
+
+// (Purple)
+$base-color-purple: #8E45B0;
+$highlight-color-purple: #C561F3;
+$shadow-color-purple: #623378;
+
+// (Orange)
+$base-color-orange: #d87410;
+$highlight-color-orange: #ffae5d;
+$shadow-color-orange: #8f4800;
+
+// (Grey)
+$base-color-grey: #d4d4d4;
+$highlight-color-grey: #C8C8C8;
+$shadow-color-grey: #6c6c6c;
+
+$btn-padding-x:2rem;
+$btn-padding-y: 0.4rem;
+$btn-height: 2.5rem;
+$btn-border-radius: 0.6rem;
+$btn-border-width: 2px;
+$btn-font-size: 1rem;
+$btn-text-font-size: 1.25rem;
+$btn-text-offset-y: 0.15rem;
+$btn-disabled-opacity: 0.5;

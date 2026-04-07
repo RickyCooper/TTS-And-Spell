@@ -1,0 +1,14 @@
+@use "./styles/variables" as *;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  color: $primary-font-color;
+  background-color: $primary-background-color;
+}
+
+body {
+  margin: 0;
+}

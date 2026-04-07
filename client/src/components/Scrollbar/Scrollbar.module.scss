@@ -1,0 +1,47 @@
+@use "sass:color";
+@use "../../styles/variables" as *;
+
+.scrollbar {
+  width: 20px;
+  height: 52vh;
+  background-color: #ffffff;
+  border-radius: 50px;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: -3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden; 
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .scrollbar {
+    opacity: 0;
+  }
+}
+
+.scrollbar_thumb {
+  width: 100%;
+  background-color: $base-color-grey;
+  border: 1.5px solid $shadow-color-grey;
+  border-radius: 50px;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 2px $highlight-color-grey; 
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: color.adjust($base-color-grey, $lightness: 5%);
+  }
+
+  &:active {
+    background-color: color.adjust($base-color-grey, $lightness: -5%);
+  }
+}
