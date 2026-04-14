@@ -1,8 +1,8 @@
 @use "../../styles/variables" as *;
 
 .audio-button {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 4.3rem;
+  height: 4.3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +37,7 @@
   }
 
   .audio-button__icon {
-    width: 2.3rem;
+    width: 2.7rem;
     object-fit: contain;
   }
 
@@ -66,8 +66,8 @@
     }
 
     .audio-button__icon {
-      width: 20px;
-      height: 20px;
+      width: 2rem;
+      height: 2rem;
     }
   }
 }

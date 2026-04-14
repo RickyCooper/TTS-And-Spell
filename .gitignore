@@ -45,6 +45,7 @@ coverage/
 *.local
 .cache/
 .github/
+storage/ 
 
 # Generated audio cache
 server/audio/
