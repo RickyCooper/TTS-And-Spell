@@ -19,10 +19,10 @@ $button-font-family: "Baloo Bhaina", sans-serif;
 
 // (Font-Size)
 $xs-font-size: clamp(1rem, 0.5rem + 1vw, 1.2rem);
-$sm-font-size: clamp(1rem, 0.5rem + 1vw, 1.2rem);
+$sm-font-size: clamp(1rem, 0.5rem + 1vw, 1rem);
 $md-font-size: clamp(1.2rem, 1rem + 1vw, 1.5rem);
-$lg-font-size: clamp(1.5rem, 1.5rem + 1.5vw, 2.5rem);
-$xl-font-size: clamp(2rem, 3rem + 2vw, 5rem);
+$lg-font-size: clamp(1.8rem, 1rem + 1vw, 2rem);
+$xl-font-size: clamp(2.5rem, 2.5rem + 2.5vw, 5rem);
 
 // (Green)
 $base-color-green: #33a275;
@@ -63,6 +63,8 @@ $shadow-color-orange: #8f4800;
 $base-color-grey: #d4d4d4;
 $highlight-color-grey: #C8C8C8;
 $shadow-color-grey: #6c6c6c;
+
+// (Button)
 
 $btn-padding-x:2rem;
 $btn-padding-y: 0.4rem;
