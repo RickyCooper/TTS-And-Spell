@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import type { ReactNode } from "react";
 import type {
   GameState,
@@ -20,6 +20,10 @@ const initialState: GameState = {
   },
   currentIndex: 0,
   mode: undefined,
+  timer: {
+    total: null,
+    remaining: null,
+  },
 };
 
 export const GameProvider: React.FC<{ children: ReactNode }> = ({children}) => {
@@ -27,6 +31,7 @@ export const GameProvider: React.FC<{ children: ReactNode }> = ({children}) => {
   const [gameState, setGameState] = useState<GameState>(initialState);
   const startTimeRef = React.useRef<number | null>(null);
   const isPrefetchingRef = React.useRef<boolean>(false);
+  const timerExpiredRef = React.useRef<boolean>(false);
   
   const streakRef = React.useRef<StreakInfo>({
     currentStreak: 0,
@@ -36,20 +41,32 @@ export const GameProvider: React.FC<{ children: ReactNode }> = ({children}) => {
   const startGame = useCallback(async (mode: GameModeType) => {
     const modeDetails = GAME_MODES.find((game) => game.name === mode);
     const modeConfig = modeDetails?.config;
-    
-    setGameState((prev) => ({ ...prev, status: "loading", mode: modeDetails }));
+    const timeLimit = modeConfig?.timeLimit ?? null;
+
+    streakRef.current = { currentStreak: 0, highestStreak: 0 };
+    timerExpiredRef.current = false;
+
+    setGameState({
+      ...initialState,
+      status: "loading",
+      mode: modeDetails,
+      timer: {
+        total: timeLimit,
+        remaining: timeLimit,
+      },
+    });
   
     try {
       const words = await fetchWords("medium", modeConfig?.questionLimit);
+      startTimeRef.current = Date.now();
+
       setGameState((prev) => ({
         ...prev,
         status: "playing",
         words,
-        modeConfig,
       }));
-      startTimeRef.current = Date.now();
     } catch {
-      setGameState((prev) => ({ ...prev, status: "idle" }));
+      setGameState(initialState);
     }
   }, []);
 
@@ -113,7 +130,9 @@ export const GameProvider: React.FC<{ children: ReactNode }> = ({children}) => {
     }
   };
 
-  const endGame = (earlyEnd?: boolean) => {
+  const endGame = useCallback((earlyEnd?: boolean) => {
+    timerExpiredRef.current = true;
+
     setGameState((prev) => {
       const words = earlyEnd ? prev.words.slice(0, prev.currentIndex) : prev.words;
       return {
@@ -128,10 +147,44 @@ export const GameProvider: React.FC<{ children: ReactNode }> = ({children}) => {
         status: "review",
       };
     });
-  };
+  }, []);
+
+  useEffect(() => {
+    const timeLimit = gameState.mode?.config?.timeLimit;
+
+    if (gameState.status !== "playing" || !timeLimit || !startTimeRef.current) {
+      return;
+    }
+
+    const updateTimer = () => {
+      if (!startTimeRef.current) return;
+
+      const elapsedSeconds = (Date.now() - startTimeRef.current) / 1000;
+      const remaining = Math.max(timeLimit - elapsedSeconds, 0);
+
+      setGameState((prev) => ({
+        ...prev,
+        timer: {
+          total: timeLimit,
+          remaining,
+        },
+      }));
+
+      if (remaining <= 0 && !timerExpiredRef.current) {
+        endGame(true);
+      }
+    };
+
+    updateTimer();
+    const intervalId = window.setInterval(updateTimer, 100);
+
+    return () => window.clearInterval(intervalId);
+  }, [gameState.status, gameState.mode, endGame]);
 
   const resetGame = useCallback(() => {
     streakRef.current = { currentStreak: 0, highestStreak: 0 };
+    startTimeRef.current = null;
+    timerExpiredRef.current = false;
     setGameState(initialState);
   }, []);
 

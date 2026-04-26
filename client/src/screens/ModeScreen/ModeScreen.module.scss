@@ -12,8 +12,8 @@
     display: grid;
     grid-template-columns: clamp(20rem, 15.813rem + 19.14vw, 25rem);
     grid-template-rows: repeat(5, 8rem);
-    row-gap: clamp(1rem, 5vw, 1.2rem);
-    column-gap: clamp(1rem, 1vw, 1.2rem);
+    row-gap: clamp(0.5rem, 5vw, 0.7rem);
+    column-gap: clamp(0.5rem, 1vw, 0.7rem);
 
     :first-child {
       grid-column: 1 / 2;

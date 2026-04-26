@@ -1,7 +1,7 @@
 import AudioButton from "../../components/AudioButton/AudioButton";
 import styles from "./GameScreen.module.scss";
 import { useGameController } from "./useGameController";
-import ProgressBar from "../../components/ProgressBar/ProgressBar";
+import IndicatorBar from "../../components/IndicatorBar/IndicatorBar";
 import GameInput from "../../components/GameInput/GameInput";
 import Button from "../../components/Button/Button";
 import { useGameContext } from "../../context/GameContext/GameContext";
@@ -20,12 +20,21 @@ const GameScreen = () => {
   } = useGameController();
 
   const questionLimit = gameState.mode?.config?.questionLimit;
+  const timeLimit = gameState.timer.total;
 
-  const displayProgressBar = (
-      questionLimit && (
-        <ProgressBar completed={gameState.currentIndex} total={questionLimit} />
-      )
-  )
+  const displayProgressBar = questionLimit ? (
+    <IndicatorBar
+      value={gameState.currentIndex}
+      total={questionLimit}
+      variant="progress"
+    />
+  ) : timeLimit && gameState.timer.remaining !== null ? (
+    <IndicatorBar
+      value={gameState.timer.remaining}
+      total={timeLimit}
+      variant="timer"
+    />
+  ) : null;
 
   return (
     <div className={styles["game-screen"]}>
