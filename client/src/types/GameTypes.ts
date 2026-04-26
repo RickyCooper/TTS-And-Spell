@@ -33,11 +33,15 @@ export interface GameState {
   mode?: GameModeInfo;
   words: Word[];
   currentIndex: number;
+  timer: {
+    total: number | null;
+    remaining: number | null;
+  };
   stats: {
     time: { minutes: number; seconds: number };
     accuracy: number;
     highestStreak: number;
-  }
+  };
 }
 export interface StreakInfo {
   currentStreak: number;
