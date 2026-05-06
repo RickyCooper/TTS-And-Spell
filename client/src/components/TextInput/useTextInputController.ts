@@ -1,7 +1,7 @@
 import { useState } from "react";
 import type { ChangeEvent } from "react";
 
-export const useGameInputController = (
+export const useTextInputController = (
   initialValue: string = "",
   onChange?: (value: string) => void,
 ) => {

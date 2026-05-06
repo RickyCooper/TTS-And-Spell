@@ -63,7 +63,8 @@
 }
 
 .button--tertiary {
-  font-family: $button-font-family;
+  font-family: $body-font-family;
+  font-size: $btn-font-size;
   box-shadow: none;
   background: none;
   border: none;
