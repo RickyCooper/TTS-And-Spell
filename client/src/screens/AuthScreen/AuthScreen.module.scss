@@ -1,0 +1,44 @@
+@use "../../styles/variables" as *;
+
+.auth-screen {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.auth-screen__title {
+  font-family: $title-font-family;
+  font-size: $lg-font-size;
+  color: $secondary-font-color;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+.auth-screen__form {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: 1fr;
+}
+
+.auth-screen__row {
+  display: grid;
+  grid-template-columns: 15rem 15rem;
+  gap: 1.2rem;
+}
+
+.auth-screen__error {
+  font-family: $body-font-family;
+  font-size: $sm-font-size;
+  color: $base-color-red;
+  margin: 0;
+  text-align: center;
+}
+
+.auth-screen__actions {
+  border-top: 1px solid $secondary-font-color;
+  display: grid;
+  padding-top: 1.2rem;
+  width: 20rem;
+}

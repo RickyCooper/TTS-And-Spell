@@ -37,7 +37,7 @@ export const GAME_MODES: GameModeInfo[] = [
     title: "Countdown",
     desc: "race against the clock.",
     config: {
-      timeLimit: 60,
+      timeLimit: 120,
     },
   },
 ];

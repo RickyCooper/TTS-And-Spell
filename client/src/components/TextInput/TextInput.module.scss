@@ -1,30 +1,31 @@
 @use "../../styles/variables" as *;
 
-.game-input {
+.text-input {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  .game-input__helper-text {
+  .text-input__helper-text {
     font-size: 1rem;
-    font-family: $title-font-family;
+    font-family: $body-font-family;
     color: $secondary-font-color;
   }
 }
 
-.game-input__textarea {
+.text-input__input {
   width: 100%;
-  max-width: 400px;
   font-size: 1.4rem;
-  padding: 0.2rem;
+  padding: 0.4rem 0;
   text-align: center;
   font-family: $input-font-family;
   font-optical-sizing: auto;
   font-weight: lighter;
   line-height: 1;
   border: 0.1rem solid $shadow-color-grey;
-  border-radius: 0.8rem;
-  box-shadow: 0 0 0 0.2rem $highlight-color-grey;
+  border-radius: 0.5rem;
+  box-shadow: 
+    0 0 0 0.12rem #fff,
+    0 0 0 0.24rem $highlight-color-grey;
   outline: none;
   transition:
     border-color 0.2s,
@@ -33,13 +34,50 @@
     box-shadow 0.2s;
 }
 
-.game-input__textarea--correct {
+.text-input__input--form {
+  font-size: 1rem;
+  text-align: left;
+  padding: 0.8rem;
+
+  &::placeholder {
+    color: rgba($secondary-font-color, 0.4);
+  }
+}
+
+.text-input__textarea {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.8rem;
+  text-align: left;
+  font-family: $input-font-family;
+  font-optical-sizing: auto;
+  font-weight: lighter;
+  line-height: 1.5;
+  border: 0.1rem solid $shadow-color-grey;
+  border-radius: 0.5rem;
+  box-shadow:
+    0 0 0 0.12rem #fff,
+    0 0 0 0.24rem $highlight-color-grey;
+  outline: none;
+  resize: none;
+  transition:
+    border-color 0.2s,
+    color 0.2s,
+    background 0.2s,
+    box-shadow 0.2s;
+
+  &::placeholder {
+    color: rgba($secondary-font-color, 0.4);
+  }
+}
+
+.text-input__input--valid {
   border-color: $base-color-green;
   box-shadow: 0 0 0 0.2rem $highlight-color-green;
   color: $base-color-green;
 }
 
-.game-input__textarea--incorrect {
+.text-input__input--invalid {
   border-color: $base-color-red;
   box-shadow: 0 0 0 0.2rem $highlight-color-red;
   color: $base-color-red;
@@ -69,6 +107,6 @@
   }
 }
 
-.game-input__textarea--shake {
+.text-input__input--shake {
   animation: shake 0.4s;
 }

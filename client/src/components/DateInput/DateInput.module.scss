@@ -1,0 +1,61 @@
+@use "../../styles/variables" as *;
+
+.date-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .date-input__helper-text {
+    font-size: 1rem;
+    font-family: $title-font-family;
+    color: $secondary-font-color;
+  }
+}
+
+.date-input__wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.date-input__input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.8rem;
+  text-align: left;
+  font-family: $input-font-family;
+  font-optical-sizing: auto;
+  font-weight: lighter;
+  line-height: 1;
+  border: 0.1rem solid $shadow-color-grey;
+  border-radius: 0.5rem;
+  box-shadow:
+    0 0 0 0.12rem #fff,
+    0 0 0 0.24rem $highlight-color-grey;
+  outline: none;
+  color: transparent;
+  caret-color: $primary-font-color;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.date-input__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-family: $input-font-family;
+  font-weight: lighter;
+  pointer-events: none;
+  line-height: 1;
+}
+
+.date-input__char--filled {
+  color: $primary-font-color;
+}
+
+.date-input__char--empty {
+  color: rgba($secondary-font-color, 0.35);
+}

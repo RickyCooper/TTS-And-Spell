@@ -2,7 +2,7 @@ import AudioButton from "../../components/AudioButton/AudioButton";
 import styles from "./GameScreen.module.scss";
 import { useGameController } from "./useGameController";
 import IndicatorBar from "../../components/IndicatorBar/IndicatorBar";
-import GameInput from "../../components/GameInput/GameInput";
+import TextInput from "../../components/TextInput/TextInput";
 import Button from "../../components/Button/Button";
 import { useGameContext } from "../../context/GameContext/GameContext";
 
@@ -43,7 +43,8 @@ const GameScreen = () => {
           audio={gameState.words[gameState.currentIndex]?.audio}
           onAfterClick={focusInput}
         />     
-        <GameInput
+        <TextInput
+          key={gameState.currentIndex}
           ref={inputRef}
           helperText="Press enter to submit your answer."
           autoFocus={true}
@@ -54,7 +55,7 @@ const GameScreen = () => {
       </div>
       <div className={styles["game-screen_footer"]}>
         {displayProgressBar}
-        <Button text="end lesson early." variant="tertiary" onClick={handleEndGame} />
+        <Button text="end lesson." variant="tertiary" onClick={handleEndGame} />
       </div>
     </div>
   );
