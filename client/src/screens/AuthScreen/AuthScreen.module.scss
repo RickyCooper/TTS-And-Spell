@@ -4,29 +4,28 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   justify-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
   width: 100%;
 }
 
 .auth-screen__title {
   font-family: $title-font-family;
-  font-size: 1.6rem;
-  color: #6B6B6B;
-  justify-self: center;
+  font-size: $lg-font-size;
+  color: $secondary-font-color;
   margin: 0;
   letter-spacing: 0.05em;
 }
 
 .auth-screen__form {
   display: grid;
-  gap: 1.5rem;
+  gap: 1.2rem;
   grid-template-columns: 1fr;
 }
 
-.auth-screen__col {
+.auth-screen__row {
   display: grid;
-  grid-template-columns: 15rem;
-  gap: 1.5rem;
+  grid-template-columns: 15rem 15rem;
+  gap: 1.2rem;
 }
 
 .auth-screen__error {
@@ -38,19 +37,8 @@
 }
 
 .auth-screen__actions {
+  border-top: 1px solid $secondary-font-color;
   display: grid;
+  padding-top: 1.2rem;
   width: 20rem;
-}
-
-.auth-screen__textarea-container {
-  display: grid;
-  grid-template-columns: 31.5rem;
-  gap: 1rem;
-
-  p {
-    font-family: $body-font-family;
-    font-size: $sm-font-size;
-    color: #6B6B6B;
-    margin: 0;
-  }
 }

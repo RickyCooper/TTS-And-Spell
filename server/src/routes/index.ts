@@ -1,10 +1,10 @@
 import { Router } from "express";
+import { WordAudioController } from "../controllers/WordAudioController";
 import authRoutes from "./AuthRoutes";
-import gameRoutes from "./GameRoutes";
 
 const router = Router();
 
 router.use("/auth", authRoutes);
-router.use("/game", gameRoutes);
+router.post("/words", WordAudioController);
 
 export default router;

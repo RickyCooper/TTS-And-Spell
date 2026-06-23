@@ -1,8 +1,3 @@
 node_modules
 # Keep environment variables out of version control
 .env
-
-/src/generated/prisma
-
-# Runtime audio cache (dynamically generated, not for version control)
-/audio/

@@ -29,25 +29,30 @@ const GameContent = () => {
   }
 };
 
-const AppRoutes = () => {
-  const { user, isLoading } = useAuthContext();
+const AppContent = () => {
+  const { isAuthenticated, isLoading } = useAuthContext();
 
-  if (isLoading) return <LoadingScreen />;
+  if (isLoading) {
+    return <LoadingScreen />;
+  }
 
-  const isDemo = !user || user.approvalStatus === "pending";
+  if (!isAuthenticated) {
+    return <AuthScreen />;
+  }
 
   return (
+    <GameProvider>
+      <GameContent />
+    </GameProvider>
+  );
+};
+
+const App = () => {
+  return (
     <div className={styles.app}>
-      <GameProvider>
-        <Routes>
-          <Route path="/" element={<Navigate to="/login" replace />} />
-          <Route path="/login" element={<AuthScreen initialView="login" />} />
-          <Route path="/signup" element={<AuthScreen initialView="signup" />} />
-          <Route path="/modes" element={<ModeScreen isDemo={isDemo} />} />
-          <Route path="/game" element={<GameContent />} />
-          <Route path="*" element={<Navigate to="/login" replace />} />
-        </Routes>
-      </GameProvider>
+      <AuthProvider>
+        <AppContent />
+      </AuthProvider>
     </div>
   );
 };
