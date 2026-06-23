@@ -3,3 +3,6 @@ node_modules
 .env
 
 /src/generated/prisma
+
+# Runtime audio cache (dynamically generated, not for version control)
+/audio/

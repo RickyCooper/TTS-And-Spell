@@ -3,6 +3,7 @@ export interface User {
   username: string;
   email: string;
   dateOfBirth: string;
+  approvalStatus: 'pending' | 'approved';
 }
 
 export interface LoginInput {

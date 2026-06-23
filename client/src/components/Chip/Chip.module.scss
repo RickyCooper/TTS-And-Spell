@@ -18,8 +18,7 @@
     inherits: false;
 }
 
-.stat-chip {
-    height: 52px;
+.chip {
     display: flex;
     align-items: center;
     border-radius: 50px;
@@ -27,10 +26,9 @@
     background: white;
     border: none;
     position: relative;
-    padding-left: 52px;
 }
 
-.stat-chip_icon-container {
+.chip_icon-container {
     width: 52px;
     height: 52px;
     border-radius: 50%;
@@ -46,40 +44,71 @@
     transform: translateY(-50%);
 }
 
-.stat-chip_icon {
+.chip_icon {
     width: 2.8rem;
     height: 2.8rem;
     position: relative;
 }
 
-.stat-chip_data-container {
+.chip_data-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 1;
-    .stat-chip_data {
+
+    .chip_data {
         font-family: $button-font-family;
         font-size: $md-font-size;
         margin: 0;
         color: $primary-font-color;
+    }
+}
+
+.chip--stat {
+    height: 52px;
+    padding-left: 52px;
+
+    .chip_data {
         position: relative;
         left: -0.5rem;
         top: 0.2rem;
     }
 }
 
-.stat-chip--time {
-    border-color: $base-color-blue;
-    box-shadow: 
-    inset 0 0 0 0.3rem $base-color-blue,
-    0 0 0 0.1rem #fff, 
-    0 0 0 0.3rem $highlight-color-grey;
+.chip--notification {
+    min-height: 2.5rem;
+    padding: 0.3rem 1rem 0.4rem calc(2.5rem + 0.2rem);
+    min-width: fit-content;
 
-    .stat-chip_icon-container {
+    .chip_icon-container {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .chip_icon {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    .chip_data {
+        font-size: $sm-font-size;
+        font-family: $body-font-family;
+    }
+}
+
+.chip--time {
+    border-color: $base-color-blue;
+    box-shadow:
+        inset 0 0 0 0.3rem $base-color-blue,
+        0 0 0 0.1rem #fff,
+        0 0 0 0.3rem $highlight-color-grey;
+
+    .chip_icon-container {
         background-color: $base-color-blue;
         border-color: $base-color-blue;
     }
-    .stat-chip_data {
+
+    .chip_data {
         color: $base-color-blue;
         animation: counter 1s ease-out forwards;
         counter-reset: num-min var(--num-min) num-sec var(--num-sec);
@@ -90,21 +119,23 @@
     }
 }
 
-.stat-chip--streak {
+.chip--streak {
     border-color: $base-color-orange;
-    box-shadow: 
-    inset 0 0 0 0.3rem $base-color-orange,
-    0 0 0 0.1rem #fff, 
-    0 0 0 0.3rem $highlight-color-grey;
+    box-shadow:
+        inset 0 0 0 0.3rem $base-color-orange,
+        0 0 0 0.1rem #fff,
+        0 0 0 0.3rem $highlight-color-grey;
 
-    .stat-chip_icon-container {
+    .chip_icon-container {
         background-color: $base-color-orange;
         border-color: $base-color-orange;
     }
-    .stat-chip_icon {
+
+    .chip_icon {
         left: 0.1rem;
     }
-    .stat-chip_data {
+
+    .chip_data {
         color: $base-color-orange;
         animation: counter 1s ease-out forwards;
         counter-reset: num var(--num);
@@ -115,18 +146,19 @@
     }
 }
 
-.stat-chip--accuracy {
+.chip--accuracy {
     border-color: $base-color-green;
-    box-shadow: 
-    inset 0 0 0 0.3rem $base-color-green,
-    0 0 0 0.1rem #fff, 
-    0 0 0 0.3rem $highlight-color-grey;
+    box-shadow:
+        inset 0 0 0 0.3rem $base-color-green,
+        0 0 0 0.1rem #fff,
+        0 0 0 0.3rem $highlight-color-grey;
 
-    .stat-chip_icon-container {
+    .chip_icon-container {
         background-color: $base-color-green;
         border-color: $base-color-green;
     }
-    .stat-chip_data {
+
+    .chip_data {
         color: $base-color-green;
         animation: counter 1s ease-out forwards;
         counter-reset: num var(--num);
@@ -134,6 +166,35 @@
         &::after {
             content: counter(num) "%";
         }
+    }
+}
+
+.chip--error {
+    border-color: $base-color-red;
+    box-shadow:
+        inset 0 0 0 0.2rem $base-color-red,
+        0 0 0 0.1rem #fff,
+        0 0 0 0.3rem $highlight-color-grey;
+
+    .chip_icon-container {
+        background-color: $base-color-red;
+        border-color: $base-color-red;
+    }
+    .chip_data {
+        color: $base-color-red;
+    }
+}
+
+.chip--warning {
+    border-color: $base-color-orange;
+    box-shadow:
+        inset 0 0 0 0.2rem $base-color-orange,
+        0 0 0 0.1rem #fff,
+        0 0 0 0.3rem $highlight-color-grey;
+
+    .chip_icon-container {
+        background-color: $base-color-orange;
+        border-color: $base-color-orange;
     }
 }
 
@@ -146,9 +207,7 @@
 }
 
 @media (max-width: 500px) {
-    .stat-chip_data-container {
-        .stat-chip_data {
-            top: 0.15rem;        
-        }
+    .chip--stat .chip_data {
+        top: 0.15rem;
     }
 }

@@ -8,6 +8,14 @@
   width: 100%;
   padding: 2rem 2rem;
 
+  .mode-screen__logout {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
   .mode-screen__grid {
     display: grid;
     grid-template-columns: clamp(20rem, 15.813rem + 19.14vw, 25rem);

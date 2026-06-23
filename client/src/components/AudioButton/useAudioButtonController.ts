@@ -40,7 +40,7 @@ export const useAudioButtonController = (
     }
   }, [audioSrc]);
 
-  useEffect(() => { // Autoplay logic
+  useEffect(() => { 
     const delay = Math.max(0, autoplayDelayMs);
 
     const timeoutId = setTimeout(() => {

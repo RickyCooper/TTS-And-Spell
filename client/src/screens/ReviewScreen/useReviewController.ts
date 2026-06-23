@@ -1,10 +1,12 @@
 import { useGameContext } from "../../context/GameContext/GameContext";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import victorySound from "../../assets/audio/victory.mp3";
 
 export const useReviewController = () => {
 
   const { gameState, startGame, resetGame } = useGameContext();
+  const navigate = useNavigate();
 
   console.log(gameState.stats)
 
@@ -32,12 +34,13 @@ export const useReviewController = () => {
 
   const handleExit = () => {
     resetGame();
+    navigate("/modes");
   };
 
-  const handleReplay = () => {
-    resetGame();
-    startGame(gameState.mode!.name);
-  }
+  const handleReplay = async () => {
+    await startGame(gameState.mode!.name);
+    navigate("/game");
+  };
 
   return {
     results: results,
