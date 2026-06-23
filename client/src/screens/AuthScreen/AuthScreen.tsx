@@ -3,24 +3,28 @@ import TextInput from "../../components/TextInput/TextInput";
 import DateInput from "../../components/DateInput/DateInput";
 import Button from "../../components/Button/Button";
 import { useAuthController } from "./useAuthController";
+import Chip from "../../components/Chip/Chip";
+import alertIcon from "../../assets/svg/alert.svg";
+import { useNavigate } from "react-router-dom";
 
-const AuthScreen = () => {
+type AuthView = "login" | "signup";
+
+const AuthScreen = ({ initialView = "login" }: { initialView?: AuthView }) => {
+  const navigate = useNavigate();
   const {
-    view,
-    switchView,
     handleLoginFieldChange,
     handleSignupFieldChange,
     handleLogin,
     handleSignup,
     error,
     isLoading,
-  } = useAuthController();
+  } = useAuthController(initialView);
 
-  if (view === "login") {
+  if (initialView === "login") {
     return (
       <div className={styles["auth-screen"]}>
-        <h1 className={styles["auth-screen__title"]}>LOGIN</h1>
         <div className={styles["auth-screen__form"]}>
+          <h1 className={styles["auth-screen__title"]}>LOG IN</h1>
           <TextInput
             placeholder="Username or Email"
             variant="form"
@@ -36,9 +40,9 @@ const AuthScreen = () => {
             onSubmit={handleLogin}
           />
         </div>
-        {error && <p className={styles["auth-screen__error"]}>{error}</p>}
+        {error && <Chip icon={alertIcon} variant="error" msg={error}/>}
           <Button
-            text="LOGIN"
+            text="LOG IN"
             variant="primary"
             color="green"
             onClick={handleLogin}
@@ -46,20 +50,25 @@ const AuthScreen = () => {
           />
         <div className={styles["auth-screen__actions"]}>
           <Button
-            text="Don't have an account? sign up"
+            text="Don't have an account? Sign Up"
             variant="tertiary"
-            onClick={() => switchView("signup")}
+            onClick={() => navigate("/signup")}
           />
         </div>
+        <Button
+          text="Try the demo"
+          variant="tertiary"
+          onClick={() => navigate("/modes")}
+        />
       </div>
     );
   }
 
   return (
     <div className={`${styles["auth-screen"]} ${styles["auth-screen--wide"]}`}>
-      <h1 className={styles["auth-screen__title"]}>SIGN UP</h1>
       <div className={styles["auth-screen__form"]}>
-        <div className={styles["auth-screen__row"]}>
+        <h1 className={styles["auth-screen__title"]}>SIGN UP</h1>
+        <div className={styles["auth-screen__col"]}>
           <TextInput
             placeholder="Email"
             variant="form"
@@ -69,8 +78,6 @@ const AuthScreen = () => {
           <DateInput
             onChange={(v) => handleSignupFieldChange("dateOfBirth", v)}
           />
-        </div>
-        <div className={styles["auth-screen__row"]}>
           <TextInput
             placeholder="Username"
             variant="form"
@@ -86,15 +93,8 @@ const AuthScreen = () => {
             onSubmit={handleSignup}
           />
         </div>
-        <TextInput
-          multiline
-          rows={4}
-          variant="form"
-          autoFocus={false}
-          placeholder="TTS & Spell is currently in closed beta. Share why you're interested in early access and we'll review your request."
-        />
       </div>
-      {error && <p className={styles["auth-screen__error"]}>{error}</p>}
+      {error && <Chip icon={alertIcon} variant="error" msg={error}/>}
         <Button
           text="SIGN UP"
           variant="primary"
@@ -106,9 +106,14 @@ const AuthScreen = () => {
         <Button
           text="already have an account? log in"
           variant="tertiary"
-          onClick={() => switchView("login")}
+          onClick={() => navigate("/login")}
         />
       </div>
+        <Button
+          text="Try the demo"
+          variant="tertiary"
+          onClick={() => navigate("/modes")}
+        />
     </div>
   );
 };

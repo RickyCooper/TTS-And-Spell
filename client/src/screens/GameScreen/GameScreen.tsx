@@ -2,7 +2,7 @@ import AudioButton from "../../components/AudioButton/AudioButton";
 import styles from "./GameScreen.module.scss";
 import { useGameController } from "./useGameController";
 import IndicatorBar from "../../components/IndicatorBar/IndicatorBar";
-import GameInput from "../../components/GameInput/GameInput";
+import TextInput from "../../components/TextInput/TextInput";
 import Button from "../../components/Button/Button";
 import { useGameContext } from "../../context/GameContext/GameContext";
 
@@ -42,7 +42,7 @@ const GameScreen = () => {
         <AudioButton
           audio={gameState.words[gameState.currentIndex]?.audio}
           onAfterClick={focusInput}
-        />     
+        />
         <TextInput
           key={gameState.currentIndex}
           ref={inputRef}

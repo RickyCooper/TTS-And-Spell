@@ -3,7 +3,7 @@ import type { GameState, GameModeType } from "../../types/GameTypes";
 
 export interface GameContextType {
   gameState: GameState;
-  startGame: (mode: GameModeType) => Promise<void>;
+  startGame: (mode: GameModeType, isDemo?: boolean) => Promise<void>;
   submitAnswer: (input: string, skipped?: boolean) => string;
   resetGame: () => void;
   endGame: (earlyEnd?: boolean) => void;

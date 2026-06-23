@@ -12,7 +12,7 @@ const IndicatorBar: React.FC<ProgressBarProps> = ({ value, total, variant = "pro
   const safeTotal = total <= 0 ? 1 : total;
   const percentage = Math.min(100, Math.max(0, (value / safeTotal) * 100));
   const scale = percentage / 100;
-  const isUrgentTimer = variant === "timer" && value <= 10 && value > 0;
+  const isUrgentTimer = variant === "timer" && value <= 100 && value > 0;
 
   const containerStyles = [
     styles["indicator-bar_container"],
