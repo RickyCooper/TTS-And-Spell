@@ -18,7 +18,7 @@ export const login = async (input: LoginInput): Promise<LoginResponse> => {
   const data = await response.json();
 
   if (!response.ok) {
-    throw new Error(data.error || "Login failed");
+    throw new Error(data.message || "Unknown error during login");
   }
 
   return data;
@@ -34,7 +34,7 @@ export const register = async (input: RegisterInput): Promise<User> => {
   const data = await response.json();
 
   if (!response.ok) {
-    throw new Error(data.error || "Registration failed");
+    throw new Error(data.message || "Unknown error during registration");
   }
 
   return data;

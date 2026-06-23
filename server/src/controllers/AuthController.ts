@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import * as authService from "../services/AuthService";
+import * as authService from "../services/authService";
 import { AuthRequest } from "../middleware/authenticate";
 
 const REFRESH_COOKIE = "refreshToken";
@@ -33,7 +33,11 @@ export const login = async (req: Request, res: Response): Promise<void> => {
     res.status(200).json({ accessToken, user });
   } catch (err: any) {
     if (err.message === "INVALID_CREDENTIALS") {
-      res.status(401).json({ message: "Invalid email or password" });
+      const isEmail = req.body.identifier?.includes("@");
+      const message = isEmail
+        ? "Email or password is incorrect"
+        : "Username or password is incorrect";
+      res.status(401).json({ message });
     } else {
       throw err;
     }

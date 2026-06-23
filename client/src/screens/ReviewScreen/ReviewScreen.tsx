@@ -5,7 +5,7 @@ import Button from "../../components/Button/Button";
 import Scrollbar from "../../components/Scrollbar/Scrollbar";
 import { useRef } from "react";
 import useGridObserver from "../../hooks/useGridObserver";
-import StatChip from "../../components/StatChip/StatChip";
+import Chip from "../../components/Chip/Chip";
 import accuracyIcon from "../../assets/svg/accuracy.svg";
 import streakIcon from "../../assets/svg/streak.svg";
 import timeIcon from "../../assets/svg/time.svg";
@@ -20,9 +20,9 @@ const ReviewScreen = () => {
 
   const statChips = (
     <div className={styles["review-screen_stats-container"]}>
-      <StatChip icon={accuracyIcon} data={stats.accuracy} stat="accuracy"/>
-      <StatChip icon={streakIcon} data={stats.highestStreak} stat="streak"/>
-      <StatChip icon={timeIcon} data={[stats.time.minutes, stats.time.seconds]} stat="time"/>
+      <Chip icon={accuracyIcon} data={stats.accuracy} variant="accuracy"/>
+      <Chip icon={streakIcon} data={stats.highestStreak} variant="streak"/>
+      <Chip icon={timeIcon} data={[stats.time.minutes, stats.time.seconds]} variant="time"/>
     </div>
   )
 

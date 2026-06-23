@@ -1,4 +1,5 @@
 import { useState, useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../context/AuthContext/AuthContext";
 import type { LoginInput, RegisterInput } from "../../types/AuthTypes";
 
@@ -17,10 +18,10 @@ const resolveError = (err: unknown): string => {
   return "Something went wrong. Please try again.";
 };
 
-export const useAuthController = () => {
+export const useAuthController = (_initialView?: AuthView) => {
   const { login, signup, isLoading } = useAuthContext();
+  const navigate = useNavigate();
 
-  const [view, setView] = useState<AuthView>("login");
   const [error, setError] = useState<string | null>(null);
 
   const [loginFields, setLoginFields] = useState<LoginInput>({
@@ -59,6 +60,7 @@ export const useAuthController = () => {
 
     try {
       await login(loginFields);
+      navigate("/modes");
     } catch (err) {
       setError(resolveError(err));
     }
@@ -73,19 +75,13 @@ export const useAuthController = () => {
 
     try {
       await signup(signupFields);
+      navigate("/modes");
     } catch (err) {
       setError(resolveError(err));
     }
   }, [signup, signupFields]);
 
-  const switchView = useCallback((v: AuthView) => {
-    setView(v);
-    setError(null);
-  }, []);
-
   return {
-    view,
-    switchView,
     loginFields,
     signupFields,
     handleLoginFieldChange,

@@ -42,7 +42,7 @@ const GameScreen = () => {
         <AudioButton
           audio={gameState.words[gameState.currentIndex]?.audio}
           onAfterClick={focusInput}
-        />     
+        />
         <TextInput
           key={gameState.currentIndex}
           ref={inputRef}

@@ -6,7 +6,7 @@ import type {
   StreakInfo,
 } from "../../types/GameTypes";
 import { GameContext } from "./GameContext";
-import { fetchWords } from "../../services/WordService";
+import { fetchWordAudio, fetchWordAudioDemo } from "../../services/WordService";
 import { GAME_MODES } from "../../constants/GameModes";
 import { calculateAccuracy, calculateStreak, calculateTime, checkAnswer } from "../../utils";
 
@@ -38,7 +38,7 @@ export const GameProvider: React.FC<{ children: ReactNode }> = ({children}) => {
     highestStreak: 0,
   });
 
-  const startGame = useCallback(async (mode: GameModeType) => {
+  const startGame = useCallback(async (mode: GameModeType, isDemo?: boolean) => {
     const modeDetails = GAME_MODES.find((game) => game.name === mode);
     const modeConfig = modeDetails?.config;
     const timeLimit = modeConfig?.timeLimit ?? null;
@@ -57,7 +57,9 @@ export const GameProvider: React.FC<{ children: ReactNode }> = ({children}) => {
     });
   
     try {
-      const words = await fetchWords("medium", modeConfig?.questionLimit);
+      const words = isDemo
+        ? await fetchWordAudioDemo(modeConfig?.questionLimit)
+        : await fetchWordAudio("medium", modeConfig?.questionLimit);
       startTimeRef.current = Date.now();
 
       setGameState((prev) => ({
@@ -70,11 +72,11 @@ export const GameProvider: React.FC<{ children: ReactNode }> = ({children}) => {
     }
   }, []);
 
-  const prefetchWords = async (difficulty: string, voiceId?: string) => {
+  const prefetchWordAudio = async (difficulty: string, voiceId?: string) => {
     if (isPrefetchingRef.current) return;
     isPrefetchingRef.current = true;
     try {
-      const newWords = await fetchWords(difficulty, 5, voiceId);
+      const newWords = await fetchWordAudio(difficulty, 5, voiceId);
       setGameState((prev) => ({ ...prev, words: [...prev.words, ...newWords] }));
     } catch (error) {
       console.error("Failed to prefetch words", error);
@@ -125,7 +127,7 @@ export const GameProvider: React.FC<{ children: ReactNode }> = ({children}) => {
       const questionLimit = gameState.mode?.config?.questionLimit;
       const remaining = gameState.words.length - index;
       if (!questionLimit && remaining <= 5) {
-        prefetchWords("medium");
+        prefetchWordAudio("medium");
       }
     }
   };

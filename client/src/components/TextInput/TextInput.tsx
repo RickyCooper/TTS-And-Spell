@@ -43,8 +43,8 @@ const TextInput = forwardRef<HTMLInputElement, TextInputProps>(({
       e.preventDefault();
       if (onSubmit && value.trim()) {
         onSubmit(value);
+        setValue("");
       }
-      setValue("");
     }
   };
 

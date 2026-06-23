@@ -1,3 +1,4 @@
+import { Routes, Route, Navigate } from "react-router-dom";
 import styles from "./App.module.scss";
 import GameScreen from "./screens/GameScreen/GameScreen";
 import ModeScreen from "./screens/ModeScreen/ModeScreen";
@@ -12,6 +13,10 @@ import { useAuthContext } from "./context/AuthContext/AuthContext";
 const GameContent = () => {
   const { gameState } = useGameContext();
 
+  if (gameState.status === "idle") {
+    return <Navigate to="/modes" replace />;
+  }
+
   switch (gameState.status) {
     case "playing":
       return <GameScreen />;
@@ -19,37 +24,39 @@ const GameContent = () => {
       return <ReviewScreen />;
     case "loading":
       return <LoadingScreen />;
-    case "idle":
     default:
-      return <ModeScreen />;
+      return <Navigate to="/modes" replace />;
   }
 };
 
-const AppContent = () => {
-  const { isAuthenticated, isLoading } = useAuthContext();
+const AppRoutes = () => {
+  const { user, isLoading } = useAuthContext();
 
-  if (isLoading) {
-    return <LoadingScreen />;
-  }
+  if (isLoading) return <LoadingScreen />;
 
-  if (!isAuthenticated) {
-    return <AuthScreen />;
-  }
+  const isDemo = !user || user.approvalStatus === "pending";
 
   return (
-    <GameProvider>
-      <GameContent />
-    </GameProvider>
+    <div className={styles.app}>
+      <GameProvider>
+        <Routes>
+          <Route path="/" element={<Navigate to="/login" replace />} />
+          <Route path="/login" element={<AuthScreen initialView="login" />} />
+          <Route path="/signup" element={<AuthScreen initialView="signup" />} />
+          <Route path="/modes" element={<ModeScreen isDemo={isDemo} />} />
+          <Route path="/game" element={<GameContent />} />
+          <Route path="*" element={<Navigate to="/login" replace />} />
+        </Routes>
+      </GameProvider>
+    </div>
   );
 };
 
 const App = () => {
   return (
-    <div className={styles.app}>
-      <AuthProvider>
-        <AppContent />
-      </AuthProvider>
-    </div>
+    <AuthProvider>
+      <AppRoutes />
+    </AuthProvider>
   );
 };
 
