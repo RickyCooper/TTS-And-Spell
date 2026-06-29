@@ -1,6 +1,6 @@
 import { Router } from "express";
-import authRoutes from "./AuthRoutes";
-import gameRoutes from "./GameRoutes";
+import authRoutes from "./authRoutes";
+import gameRoutes from "./gameRoutes";
 
 const router = Router();
 

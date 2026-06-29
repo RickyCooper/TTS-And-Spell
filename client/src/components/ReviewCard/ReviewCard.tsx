@@ -17,6 +17,14 @@ const ReviewCard = ({ word, attempts, audio = "", index = 0 }: ReviewCardProps) 
   const isCorrect = attempts.some(
     (attempt) => checkAnswer(attempt, word ) 
   );
+
+  const incorrectAttemptsCount = attempts.filter((attempt) => !checkAnswer(attempt, word)).length;
+  
+  const incorrectCounter = (
+    <div className={styles["review-card_incorrect-counter"]}>
+      {incorrectAttemptsCount}
+    </div>
+  );
   
   const header = (
     <div
@@ -25,8 +33,13 @@ const ReviewCard = ({ word, attempts, audio = "", index = 0 }: ReviewCardProps) 
       ${styles["review-card--closed"]} 
     `}
     >
-      <AudioButton size="small" audio={audio} />
-      <h3>{word}</h3>
+      <div className={styles["review-card_header-left"]}>
+        <AudioButton size="small" audio={audio} />
+        <h3>{word}</h3>
+      </div>
+      <div>
+        {incorrectAttemptsCount > 0 && incorrectCounter}
+      </div>
     </div>
   );
 
