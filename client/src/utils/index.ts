@@ -10,8 +10,7 @@ export const calculateTime = (startTime: number, endTime: number) => {
     if (seconds < 10) {    
         return { minutes: minutes, seconds: Number(`0${seconds}`) };
     }
-    
-    console.log("Calculated time:", { minutes, seconds });
+
     return { minutes: minutes, seconds: seconds };
 }
 
@@ -19,9 +18,12 @@ const FIRST_TRY_SCORE = 1;
 const SECOND_TRY_SCORE = 0.5;
 const MULTIPLE_TRY_SCORE = 0.25;
 
-const getWordScore = (attempts: string[], word: string): number => {
-    if (attempts.length === 0) return 0;
-    const correctIndex = attempts.findIndex(a => checkAnswer(a, word));
+const findCorrectAttemptIndex = (attempts: string[], word: string): number => {
+    return attempts.findIndex(a => checkAnswer(a, word));
+};
+
+const calculateWordScore = (attempts: string[], word: string): number => {
+    const correctIndex = findCorrectAttemptIndex(attempts, word);
     if (correctIndex === -1) return 0;
     if (correctIndex === 0) return FIRST_TRY_SCORE;
     if (correctIndex === 1) return SECOND_TRY_SCORE;
@@ -33,7 +35,7 @@ export const calculateAccuracy = (words: { text: string; attempts?: string[] }[]
     if (totalWords === 0) return 0;
 
     const totalScore = words.reduce((sum, word) => {
-        return sum + getWordScore(word.attempts || [], word.text);
+        return sum + calculateWordScore(word.attempts || [], word.text);
     }, 0);
 
     return Math.round((totalScore / totalWords) * 100);
@@ -41,7 +43,7 @@ export const calculateAccuracy = (words: { text: string; attempts?: string[] }[]
 
 export const calculateScore = (words: { text: string; attempts?: string[] }[]) => {
     return words.filter((word) =>
-        (word.attempts || []).some((attempt) => checkAnswer(attempt, word.text))
+        findCorrectAttemptIndex(word.attempts || [], word.text) !== -1
     ).length;
 }
 
