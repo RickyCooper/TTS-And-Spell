@@ -1,16 +1,19 @@
 @use "../../styles/variables" as *;
 
 .audio-button {
+  --audio-base: #{$base-color-green};
+  --audio-highlight: #{$highlight-color-green};
+  --audio-shadow: #{$shadow-color-green};
   width: 4.3rem;
   height: 4.3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background-color: $base-color-green;
-  border: 0.2rem solid $shadow-color-green;
-  box-shadow: 0 0 0 0.15rem $shadow-color-green,
-    0 0.3rem 0 0.15rem $shadow-color-green;
+  background-color: var(--audio-base);
+  border: 0.2rem solid var(--audio-shadow);
+  box-shadow: 0 0 0 0.15rem var(--audio-shadow),
+    0 0.3rem 0 0.15rem var(--audio-shadow);
   border-radius: 12px;
   transition:
     transform 0.1s ease,
@@ -20,8 +23,8 @@
   border: 2px solid transparent;
   
   background-image:
-  linear-gradient($base-color-green, $base-color-green),
-  linear-gradient(to top, $highlight-color-green, $base-color-green);
+  linear-gradient(var(--audio-base), var(--audio-base)),
+  linear-gradient(to top, var(--audio-highlight), var(--audio-base));
   background-origin: border-box;
   background-clip: padding-box, border-box;
 
@@ -31,8 +34,8 @@
 
   &:not(:disabled):active {
     transform: translateY(0.2rem);
-    box-shadow: 0 0 0 0.15rem $shadow-color-green,
-      0 0.1rem 0 0.15rem $shadow-color-green;
+    box-shadow: 0 0 0 0.15rem var(--audio-shadow),
+      0 0.1rem 0 0.15rem var(--audio-shadow);
 
   }
 
@@ -45,23 +48,23 @@
     width: 3rem;
     height: 3rem;
     border-radius: 10px;
-    border: 0.15rem solid $shadow-color-green;
-    box-shadow: 0 0 0 0.15rem $shadow-color-green,
-      0 0.2rem 0 0.05rem $shadow-color-green;
+    border: 0.15rem solid var(--audio-shadow);
+    box-shadow: 0 0 0 0.15rem var(--audio-shadow),
+      0 0.2rem 0 0.05rem var(--audio-shadow);
 
         
     border: 2px solid transparent;
     background-image:
-    linear-gradient($base-color-green, $base-color-green),
-    linear-gradient(to top, $highlight-color-green, $base-color-green);
+    linear-gradient(var(--audio-base), var(--audio-base)),
+    linear-gradient(to top, var(--audio-highlight), var(--audio-base));
     background-origin: border-box;
     background-clip: padding-box, border-box;
 
 
     &:not(:disabled):active {
       transform: translateY(0.2rem);
-      box-shadow: 0 0 0 0.15rem $shadow-color-green,
-        0 0.1rem 0 0.01rem $shadow-color-green;
+      box-shadow: 0 0 0 0.15rem var(--audio-shadow),
+        0 0.1rem 0 0.01rem var(--audio-shadow);
 
     }
 
@@ -69,5 +72,35 @@
       width: 2rem;
       height: 2rem;
     }
+  }
+
+  &.audio-button--blue {
+    --audio-base: #{$base-color-blue};
+    --audio-highlight: #{$highlight-color-blue};
+    --audio-shadow: #{$shadow-color-blue};
+  }
+
+  &.audio-button--red {
+    --audio-base: #{$base-color-red};
+    --audio-highlight: #{$highlight-color-red};
+    --audio-shadow: #{$shadow-color-red};
+  }
+
+  &.audio-button--brown {
+    --audio-base: #{$base-color-brown};
+    --audio-highlight: #{$highlight-color-brown};
+    --audio-shadow: #{$shadow-color-brown};
+  }
+
+  &.audio-button--purple {
+    --audio-base: #{$base-color-purple};
+    --audio-highlight: #{$highlight-color-purple};
+    --audio-shadow: #{$shadow-color-purple};
+  }
+
+  &.audio-button--orange {
+    --audio-base: #{$base-color-orange};
+    --audio-highlight: #{$highlight-color-orange};
+    --audio-shadow: #{$shadow-color-orange};
   }
 }

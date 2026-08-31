@@ -65,6 +65,8 @@
 }
 
 .chip--stat {
+    width: 100%;
+    min-width: 0;
     height: 52px;
     padding-left: 52px;
 
@@ -97,19 +99,19 @@
 }
 
 .chip--time {
-    border-color: $base-color-blue;
+    border-color: $base-color-purple;
     box-shadow:
-        inset 0 0 0 0.3rem $base-color-blue,
+        inset 0 0 0 0.3rem $base-color-purple,
         0 0 0 0.1rem #fff,
         0 0 0 0.3rem $highlight-color-grey;
 
     .chip_icon-container {
-        background-color: $base-color-blue;
-        border-color: $base-color-blue;
+        background-color: $base-color-purple;
+        border-color: $base-color-purple;
     }
 
     .chip_data {
-        color: $base-color-blue;
+        color: $base-color-purple;
         animation: counter 1s ease-out forwards;
         counter-reset: num-min var(--num-min) num-sec var(--num-sec);
 
@@ -147,6 +149,29 @@
 }
 
 .chip--accuracy {
+    border-color: $base-color-blue;
+    box-shadow:
+        inset 0 0 0 0.3rem $base-color-blue,
+        0 0 0 0.1rem #fff,
+        0 0 0 0.3rem $highlight-color-grey;
+
+    .chip_icon-container {
+        background-color: $base-color-blue;
+        border-color: $base-color-blue;
+    }
+
+    .chip_data {
+        color: $base-color-blue;
+        animation: counter 1s ease-out forwards;
+        counter-reset: num var(--num);
+
+        &::after {
+            content: counter(num) "%";
+        }
+    }
+}
+
+.chip--correct {
     border-color: $base-color-green;
     box-shadow:
         inset 0 0 0 0.3rem $base-color-green,
@@ -164,7 +189,7 @@
         counter-reset: num var(--num);
 
         &::after {
-            content: counter(num) "%";
+            content: counter(num);
         }
     }
 }

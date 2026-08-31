@@ -2,13 +2,27 @@ import React, { useState, useCallback, useEffect } from "react";
 import type { ReactNode } from "react";
 import type {
   GameState,
-  GameModeType,
+  GamemodeType,
   StreakInfo,
 } from "../../types/GameTypes";
 import { GameContext } from "./GameContext";
 import { fetchWordAudio, fetchWordAudioDemo } from "../../services/WordService";
 import { GAME_MODES } from "../../constants/GameModes";
-import { calculateAccuracy, calculateStreak, calculateTime, checkAnswer } from "../../utils";
+import {
+  calculateAccuracy,
+  calculateScore,
+  calculateStreak,
+  calculateTime,
+  checkAnswer,
+  getAttemptedWords,
+  getRemainingTime,
+  recordAttempt,
+  shouldPrefetch,
+} from "../../utils";
+
+const DEFAULT_DIFFICULTY = "medium";
+const PREFETCH_BATCH_SIZE = 5;
+const PREFETCH_THRESHOLD = 5;
 
 const initialState: GameState = {
   status: "idle",
@@ -17,6 +31,7 @@ const initialState: GameState = {
     time: { minutes: 0, seconds: 0 },
     accuracy: 0,
     highestStreak: 0,
+    score: 0,
   },
   currentIndex: 0,
   mode: undefined,
@@ -38,7 +53,7 @@ export const GameProvider: React.FC<{ children: ReactNode }> = ({children}) => {
     highestStreak: 0,
   });
 
-  const startGame = useCallback(async (mode: GameModeType, isDemo?: boolean) => {
+  const startGame = useCallback(async (mode: GamemodeType, isDemo?: boolean) => {
     const modeDetails = GAME_MODES.find((game) => game.name === mode);
     const modeConfig = modeDetails?.config;
     const timeLimit = modeConfig?.timeLimit ?? null;
@@ -59,7 +74,7 @@ export const GameProvider: React.FC<{ children: ReactNode }> = ({children}) => {
     try {
       const words = isDemo
         ? await fetchWordAudioDemo(modeConfig?.questionLimit)
-        : await fetchWordAudio("medium", modeConfig?.questionLimit);
+        : await fetchWordAudio(DEFAULT_DIFFICULTY, modeConfig?.questionLimit);
       startTimeRef.current = Date.now();
 
       setGameState((prev) => ({
@@ -72,77 +87,31 @@ export const GameProvider: React.FC<{ children: ReactNode }> = ({children}) => {
     }
   }, []);
 
-  const prefetchWordAudio = async (difficulty: string, voiceId?: string) => {
+  const prefetchWordAudio = useCallback(async () => {
     if (isPrefetchingRef.current) return;
     isPrefetchingRef.current = true;
     try {
-      const newWords = await fetchWordAudio(difficulty, 5, voiceId);
+      const newWords = await fetchWordAudio(DEFAULT_DIFFICULTY, PREFETCH_BATCH_SIZE);
       setGameState((prev) => ({ ...prev, words: [...prev.words, ...newWords] }));
     } catch (error) {
       console.error("Failed to prefetch words", error);
     } finally {
       isPrefetchingRef.current = false;
     }
-  };
-
-  const submitAnswer = (input: string, skipped?: boolean) => {
-    const isCorrect = checkAnswer(input, gameState.words[gameState.currentIndex].text);
-    streakRef.current = calculateStreak(streakRef.current.currentStreak, streakRef.current.highestStreak, isCorrect);
-
-    setGameState((prev) => {
-      const words = prev.words.map((word, wordIndex) => 
-        wordIndex === prev.currentIndex
-          ? (skipped
-              ? word
-              : { ...word, attempts: [...(word.attempts || []), input.trim().toLowerCase()] })
-          : word
-      );
-
-      return {
-        ...prev,
-        words,
-      };
-    });
-
-    progressGameIndex(isCorrect, skipped);
-    
-    return skipped ? "skipped" : isCorrect ? "correct" : "incorrect";
-  };
-  
-  const progressGameIndex = (isCorrect: boolean, skipped?: boolean) => {
-    const index = gameState.currentIndex + (isCorrect || skipped ? 1 : 0);
-    const isLastQuestion = index >= gameState.words.length;
-
-    if (isLastQuestion) {
-      endGame();
-    } else {
-      setGameState((prev) => {
-        return {
-          ...prev,
-          currentIndex: isLastQuestion ? prev.currentIndex : index,
-          status: "playing",
-        };
-      });
-
-      const questionLimit = gameState.mode?.config?.questionLimit;
-      const remaining = gameState.words.length - index;
-      if (!questionLimit && remaining <= 5) {
-        prefetchWordAudio("medium");
-      }
-    }
-  };
+  }, []);
 
   const endGame = useCallback((earlyEnd?: boolean) => {
     timerExpiredRef.current = true;
 
     setGameState((prev) => {
-      const words = earlyEnd ? prev.words.slice(0, prev.currentIndex) : prev.words;
+      const words = getAttemptedWords(prev.words, prev.currentIndex, earlyEnd);
       return {
         ...prev,
         words,
         stats: {
           ...prev.stats,
           accuracy: calculateAccuracy(words),
+          score: calculateScore(words),
           time: calculateTime(startTimeRef.current || 0, Date.now()),
           highestStreak: streakRef.current.highestStreak,
         },
@@ -150,6 +119,38 @@ export const GameProvider: React.FC<{ children: ReactNode }> = ({children}) => {
       };
     });
   }, []);
+
+  const submitAnswer = useCallback((input: string, skipped?: boolean) => {
+    const isCorrect = checkAnswer(input, gameState.words[gameState.currentIndex].text);
+    streakRef.current = calculateStreak(streakRef.current.currentStreak, streakRef.current.highestStreak, isCorrect);
+
+    setGameState((prev) => ({
+      ...prev,
+      words: prev.words.map((word, index) =>
+        index === prev.currentIndex ? recordAttempt(word, input, skipped) : word
+      ),
+    }));
+
+    const nextIndex = gameState.currentIndex + (isCorrect || skipped ? 1 : 0);
+    const isLastQuestion = nextIndex >= gameState.words.length;
+
+    if (isLastQuestion) {
+      endGame();
+    } else {
+      setGameState((prev) => ({
+        ...prev,
+        currentIndex: nextIndex,
+        status: "playing",
+      }));
+
+      const remainingWords = gameState.words.length - nextIndex;
+      if (shouldPrefetch(gameState.mode?.config?.questionLimit, remainingWords, PREFETCH_THRESHOLD)) {
+        prefetchWordAudio();
+      }
+    }
+
+    return skipped ? "skipped" : isCorrect ? "correct" : "incorrect";
+  }, [gameState.words, gameState.currentIndex, gameState.mode, endGame, prefetchWordAudio]);
 
   useEffect(() => {
     const timeLimit = gameState.mode?.config?.timeLimit;
@@ -161,8 +162,7 @@ export const GameProvider: React.FC<{ children: ReactNode }> = ({children}) => {
     const updateTimer = () => {
       if (!startTimeRef.current) return;
 
-      const elapsedSeconds = (Date.now() - startTimeRef.current) / 1000;
-      const remaining = Math.max(timeLimit - elapsedSeconds, 0);
+      const remaining = getRemainingTime(timeLimit, startTimeRef.current);
 
       setGameState((prev) => ({
         ...prev,

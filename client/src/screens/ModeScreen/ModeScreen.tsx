@@ -1,14 +1,14 @@
 import styles from "./ModeScreen.module.scss";
 import { GAME_MODES } from "../../constants/GameModes";
-import GameModeCard from "../../components/GameModeCard/GameModeCard";
+import GamemodeCard from "../../components/GamemodeCard/GamemodeCard";
 import Button from "../../components/Button/Button";
 import { useGameContext } from "../../context/GameContext/GameContext";
 import { useAuthContext } from "../../context/AuthContext/AuthContext";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { useEffect } from "react";
-import type { GameModeType } from "../../types/GameTypes";
+import type { GamemodeType } from "../../types/GameTypes";
 
-const VALID_MODES = new Set<GameModeType>(["regular", "quick", "marathon", "survival", "rematch", "countdown"]);
+const VALID_MODES = new Set<GamemodeType>(["regular", "quick", "marathon", "survival", "rematch", "countdown"]);
 
 const ModeScreen = ({ isDemo }: { isDemo: boolean }) => {
   const { startGame } = useGameContext();
@@ -21,13 +21,13 @@ const ModeScreen = ({ isDemo }: { isDemo: boolean }) => {
     navigate("/login");
   };
 
-  const handleStartGame = async (mode: GameModeType) => {
+  const handleStartGame = async (mode: GamemodeType) => {
     await startGame(mode, isDemo);
     navigate("/game");
   };
 
   useEffect(() => {
-    const modeParam = searchParams.get("mode") as GameModeType | null;
+    const modeParam = searchParams.get("mode") as GamemodeType | null;
     if (modeParam && VALID_MODES.has(modeParam)) {
       void handleStartGame(modeParam);
     }
@@ -54,7 +54,7 @@ const ModeScreen = ({ isDemo }: { isDemo: boolean }) => {
       <h1 className={styles["mode-screen__title"]}>gamemodes</h1>
       <div className={styles["mode-screen__grid"]}>
         {GAME_MODES.map((modeInfo) => (
-          <GameModeCard
+          <GamemodeCard
             key={modeInfo.name}
             mode={modeInfo.name}
             title={modeInfo.title}

@@ -1,12 +1,15 @@
-export type GameModeType =
+export type GamemodeType =
   | "regular"
   | "quick"
   | "marathon"
   | "survival"
   | "rematch"
   | "countdown";
+;
 
 export type GameStatus = "idle" | "loading" | "playing" | "review";
+
+export type GameModeTheme = "green" | "blue" | "red" | "brown" | "purple" | "orange";
 
 export interface GameConfig {
   timeLimit?: number;
@@ -14,10 +17,11 @@ export interface GameConfig {
   lifeLimit?: number;
 }
 
-export interface GameModeInfo {
-  name: GameModeType;
+export interface GamemodeInfo {
+  name: GamemodeType;
   title: string;
   desc: string;
+  theme: GameModeTheme;
   config: GameConfig;
   disabled?: boolean;
 }
@@ -30,7 +34,7 @@ export interface Word {
 
 export interface GameState {
   status: GameStatus;
-  mode?: GameModeInfo;
+  mode?: GamemodeInfo;
   words: Word[];
   currentIndex: number;
   timer: {
@@ -41,6 +45,7 @@ export interface GameState {
     time: { minutes: number; seconds: number };
     accuracy: number;
     highestStreak: number;
+    score: number;
   };
 }
 export interface StreakInfo {

@@ -1,10 +1,11 @@
-import type { GameModeInfo } from "../types/GameTypes";
+import type { GamemodeInfo } from "../types/GameTypes";
 
-export const GAME_MODES: GameModeInfo[] = [
+export const GAME_MODES: GamemodeInfo[] = [
   {
     name: "regular",
     title: "Regular",
     desc: "standard game, ten words.",
+    theme: "green",
     config: {
       questionLimit: 10,
     },
@@ -13,6 +14,7 @@ export const GAME_MODES: GameModeInfo[] = [
     name: "quick",
     title: "Quick",
     desc: "short on time? five words.",
+    theme: "blue",
     config: {
       questionLimit: 5,
     },
@@ -21,6 +23,7 @@ export const GAME_MODES: GameModeInfo[] = [
     name: "rematch",
     title: "Rematch",
     desc: "words you answered incorrectly.",
+    theme: "red",
     config: {
       questionLimit: 10,
     },
@@ -29,6 +32,7 @@ export const GAME_MODES: GameModeInfo[] = [
     name: "marathon",
     title: "Marathon",
     desc: "endless mode.",
+    theme: "orange",
     config: {
     },
   },
@@ -36,6 +40,7 @@ export const GAME_MODES: GameModeInfo[] = [
     name: "countdown",
     title: "Countdown",
     desc: "race against the clock.",
+    theme: "purple",
     config: {
       timeLimit: 60,
     },

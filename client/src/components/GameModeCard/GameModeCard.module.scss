@@ -13,11 +13,6 @@
     -webkit-text-stroke-color: $shadow-color;
   }
 
-  &:not(:disabled):active {
-    box-shadow:
-      inset 0 0 0 2px $highlight-color,
-      0 0.3rem 0 $shadow-color;
-  }
 
   &:not(:disabled):hover {
     filter: brightness(1.10);
@@ -39,14 +34,6 @@
   color: white;
   cursor: pointer;
   user-select: none;
-  transition:
-    transform 0.1s ease,
-    box-shadow 0.1s ease,
-    filter 0.1s ease;
-
-  &:not(:disabled):active {
-    transform: translateY(0.4375rem);
-  }
 
   padding: clamp(1rem, 2vw, 1.5rem);
 

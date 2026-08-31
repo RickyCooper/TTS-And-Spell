@@ -27,12 +27,14 @@ const GameScreen = () => {
       value={gameState.currentIndex}
       total={questionLimit}
       variant="progress"
+      color={gameState.mode?.theme}
     />
   ) : timeLimit && gameState.timer.remaining !== null ? (
     <IndicatorBar
       value={gameState.timer.remaining}
       total={timeLimit}
       variant="timer"
+      color={gameState.mode?.theme}
     />
   ) : null;
 
@@ -42,6 +44,7 @@ const GameScreen = () => {
         <AudioButton
           audio={gameState.words[gameState.currentIndex]?.audio}
           onAfterClick={focusInput}
+          color={gameState.mode?.theme}
         />
         <TextInput
           key={gameState.currentIndex}

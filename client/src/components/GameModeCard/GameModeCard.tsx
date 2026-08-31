@@ -1,17 +1,17 @@
 import type { JSX } from "react/jsx-dev-runtime";
-import type { GameModeType } from "../../types/GameTypes";
-import styles from "./GameModeCard.module.scss";
+import type { GamemodeType } from "../../types/GameTypes";
+import styles from "./GamemodeCard.module.scss";
 import Button from "../Button/Button";
 
-interface GameModeCardProps {
-  mode: GameModeType;
+interface GamemodeCardProps {
+  mode: GamemodeType;
   title: string;
   desc: string;
   disabled?: boolean;
   onClick?: () => void;
 }
 
-const GameModeCard: React.FC<GameModeCardProps> = ({
+const GamemodeCard: React.FC<GamemodeCardProps> = ({
   mode,
   title,
   desc,
@@ -34,4 +34,4 @@ const GameModeCard: React.FC<GameModeCardProps> = ({
 
 };
 
-export default GameModeCard;
+export default GamemodeCard;
