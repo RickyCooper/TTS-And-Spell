@@ -5,9 +5,10 @@ export type GamemodeType =
   | "survival"
   | "rematch"
   | "countdown";
-;
 
 export type GameStatus = "idle" | "loading" | "playing" | "review";
+
+export type SubmitResult = "correct" | "incorrect" | "skipped";
 
 export type GameModeTheme = "green" | "blue" | "red" | "brown" | "purple" | "orange";
 
@@ -37,6 +38,8 @@ export interface GameState {
   mode?: GamemodeInfo;
   words: Word[];
   currentIndex: number;
+  startTime: number | null;
+  streak: StreakInfo;
   timer: {
     total: number | null;
     remaining: number | null;
