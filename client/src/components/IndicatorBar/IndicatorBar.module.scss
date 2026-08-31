@@ -1,10 +1,17 @@
 @use "../../styles/variables" as *;
 
 .indicator-bar_container {
+  --indicator-color: #{$base-color-green};
   position: relative;
   width: 100%;
   max-width: clamp(350px, 50%, 500px);
   height: 1.2rem;
+
+  &.indicator-bar_container--blue { --indicator-color: #{$base-color-blue}; }
+  &.indicator-bar_container--red { --indicator-color: #{$base-color-red}; }
+  &.indicator-bar_container--brown { --indicator-color: #{$base-color-brown}; }
+  &.indicator-bar_container--purple { --indicator-color: #{$base-color-purple}; }
+  &.indicator-bar_container--orange { --indicator-color: #{$base-color-orange}; }
 }
 
 .indicator-bar_track {
@@ -26,7 +33,7 @@
   position: absolute;
   inset: -0.3rem;
   border-radius: 999px;
-  border: 0.16rem solid rgba($base-color-green, 0.88);
+  border: 0.16rem solid var(--indicator-color);
   opacity: 0;
   pointer-events: none;
   animation: timer-border-pulse 1.2s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;
@@ -59,6 +66,12 @@
   &.indicator-bar--hidden {
     opacity: 0;
   }
+
+  &.indicator-bar--blue { background-color: $base-color-blue; }
+  &.indicator-bar--red { background-color: $base-color-red; }
+  &.indicator-bar--brown { background-color: $base-color-brown; }
+  &.indicator-bar--purple { background-color: $base-color-purple; }
+  &.indicator-bar--orange { background-color: $base-color-orange; }
 }
 
 @keyframes timer-border-pulse {

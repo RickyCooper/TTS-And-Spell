@@ -7,6 +7,7 @@ import { useRef } from "react";
 import useGridObserver from "../../hooks/useGridObserver";
 import Chip from "../../components/Chip/Chip";
 import accuracyIcon from "../../assets/svg/accuracy.svg";
+import correctIcon from "../../assets/svg/correct.svg";
 import streakIcon from "../../assets/svg/streak.svg";
 import timeIcon from "../../assets/svg/time.svg";
 
@@ -20,6 +21,7 @@ const ReviewScreen = () => {
 
   const statChips = (
     <div className={styles["review-screen_stats-container"]}>
+      <Chip icon={correctIcon} data={stats.score} variant="correct"/>
       <Chip icon={accuracyIcon} data={stats.accuracy} variant="accuracy"/>
       <Chip icon={streakIcon} data={stats.highestStreak} variant="streak"/>
       <Chip icon={timeIcon} data={[stats.time.minutes, stats.time.seconds]} variant="time"/>
@@ -45,12 +47,14 @@ const ReviewScreen = () => {
 
   return (
     <div className={styles["review-screen"]}>
-      {statChips}
-      <div className={styles["review-screen_scroll-wrapper"]}>
-        {scrollbar}
-        <div className={styles["review-screen_cards-container"]} ref={scrollTargetRef}>
-          {reviewCards}
+      <div className={styles["review-screen_content"]}>
+        <div className={styles["review-screen_scroll-wrapper"]}>
+          {scrollbar}
+          <div className={styles["review-screen_cards-container"]} ref={scrollTargetRef}>
+            {reviewCards}
+          </div>
         </div>
+        {statChips}
       </div>
       <div className={styles["review-screen_buttons-container"]}>
         <Button text="Replay" variant="primary" color="orange" onClick={handleReplay} />

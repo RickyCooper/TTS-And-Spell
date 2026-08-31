@@ -1,7 +1,7 @@
 import React, { type JSX } from 'react';
 import styles from './Chip.module.scss';
 
-type Stat = 'accuracy' | 'streak' | 'time';
+type Stat = 'accuracy' | 'correct' | 'streak' | 'time';
 type Notification = 'error' | 'warning';
 
 type StatChipProps = {
