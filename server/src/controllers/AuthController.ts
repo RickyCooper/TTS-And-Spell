@@ -78,3 +78,34 @@ export const me = async (req: AuthRequest, res: Response): Promise<void> => {
     res.status(404).json({ message: "User not found" });
   }
 }
+
+export const forgotPassword = async (req: Request, res: Response): Promise<void> => {
+  await authService.forgotPassword(req.body.email);
+  res.status(200).json({ message: "If an account exists for that email, a reset code has been sent." });
+}
+
+export const verifyResetCode = async (req: Request, res: Response): Promise<void> => {
+  try {
+    await authService.verifyResetCode(req.body.email, req.body.code);
+    res.status(200).json({ valid: true });
+  } catch (err: any) {
+    if (err.message === "INVALID_RESET_CODE") {
+      res.status(400).json({ message: "That code is invalid or has expired." });
+    } else {
+      throw err;
+    }
+  }
+}
+
+export const resetPassword = async (req: Request, res: Response): Promise<void> => {
+  try {
+    await authService.resetPassword(req.body.email, req.body.code, req.body.password);
+    res.status(200).json({ message: "Your password has been reset." });
+  } catch (err: any) {
+    if (err.message === "INVALID_RESET_CODE") {
+      res.status(400).json({ message: "That code is invalid or has expired." });
+    } else {
+      throw err;
+    }
+  }
+}

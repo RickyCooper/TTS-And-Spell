@@ -5,6 +5,7 @@ import ModeScreen from "./screens/ModeScreen/ModeScreen";
 import ReviewScreen from "./screens/ReviewScreen/ReviewScreen";
 import LoadingScreen from "./screens/LoadingScreen/LoadingScreen";
 import AuthScreen from "./screens/AuthScreen/AuthScreen";
+import ResetPasswordScreen from "./screens/ResetPasswordScreen/ResetPasswordScreen";
 import { useGameContext } from "./context/GameContext/GameContext";
 import { GameProvider } from "./context/GameContext/GameProvider";
 import { AuthProvider } from "./context/AuthContext/AuthProvider";
@@ -43,6 +44,7 @@ const AppRoutes = () => {
           <Route path="/" element={<Navigate to="/login" replace />} />
           <Route path="/login" element={<AuthScreen initialView="login" />} />
           <Route path="/signup" element={<AuthScreen initialView="signup" />} />
+          <Route path="/reset-password" element={<ResetPasswordScreen />} />
           <Route path="/modes" element={<ModeScreen isDemo={isDemo} />} />
           <Route path="/game" element={<GameContent />} />
           <Route path="*" element={<Navigate to="/login" replace />} />

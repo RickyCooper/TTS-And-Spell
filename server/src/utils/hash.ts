@@ -14,3 +14,8 @@ export const comparePassword = (password: string, hash: string): Promise<boolean
 export const hashToken = (token: string): string => {
   return crypto.createHash("sha256").update(token).digest("hex");
 }
+
+// cryptographically secure 6-digit numeric code for password reset emails
+export const generateResetCode = (): string => {
+  return crypto.randomInt(100000, 1000000).toString();
+}
