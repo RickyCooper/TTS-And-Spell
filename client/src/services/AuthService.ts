@@ -61,3 +61,45 @@ export const getMe = async (accessToken: string): Promise<User> => {
 
   return data;
 };
+
+export const forgotPassword = async (email: string): Promise<void> => {
+  const response = await fetch(`${API_URL}/auth/forgot-password`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email }),
+  });
+
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw new Error(data.message || "Failed to send reset code");
+  }
+};
+
+export const verifyResetCode = async (email: string, code: string): Promise<void> => {
+  const response = await fetch(`${API_URL}/auth/verify-reset-code`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email, code }),
+  });
+
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw new Error(data.message || "That code is invalid or has expired.");
+  }
+};
+
+export const resetPassword = async (email: string, code: string, password: string): Promise<void> => {
+  const response = await fetch(`${API_URL}/auth/reset-password`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email, code, password }),
+  });
+
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw new Error(data.message || "Failed to reset password");
+  }
+};

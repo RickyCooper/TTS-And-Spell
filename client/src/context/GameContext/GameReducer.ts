@@ -123,6 +123,8 @@ export const gameReducer = (state: GameState, action: GameAction): GameState => 
 
     case "END_GAME": {
       if (state.status !== "playing") return state;
+      // no completed questions to review, so skip the review screen entirely
+      if (action.earlyEnd && state.currentIndex === 0) return initialState;
       const words = getAttemptedWords(state.words, state.currentIndex, action.earlyEnd);
       return {
         ...state,

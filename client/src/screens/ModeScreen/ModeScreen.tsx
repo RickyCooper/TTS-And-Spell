@@ -31,7 +31,6 @@ const ModeScreen = ({ isDemo }: { isDemo: boolean }) => {
     if (modeParam && VALID_MODES.has(modeParam)) {
       void handleStartGame(modeParam);
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
