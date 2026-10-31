@@ -29,6 +29,15 @@ export const GAME_MODES: GamemodeInfo[] = [
     },
   },
   {
+    name: "survival",
+    title: "Survival",
+    desc: "three lives, how far can you go?",
+    theme: "brown",
+    config: {
+      lifeLimit: 3,
+    },
+  },
+  {
     name: "marathon",
     title: "Marathon",
     desc: "endless mode.",

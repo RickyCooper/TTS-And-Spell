@@ -1,5 +1,9 @@
 @use "../../styles/variables" as *;
 
+.audio-button-wrapper {
+  position: relative;
+}
+
 .audio-button {
   --audio-base: #{$base-color-green};
   --audio-highlight: #{$highlight-color-green};
@@ -102,5 +106,141 @@
     --audio-base: #{$base-color-orange};
     --audio-highlight: #{$highlight-color-orange};
     --audio-shadow: #{$shadow-color-orange};
+  }
+}
+
+.audio-button__menu-toggle {
+  position: absolute;
+  z-index: 2;
+  top: -0.85rem;
+  right: -0.85rem;
+  display: grid;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  place-items: center;
+  cursor: pointer;
+  background-color: white;
+  border: 0.15rem solid $shadow-color-grey;
+  border-radius: 50%;
+  box-shadow: 0 0.16rem 0 $shadow-color-grey;
+}
+
+.audio-button__menu-plus {
+  display: block;
+  width: 1.75rem;
+  height: 1.95rem;
+  margin: auto;
+  transform: translateY(-0.08rem);
+}
+
+.audio-button__menu {
+  position: absolute;
+  z-index: 1;
+  top: -0.9rem;
+  left: calc(100% + 1.25rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: max-content;
+  animation: audio-menu-reveal 180ms ease-out both;
+
+  button {
+    min-width: 8.5rem;
+    padding: 0.3rem 0.75rem 0.3rem 0.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+    color: #555555;
+    font-family: $body-font-family;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-align: left;
+    cursor: pointer;
+    background-color: white;
+    border: 0.15rem solid $shadow-color-grey;
+    border-radius: 0.55rem;
+    box-shadow: 0 0.16rem 0 $shadow-color-grey;
+
+    &:hover {
+      background-color: $primary-background-color;
+    }
+
+    &:nth-child(2) {
+      animation-delay: 45ms;
+    }
+
+    img {
+      width: 1.75em;
+      height: 1.75em;
+    }
+
+    animation: audio-menu-action-reveal 160ms ease-out both;
+  }
+
+  &.audio-button__menu--closing {
+    pointer-events: none;
+    animation: audio-menu-dismiss 180ms ease-in both;
+
+    button {
+      animation: audio-menu-action-dismiss 130ms ease-in both;
+      animation-delay: 0;
+    }
+  }
+}
+
+@keyframes audio-menu-reveal {
+  from {
+    opacity: 0;
+    transform: translateX(-0.75rem) scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes audio-menu-action-reveal {
+  from {
+    opacity: 0;
+    transform: translateX(-0.4rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes audio-menu-dismiss {
+  from {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(-0.75rem) scale(0.96);
+  }
+}
+
+@keyframes audio-menu-action-dismiss {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(-0.4rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .audio-button__menu,
+  .audio-button__menu button {
+    animation: none;
   }
 }

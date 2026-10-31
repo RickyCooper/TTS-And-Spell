@@ -52,7 +52,7 @@ const ModeScreen = ({ isDemo }: { isDemo: boolean }) => {
       )}
       <h1 className={styles["mode-screen__title"]}>gamemodes</h1>
       <div className={styles["mode-screen__grid"]}>
-        {GAME_MODES.map((modeInfo) => (
+        {GAME_MODES.filter((modeInfo) => modeInfo.name !== "rematch").map((modeInfo) => (
           <GamemodeCard
             key={modeInfo.name}
             mode={modeInfo.name}

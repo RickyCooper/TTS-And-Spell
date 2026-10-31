@@ -30,6 +30,8 @@ export interface GamemodeInfo {
 export interface Word {
   text: string;
   audio: string;
+  sentence: string;
+  definition: string;
   attempts: string[];
 }
 
@@ -44,6 +46,10 @@ export interface GameState {
     total: number | null;
     remaining: number | null;
   };
+  lives: {
+    total: number;
+    remaining: number;
+  } | null;
   stats: {
     time: { minutes: number; seconds: number };
     accuracy: number;
