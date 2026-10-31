@@ -23,6 +23,7 @@ export const initialState: GameState = {
     total: null,
     remaining: null,
   },
+  lives: null,
   stats: {
     time: { minutes: 0, seconds: 0 },
     accuracy: 0,
@@ -37,7 +38,7 @@ export type GameAction =
   | { type: "START_FAILED" }
   | { type: "WORDS_PREFETCHED"; words: Word[] }
   | { type: "SUBMIT_ANSWER"; input: string; skipped?: boolean }
-  | { type: "TICK" }
+  | { type: "UPDATE_TIMER" }
   | { type: "END_GAME"; earlyEnd?: boolean }
   | { type: "RESET" };
 
@@ -48,15 +49,35 @@ const buildFinalStats = (words: Word[], highestStreak: number, startTime: number
   highestStreak,
 });
 
+// every game-over path funnels through here so "end the round" only has one implementation
+const finishGame = (state: GameState, updates: Partial<GameState> = {}): GameState => {
+  const words = updates.words ?? state.words;
+  const streak = updates.streak ?? state.streak;
+  return {
+    ...state,
+    ...updates,
+    status: "review",
+    stats: buildFinalStats(words, streak.highestStreak, state.startTime),
+  };
+};
+
+// only lives-based modes (e.g. survival) lose a life on a miss; other modes leave lives untouched
+const applyLifePenalty = (lives: GameState["lives"], isCorrect: boolean): GameState["lives"] => {
+  if (!lives || isCorrect) return lives;
+  return { ...lives, remaining: lives.remaining - 1 };
+};
+
 export const gameReducer = (state: GameState, action: GameAction): GameState => {
   switch (action.type) {
     case "START_LOADING": {
       const timeLimit = action.mode.config.timeLimit ?? null;
+      const lifeLimit = action.mode.config.lifeLimit ?? null;
       return {
         ...initialState,
         status: "loading",
         mode: action.mode,
         timer: { total: timeLimit, remaining: timeLimit },
+        lives: lifeLimit ? { total: lifeLimit, remaining: lifeLimit } : null,
       };
     }
 
@@ -74,48 +95,40 @@ export const gameReducer = (state: GameState, action: GameAction): GameState => 
     case "SUBMIT_ANSWER": {
       if (state.status !== "playing") return state;
 
+      const isLivesMode = state.lives !== null;
       const currentWord = state.words[state.currentIndex];
       const isCorrect = checkAnswer(action.input, currentWord.text);
       const words = state.words.map((word, index) =>
         index === state.currentIndex ? recordAttempt(word, action.input, action.skipped) : word
       );
-      const reachedMaxAttempts = !action.skipped && !isCorrect
+
+      const reachedMaxAttempts = !isLivesMode && !action.skipped && !isCorrect
         && words[state.currentIndex].attempts.length >= MAX_ATTEMPTS_PER_WORD;
       const streak = calculateStreak(state.streak.currentStreak, state.streak.highestStreak, isCorrect);
-      const nextIndex = state.currentIndex + (isCorrect || action.skipped || reachedMaxAttempts ? 1 : 0);
-      const isLastQuestion = nextIndex >= words.length;
+      const lives = applyLifePenalty(state.lives, isCorrect);
 
-      if (isLastQuestion) {
-        return {
-          ...state,
-          words,
-          streak,
-          status: "review",
-          stats: buildFinalStats(words, streak.highestStreak, state.startTime),
-        };
+      // lives-based modes are one-shot per word: every submission advances, win or lose
+      const advances = isLivesMode || isCorrect || action.skipped || reachedMaxAttempts;
+      const nextIndex = state.currentIndex + (advances ? 1 : 0);
+
+      const isOutOfWords = nextIndex >= words.length;
+      const isOutOfLives = lives !== null && lives.remaining <= 0;
+
+      if (isOutOfWords || isOutOfLives) {
+        return finishGame(state, { words, streak, lives });
       }
 
-      return {
-        ...state,
-        words,
-        streak,
-        currentIndex: nextIndex,
-      };
+      return { ...state, words, streak, lives, currentIndex: nextIndex };
     }
 
-    case "TICK": {
+    case "UPDATE_TIMER": {
       if (state.status !== "playing" || state.timer.total === null || state.startTime === null) {
         return state;
       }
 
       const remaining = getRemainingTime(state.timer.total, state.startTime);
       if (remaining <= 0) {
-        return {
-          ...state,
-          status: "review",
-          timer: { ...state.timer, remaining: 0 },
-          stats: buildFinalStats(state.words, state.streak.highestStreak, state.startTime),
-        };
+        return finishGame(state, { timer: { ...state.timer, remaining: 0 } });
       }
 
       return { ...state, timer: { ...state.timer, remaining } };
@@ -126,12 +139,7 @@ export const gameReducer = (state: GameState, action: GameAction): GameState => 
       // no completed questions to review, so skip the review screen entirely
       if (action.earlyEnd && state.currentIndex === 0) return initialState;
       const words = getAttemptedWords(state.words, state.currentIndex, action.earlyEnd);
-      return {
-        ...state,
-        words,
-        status: "review",
-        stats: buildFinalStats(words, state.streak.highestStreak, state.startTime),
-      };
+      return finishGame(state, { words });
     }
 
     case "RESET":

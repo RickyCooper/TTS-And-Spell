@@ -2,6 +2,11 @@ import gameWords from "../data/words.json";
 import demoWords from "../data/demo.json";
 
 type Difficulty = keyof typeof gameWords;
+export type WordDetails = {
+  word: string;
+  definition: string;
+  sentence: string;
+};
 
 const shuffleArray = <T>(arr: T[]): T[] => {
   const shuffled = [...arr];
@@ -12,7 +17,7 @@ const shuffleArray = <T>(arr: T[]): T[] => {
   return shuffled;
 };
 
-export const getRandomWords = (difficulty: string, count: number): string[] => {
+export const getRandomWords = (difficulty: string, count: number) => {
   const difficultyKey = difficulty.toLowerCase() as Difficulty;
   const entries = gameWords[difficultyKey];
 
@@ -20,11 +25,16 @@ export const getRandomWords = (difficulty: string, count: number): string[] => {
     return [];
   }
 
-  return shuffleArray(entries).slice(0, count).map((entry) => entry.word);
+  return shuffleArray(entries).slice(0, count);
 };
 
-export const getDemoWords = (count: number = 10): string[] => {
-  return shuffleArray(demoWords).slice(0, count).map((entry) => entry.word);
+export const getDemoWords = (count: number = 10) => {
+  return shuffleArray(demoWords).slice(0, count);
+};
+
+export const getWordDetails = (word: string): WordDetails | undefined => {
+  const allWords = [...Object.values(gameWords).flat(), ...demoWords] as WordDetails[];
+  return allWords.find((entry) => entry.word.toLowerCase() === word.toLowerCase());
 };
 
 export const getAllWords = () => {

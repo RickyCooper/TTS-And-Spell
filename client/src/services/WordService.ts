@@ -3,6 +3,7 @@ import type { Word } from "../types/GameTypes";
 const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
 
 const DEFAULT_VOICE_ID = "iP95p4xoKVk53GoZ742B";
+export type ContextAudioType = "sentence" | "definition";
 
 export const fetchWordAudio = async (
   difficulty: string,
@@ -29,9 +30,11 @@ export const fetchWordAudio = async (
 
     const data = await response.json();
 
-    return data.words.map((word: { text: string, audio: string }) => ({
+    return data.words.map((word: { text: string; audio: string; sentence: string; definition: string }) => ({
       text: word.text,
       audio: word.audio,
+      sentence: word.sentence,
+      definition: word.definition,
       attempts: [],
     }));
 
@@ -52,9 +55,11 @@ export const fetchWordAudioDemo = async (count?: number): Promise<Word[]> => {
 
     const data = await response.json();
 
-    return data.words.map((word: { text: string; audio: string }) => ({
+    return data.words.map((word: { text: string; audio: string; sentence: string; definition: string }) => ({
       text: word.text,
       audio: word.audio,
+      sentence: word.sentence,
+      definition: word.definition,
       attempts: [],
     }));
 
@@ -62,4 +67,25 @@ export const fetchWordAudioDemo = async (count?: number): Promise<Word[]> => {
     console.error("Failed to fetch demo words", error);
     throw error;
   }
+};
+
+export const fetchContextAudio = async (
+  word: string,
+  contextType: ContextAudioType,
+  voiceId: string = DEFAULT_VOICE_ID,
+): Promise<string> => {
+  const response = await fetch(`${API_URL}/game/context-audio`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ word, contextType, voiceId }),
+  });
+
+  if (!response.ok) {
+    throw new Error(`Error fetching ${contextType} audio: ${response.statusText}`);
+  }
+
+  const data = await response.json();
+  return data.audio;
 };

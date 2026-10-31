@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo, useReducer } from "react";
+import React, { useCallback, useEffect, useMemo, useReducer, useRef } from "react";
 import type { ReactNode } from "react";
 import type { GamemodeType } from "../../types/GameTypes";
 import { GameContext } from "./GameContext";
@@ -14,9 +14,9 @@ const PREFETCH_THRESHOLD = 5;
 export const GameProvider: React.FC<{ children: ReactNode }> = ({children}) => {
 
   const [gameState, dispatch] = useReducer(gameReducer, initialState);
-  const isPrefetchingRef = React.useRef<boolean>(false);
+  const isPrefetchingRef = useRef<boolean>(false);
   // increments on every start/reset so late fetch responses from a superseded game can be ignored
-  const sessionIdRef = React.useRef(0);
+  const sessionIdRef = useRef(0);
 
   const startGame = useCallback(async (mode: GamemodeType, isDemo?: boolean) => {
     const modeDetails = GAME_MODES.find((game) => game.name === mode);
@@ -80,7 +80,7 @@ export const GameProvider: React.FC<{ children: ReactNode }> = ({children}) => {
   useEffect(() => {
     if (gameState.status !== "playing" || gameState.timer.total === null) return;
 
-    const intervalId = window.setInterval(() => dispatch({ type: "TICK" }), 100);
+    const intervalId = window.setInterval(() => dispatch({ type: "UPDATE_TIMER" }), 100);
     return () => window.clearInterval(intervalId);
   }, [gameState.status, gameState.timer.total]);
 

@@ -22,23 +22,29 @@ export const useAudioButtonController = (
     };
   }, []);
 
-  const audioSrc = useMemo(() => {
-    return audio ? `data:audio/mpeg;base64,${audio}` : "";
-  }, [audio]);
-
-  const playAudio = useCallback(async () => {
+  const playAudio = useCallback(async (audioData = audio) => {
     const audioElement = audioRef.current;
-    if (!audioElement) {
+    if (!audioElement || !audioData) {
       return;
     }
 
-    audioElement.src = audioSrc;
+    const audioSrc = `data:audio/mpeg;base64,${audioData}`;
+    if (audioElement.src !== audioSrc) {
+      audioElement.src = audioSrc;
+    } else {
+      audioElement.currentTime = 0;
+    }
+
     try {
       await audioElement.play();
     } catch (e) {
       console.error("Error playing audio:", e);
     }
-  }, [audioSrc]);
+  }, [audio]);
+
+  const audioSrc = useMemo(() => {
+    return audio ? `data:audio/mpeg;base64,${audio}` : "";
+  }, [audio]);
 
   useEffect(() => { 
     const delay = Math.max(0, autoplayDelayMs);
