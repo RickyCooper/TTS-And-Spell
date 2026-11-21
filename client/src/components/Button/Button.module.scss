@@ -60,6 +60,40 @@
     }
   }
 
+  &.button--icon {
+    --icon-size: #{$btn-icon-size};
+    --icon-border: #{$btn-icon-border-width};
+    --icon-ring: #{$btn-icon-ring-width};
+    flex-shrink: 0;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    padding: 0;
+    border: var(--icon-border) solid $highlight;
+    border-radius: 50%;
+    background-color: $base;
+    box-shadow: 0 0 0 var(--icon-ring) $shadow;
+
+    &:not(:disabled):hover {
+      filter: brightness(1.05);
+    }
+
+    &:not(:disabled):active {
+      transform: scale(0.95);
+    }
+
+    &.button--small {
+      --icon-size: #{$btn-icon-size-small};
+      --icon-border: #{$btn-icon-border-width-small};
+      --icon-ring: #{$btn-icon-ring-width-small};
+    }
+
+    .button_icon {
+      width: 50%;
+      height: 50%;
+      object-fit: contain;
+    }
+  }
+
 }
 
 .button--tertiary {

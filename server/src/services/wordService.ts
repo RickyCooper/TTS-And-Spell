@@ -8,6 +8,12 @@ export type WordDetails = {
   sentence: string;
 };
 
+const wordDetailsByName = new Map<string, WordDetails>();
+for (const entry of [...Object.values(gameWords).flat(), ...demoWords] as WordDetails[]) {
+  const key = entry.word.toLowerCase();
+  if (!wordDetailsByName.has(key)) wordDetailsByName.set(key, entry);
+}
+
 const shuffleArray = <T>(arr: T[]): T[] => {
   const shuffled = [...arr];
   for (let i = shuffled.length - 1; i > 0; i--) {
@@ -33,8 +39,7 @@ export const getDemoWords = (count: number = 10) => {
 };
 
 export const getWordDetails = (word: string): WordDetails | undefined => {
-  const allWords = [...Object.values(gameWords).flat(), ...demoWords] as WordDetails[];
-  return allWords.find((entry) => entry.word.toLowerCase() === word.toLowerCase());
+  return wordDetailsByName.get(word.toLowerCase());
 };
 
 export const getAllWords = () => {

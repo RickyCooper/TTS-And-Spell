@@ -35,9 +35,15 @@ export interface Word {
   attempts: string[];
 }
 
+export interface Voice {
+  id: string;
+  name: string;
+}
+
 export interface GameState {
   status: GameStatus;
   mode?: GamemodeInfo;
+  isDemo: boolean;
   words: Word[];
   currentIndex: number;
   startTime: number | null;

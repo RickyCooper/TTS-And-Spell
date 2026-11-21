@@ -17,6 +17,7 @@ export const initialState: GameState = {
   words: [],
   currentIndex: 0,
   mode: undefined,
+  isDemo: false,
   startTime: null,
   streak: { currentStreak: 0, highestStreak: 0 },
   timer: {
@@ -33,10 +34,11 @@ export const initialState: GameState = {
 };
 
 export type GameAction =
-  | { type: "START_LOADING"; mode: GamemodeInfo }
+  | { type: "START_LOADING"; mode: GamemodeInfo; isDemo: boolean }
   | { type: "WORDS_LOADED"; words: Word[]; startTime: number }
   | { type: "START_FAILED" }
   | { type: "WORDS_PREFETCHED"; words: Word[] }
+  | { type: "AUDIO_REFRESHED"; audio: Record<string, string> }
   | { type: "SUBMIT_ANSWER"; input: string; skipped?: boolean }
   | { type: "UPDATE_TIMER" }
   | { type: "END_GAME"; earlyEnd?: boolean }
@@ -76,6 +78,7 @@ export const gameReducer = (state: GameState, action: GameAction): GameState => 
         ...initialState,
         status: "loading",
         mode: action.mode,
+        isDemo: action.isDemo,
         timer: { total: timeLimit, remaining: timeLimit },
         lives: lifeLimit ? { total: lifeLimit, remaining: lifeLimit } : null,
       };
@@ -91,6 +94,15 @@ export const gameReducer = (state: GameState, action: GameAction): GameState => 
     case "WORDS_PREFETCHED":
       if (state.status !== "playing") return state;
       return { ...state, words: [...state.words, ...action.words] };
+
+    case "AUDIO_REFRESHED":
+      if (state.status !== "playing") return state;
+      return {
+        ...state,
+        words: state.words.map((word) =>
+          action.audio[word.text] ? { ...word, audio: action.audio[word.text] } : word
+        ),
+      };
 
     case "SUBMIT_ANSWER": {
       if (state.status !== "playing") return state;

@@ -1,65 +1,21 @@
-import { useCallback, useRef, useMemo, useEffect } from "react";
+import { useEffect } from "react";
 import { useGameContext } from "../../context/GameContext/GameContext";
+import { useAudioPlayer } from "../../hooks/useAudioPlayer";
 
-export const useAudioButtonController = (
-  audio: string,
-  autoplayDelayMs = 250,
-) => {
-  
+const AUTOPLAY_DELAY_MS = 250;
+
+export const useAudioButtonController = (audio: string) => {
   const { gameState } = useGameContext();
+  const { play } = useAudioPlayer();
 
-  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const playAudio = (audioData = audio) => play(audioData);
 
   useEffect(() => {
-    audioRef.current = new Audio();
+    if (gameState.status !== "playing") return;
 
-    return () => {
-      if (audioRef.current) {
-        audioRef.current.pause();
-        audioRef.current.src = "";
-        audioRef.current = null;
-      }
-    };
-  }, []);
-
-  const playAudio = useCallback(async (audioData = audio) => {
-    const audioElement = audioRef.current;
-    if (!audioElement || !audioData) {
-      return;
-    }
-
-    const audioSrc = `data:audio/mpeg;base64,${audioData}`;
-    if (audioElement.src !== audioSrc) {
-      audioElement.src = audioSrc;
-    } else {
-      audioElement.currentTime = 0;
-    }
-
-    try {
-      await audioElement.play();
-    } catch (e) {
-      console.error("Error playing audio:", e);
-    }
-  }, [audio]);
-
-  const audioSrc = useMemo(() => {
-    return audio ? `data:audio/mpeg;base64,${audio}` : "";
-  }, [audio]);
-
-  useEffect(() => { 
-    const delay = Math.max(0, autoplayDelayMs);
-
-    const timeoutId = setTimeout(() => {
-      if (gameState.status === "playing") {
-        playAudio();
-      }
-    }, delay);
-
-    return () => {
-      clearTimeout(timeoutId);
-    };
-
-  }, [audioSrc, autoplayDelayMs, playAudio, gameState.status]);
+    const timeoutId = setTimeout(() => void play(audio), AUTOPLAY_DELAY_MS);
+    return () => clearTimeout(timeoutId);
+  }, [play, audio, gameState.status]);
 
   return {
     playAudio,

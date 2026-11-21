@@ -1,0 +1,69 @@
+@use "../../styles/variables" as *;
+
+.voice-selector {
+  --panel-pad: 1.2rem;
+  position: relative;
+  display: inline-flex;
+}
+
+.voice-selector__button {
+  position: relative;
+  z-index: 3;
+}
+
+// the panel wraps the voice button (hence the left padding) and appears around it when open;
+// it stays mounted so it can fade, and visibility keeps it unfocusable while closed
+.voice-selector__options {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: calc(-1 * var(--panel-pad));
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  padding: 0 2rem 0 calc(var(--panel-pad) + #{$btn-icon-size} + 1.2rem);
+  border-radius: 1.8rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-0.75rem, -50%);
+  transition:
+    opacity 0.18s ease,
+    transform 0.18s ease,
+    visibility 0s linear 0.18s;
+
+  &.voice-selector__options--open {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, -50%);
+    transition-delay: 0s;
+  }
+}
+
+.voice-selector__option {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-width: 12rem;
+  padding: 1rem 0;
+
+  & + & {
+    border-top: 0.12rem solid $base-color-grey;
+  }
+}
+
+.voice-selector__name {
+  flex: 1;
+  color: $shadow-color-dark-grey;
+  font-family: $body-font-family;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: left;
+  user-select: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .voice-selector__options {
+    transition: none;
+  }
+}

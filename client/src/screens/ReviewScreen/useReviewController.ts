@@ -8,20 +8,11 @@ export const useReviewController = () => {
   const { gameState, startGame, resetGame } = useGameContext();
   const navigate = useNavigate();
 
-  console.log(gameState.stats)
-
-  const results = gameState.words.map((word) => {
-    const questionMatch = gameState.words.find((q) => q.text === word.text);
-    const attempts = questionMatch 
-      ? questionMatch.attempts.map((a) => a).filter((input) => input.trim())
-      : [];
-
-    return {
-      word: word.text,
-      attempts,
-      audio: word.audio,
-    };
-  });
+  const results = gameState.words.map((word) => ({
+    word: word.text,
+    attempts: word.attempts.filter((input) => input.trim()),
+    audio: word.audio,
+  }));
 
   useEffect(() => {
     const audio = new Audio(victorySound);
@@ -38,7 +29,7 @@ export const useReviewController = () => {
   };
 
   const handleReplay = async () => {
-    await startGame(gameState.mode!.name);
+    await startGame(gameState.mode!.name, gameState.isDemo);
     navigate("/game");
   };
 

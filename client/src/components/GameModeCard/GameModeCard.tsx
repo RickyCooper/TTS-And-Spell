@@ -1,4 +1,4 @@
-import type { JSX } from "react/jsx-dev-runtime";
+import type { JSX } from "react";
 import type { GamemodeType } from "../../types/GameTypes";
 import styles from "./GamemodeCard.module.scss";
 import Button from "../Button/Button";
