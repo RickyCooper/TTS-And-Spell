@@ -4,6 +4,7 @@ import { useGameController } from "./useGameController";
 import IndicatorBar from "../../components/IndicatorBar/IndicatorBar";
 import TextInput from "../../components/TextInput/TextInput";
 import Button from "../../components/Button/Button";
+import VoiceSelector from "../../components/VoiceSelector/VoiceSelector";
 import { useGameContext } from "../../context/GameContext/GameContext";
 import fireIcon from "../../assets/svg/fire.svg";
 import fireExtinguishedIcon from "../../assets/svg/fire-extinguished.svg";
@@ -55,6 +56,11 @@ const GameScreen = () => {
 
   return (
     <div className={styles["game-screen"]}>
+      <div className={styles["game-screen_header"]}>
+        {!gameState.isDemo && (
+          <VoiceSelector color={gameState.mode?.theme} onAfterChange={focusInput} />
+        )}
+      </div>
       <div className={styles["game-screen_body"]}>
         <AudioButton
           audio={gameState.words[gameState.currentIndex]?.audio}

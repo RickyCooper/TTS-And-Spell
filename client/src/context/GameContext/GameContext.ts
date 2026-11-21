@@ -3,10 +3,13 @@ import type { GameState, GamemodeType } from "../../types/GameTypes";
 
 export interface GameContextType {
   gameState: GameState;
+  voiceId: string;
+  isChangingVoice: boolean;
   startGame: (mode: GamemodeType, isDemo?: boolean) => Promise<void>;
   submitAnswer: (input: string, skipped?: boolean) => void;
   resetGame: () => void;
   endGame: (earlyEnd?: boolean) => void;
+  changeVoice: (voiceId: string) => Promise<void>;
 }
 
 export const GameContext = createContext<GameContextType | undefined>(

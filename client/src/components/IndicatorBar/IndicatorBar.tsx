@@ -1,4 +1,4 @@
-import type { JSX } from "react/jsx-dev-runtime";
+import type { JSX } from "react";
 import styles from "./IndicatorBar.module.scss";
 import type { GameModeTheme } from "../../types/GameTypes";
 

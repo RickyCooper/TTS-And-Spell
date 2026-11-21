@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo, useReducer, useRef } from "react";
+import React, { useCallback, useEffect, useReducer, useRef } from "react";
 import type { ReactNode } from "react";
 import type { GamemodeType } from "../../types/GameTypes";
 import { GameContext } from "./GameContext";
@@ -6,6 +6,7 @@ import { fetchWordAudio, fetchWordAudioDemo } from "../../services/WordService";
 import { GAME_MODES } from "../../constants/GameModes";
 import { shouldPrefetch } from "../../utils";
 import { gameReducer, initialState } from "./GameReducer";
+import { useVoice } from "./useVoice";
 
 const DEFAULT_DIFFICULTY = "medium";
 const PREFETCH_BATCH_SIZE = 5;
@@ -17,18 +18,20 @@ export const GameProvider: React.FC<{ children: ReactNode }> = ({children}) => {
   const isPrefetchingRef = useRef<boolean>(false);
   // increments on every start/reset so late fetch responses from a superseded game can be ignored
   const sessionIdRef = useRef(0);
+  const { voiceId, voiceIdRef, isChangingVoice, startGameVoice, changeVoice } = useVoice(gameState, dispatch, sessionIdRef);
 
   const startGame = useCallback(async (mode: GamemodeType, isDemo?: boolean) => {
     const modeDetails = GAME_MODES.find((game) => game.name === mode);
     if (!modeDetails) return;
 
     const sessionId = ++sessionIdRef.current;
-    dispatch({ type: "START_LOADING", mode: modeDetails });
+    const gameVoiceId = startGameVoice(isDemo);
+    dispatch({ type: "START_LOADING", mode: modeDetails, isDemo: Boolean(isDemo) });
 
     try {
       const words = isDemo
         ? await fetchWordAudioDemo(modeDetails.config.questionLimit)
-        : await fetchWordAudio(DEFAULT_DIFFICULTY, modeDetails.config.questionLimit);
+        : await fetchWordAudio(DEFAULT_DIFFICULTY, modeDetails.config.questionLimit, gameVoiceId);
 
       if (sessionId !== sessionIdRef.current) return;
       dispatch({ type: "WORDS_LOADED", words, startTime: Date.now() });
@@ -36,16 +39,18 @@ export const GameProvider: React.FC<{ children: ReactNode }> = ({children}) => {
       if (sessionId !== sessionIdRef.current) return;
       dispatch({ type: "START_FAILED" });
     }
-  }, []);
+  }, [startGameVoice]);
 
   const prefetchWordAudio = useCallback(async () => {
     if (isPrefetchingRef.current) return;
     isPrefetchingRef.current = true;
     const sessionId = sessionIdRef.current;
+    const requestedVoiceId = voiceIdRef.current;
 
     try {
-      const newWords = await fetchWordAudio(DEFAULT_DIFFICULTY, PREFETCH_BATCH_SIZE);
-      if (sessionId === sessionIdRef.current) {
+      const newWords = await fetchWordAudio(DEFAULT_DIFFICULTY, PREFETCH_BATCH_SIZE, requestedVoiceId);
+      // a batch voiced before a voice switch is dropped; the next prefetch check fetches a fresh one
+      if (sessionId === sessionIdRef.current && requestedVoiceId === voiceIdRef.current) {
         dispatch({ type: "WORDS_PREFETCHED", words: newWords });
       }
     } catch (error) {
@@ -53,7 +58,7 @@ export const GameProvider: React.FC<{ children: ReactNode }> = ({children}) => {
     } finally {
       isPrefetchingRef.current = false;
     }
-  }, []);
+  }, [voiceIdRef]);
 
   const submitAnswer = useCallback((input: string, skipped?: boolean) => {
     dispatch({ type: "SUBMIT_ANSWER", input, skipped });
@@ -84,10 +89,7 @@ export const GameProvider: React.FC<{ children: ReactNode }> = ({children}) => {
     return () => window.clearInterval(intervalId);
   }, [gameState.status, gameState.timer.total]);
 
-  const value = useMemo(
-    () => ({ gameState, startGame, submitAnswer, resetGame, endGame }),
-    [gameState, startGame, submitAnswer, resetGame, endGame],
-  );
+  const value = { gameState, voiceId, isChangingVoice, startGame, submitAnswer, resetGame, endGame, changeVoice };
 
   return (
     <GameContext.Provider value={value}>

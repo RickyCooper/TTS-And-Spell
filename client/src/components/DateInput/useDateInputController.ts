@@ -75,6 +75,8 @@ export const useDateInputController = (onChange?: (value: string) => void) => {
 
   const handleKeyDown = useCallback(
     (e: React.KeyboardEvent<HTMLInputElement>) => {
+      if (e.key === "Tab") return;
+
       e.preventDefault();
       if (/^\d$/.test(e.key) && digits.length < 8 && isDigitAllowed(digits, e.key)) {
         const newDigits = digits + e.key;

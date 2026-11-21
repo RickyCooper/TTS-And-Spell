@@ -123,7 +123,7 @@
   background-color: white;
   border: 0.15rem solid $shadow-color-grey;
   border-radius: 50%;
-  box-shadow: 0 0.16rem 0 $shadow-color-grey;
+  box-shadow: 0 0rem 0 $shadow-color-grey;
 }
 
 .audio-button__menu-plus {
@@ -143,7 +143,13 @@
   flex-direction: column;
   gap: 0.5rem;
   width: max-content;
-  animation: audio-menu-reveal 180ms ease-out both;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-0.75rem) scale(0.96);
+  transition:
+    opacity 180ms ease-in,
+    transform 180ms ease-in,
+    visibility 0s linear 180ms;
 
   button {
     min-width: 8.5rem;
@@ -162,85 +168,48 @@
     border: 0.15rem solid $shadow-color-grey;
     border-radius: 0.55rem;
     box-shadow: 0 0.16rem 0 $shadow-color-grey;
+    opacity: 0;
+    transform: translateX(-0.4rem);
+    transition:
+      opacity 130ms ease-in,
+      transform 130ms ease-in;
 
     &:hover {
       background-color: $primary-background-color;
-    }
-
-    &:nth-child(2) {
-      animation-delay: 45ms;
     }
 
     img {
       width: 1.75em;
       height: 1.75em;
     }
-
-    animation: audio-menu-action-reveal 160ms ease-out both;
   }
 
-  &.audio-button__menu--closing {
-    pointer-events: none;
-    animation: audio-menu-dismiss 180ms ease-in both;
+  &.audio-button__menu--open {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition:
+      opacity 180ms ease-out,
+      transform 180ms ease-out,
+      visibility 0s;
 
     button {
-      animation: audio-menu-action-dismiss 130ms ease-in both;
-      animation-delay: 0;
+      opacity: 1;
+      transform: none;
+      transition:
+        opacity 160ms ease-out,
+        transform 160ms ease-out;
+
+      &:nth-child(2) {
+        transition-delay: 45ms;
+      }
     }
-  }
-}
-
-@keyframes audio-menu-reveal {
-  from {
-    opacity: 0;
-    transform: translateX(-0.75rem) scale(0.96);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0) scale(1);
-  }
-}
-
-@keyframes audio-menu-action-reveal {
-  from {
-    opacity: 0;
-    transform: translateX(-0.4rem);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes audio-menu-dismiss {
-  from {
-    opacity: 1;
-    transform: translateX(0) scale(1);
-  }
-
-  to {
-    opacity: 0;
-    transform: translateX(-0.75rem) scale(0.96);
-  }
-}
-
-@keyframes audio-menu-action-dismiss {
-  from {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
-  to {
-    opacity: 0;
-    transform: translateX(-0.4rem);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .audio-button__menu,
   .audio-button__menu button {
-    animation: none;
+    transition: none;
   }
 }

@@ -3,11 +3,27 @@ import { storageProvider } from "../storage";
 
 export type ContextAudioType = "sentence" | "definition";
 
+// cache is keyed by voice only, so delete the cached voice-preview_* files if this phrase changes
+const VOICE_PREVIEW_TEXT = "Hi there! I'll read out your spelling words. Listen closely!";
+
+const sanitizeKey = (word: string): string => word.toLowerCase().replace(/[^a-z0-9_-]/g, "_");
+
 const buildCacheKey = (word: string, voiceId: string): string =>
-  `${word.toLowerCase().replace(/[^a-z0-9_-]/g, "_")}_${voiceId}`;
+  `${sanitizeKey(word)}_${voiceId}`;
 
 const buildContextCacheKey = (word: string, contextType: ContextAudioType, voiceId: string): string =>
-  `${word.toLowerCase().replace(/[^a-z0-9_-]/g, "_")}_${contextType}_${voiceId}`;
+  `${sanitizeKey(word)}_${contextType}_${voiceId}`;
+
+// returns the cached audio for key, generating and caching it from text on a miss
+const readOrGenerate = async (key: string, text: string, voiceId: string): Promise<Buffer> => {
+  if (await storageProvider.exists(key)) {
+    return storageProvider.read(key);
+  }
+
+  const audioBuffer = await generateSingleWordAudio(text, voiceId);
+  await storageProvider.write(key, audioBuffer);
+  return audioBuffer;
+};
 
 export const generateAudioWithCache = async (
   words: string[],
@@ -15,16 +31,7 @@ export const generateAudioWithCache = async (
 ): Promise<WordWithAudio[]> => {
   return Promise.all(
     words.map(async (word) => {
-      const key = buildCacheKey(word, voiceId);
-
-      let audioBuffer: Buffer;
-
-      if (await storageProvider.exists(key)) {
-        audioBuffer = await storageProvider.read(key);
-      } else {
-        audioBuffer = await generateSingleWordAudio(word, voiceId);
-        await storageProvider.write(key, audioBuffer);
-      }
+      const audioBuffer = await readOrGenerate(buildCacheKey(word, voiceId), word, voiceId);
 
       return {
         text: word,
@@ -40,15 +47,13 @@ export const generateContextAudioWithCache = async (
   contextType: ContextAudioType,
   voiceId: string,
 ): Promise<string> => {
-  const key = buildContextCacheKey(word, contextType, voiceId);
-  let audioBuffer: Buffer;
+  const audioBuffer = await readOrGenerate(buildContextCacheKey(word, contextType, voiceId), text, voiceId);
 
-  if (await storageProvider.exists(key)) {
-    audioBuffer = await storageProvider.read(key);
-  } else {
-    audioBuffer = await generateSingleWordAudio(text, voiceId);
-    await storageProvider.write(key, audioBuffer);
-  }
+  return audioBuffer.toString("base64");
+};
+
+export const generateVoicePreviewWithCache = async (voiceId: string): Promise<string> => {
+  const audioBuffer = await readOrGenerate(`voice-preview_${voiceId}`, VOICE_PREVIEW_TEXT, voiceId);
 
   return audioBuffer.toString("base64");
 };

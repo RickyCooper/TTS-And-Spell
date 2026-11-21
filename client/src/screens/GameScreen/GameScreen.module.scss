@@ -12,6 +12,13 @@
   "footer";
 }
 
+.game-screen_header {
+  display: flex;
+  align-self: start;
+  padding: 3.5rem 2rem 2rem;
+  grid-area: header;
+}
+
 .game-screen_body {
   display: flex;
   align-self: center;
